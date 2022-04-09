@@ -1,10 +1,8 @@
 package airport;
 
 import aircraft.Aircraft;
-import interfaces.Cargo;
 import interfaces.International;
-
-public class InternationalCargoAirport extends Airport implements International, Cargo {
+public class InternationalCargoAirport extends CargoAirport implements International {
 
     public InternationalCargoAirport(int aircraftCapacity, double x, double y, double fuelCost, double fuelCapacity,
             double operationFee, double airportTax) {

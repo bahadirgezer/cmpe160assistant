@@ -1,13 +1,11 @@
 package airport;
 
 import aircraft.Aircraft;
-import interfaces.Cargo;
 import interfaces.Domestic;
-import interfaces.International;
 
-public class MilitaryAirport extends Airport implements International, Domestic, Cargo {
+public class DomesticPassengerAirport extends PassengerAirport implements Domestic {
 
-    public MilitaryAirport(int aircraftCapacity, double x, double y, double fuelCost, double fuelCapacity,
+    public DomesticPassengerAirport(int aircraftCapacity, double x, double y, double fuelCost, double fuelCapacity,
             double operationFee, double airportTax) {
         super(aircraftCapacity, x, y, fuelCost, fuelCapacity, operationFee, airportTax);
         //TODO Auto-generated constructor stub
