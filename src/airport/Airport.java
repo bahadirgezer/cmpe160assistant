@@ -3,7 +3,7 @@ package airport;
 import java.lang.Math;
 import aircraft.Aircraft;
 
-abstract class Airport {
+public abstract class Airport {
     Aircraft planes[];
     private int aircraftCapacity;
     private final double x;
@@ -28,8 +28,8 @@ abstract class Airport {
 
     }
 
-    abstract boolean arrival(Aircraft plane);
-    abstract boolean departure(Aircraft plane);
+    abstract boolean arrival(Aircraft aircraft);
+    abstract boolean departure(Aircraft aircraft);
     abstract void loadFuel(double amount);
 
     abstract public double getArrivalFee(double passengerCount, double weight, int planeType);

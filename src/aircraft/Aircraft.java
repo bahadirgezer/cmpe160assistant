@@ -1,5 +1,5 @@
 package aircraft;
 
-public class Aircraft {
+public abstract class Aircraft {
     
 }
