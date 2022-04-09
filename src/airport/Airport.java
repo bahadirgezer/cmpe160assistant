@@ -32,26 +32,10 @@ abstract class Airport {
     abstract boolean departure(Aircraft plane);
     abstract void loadFuel(double amount);
 
-    /**
-     * 
-     * @param passengerCount
-     * @param weight
-     * @param fuel
-     * @param planeType
-     * @return
-     */
-    public double getArrivalFee(double passengerCount, double weight, int planeType) {
-        if (planeType == 0) {
+    abstract public double getArrivalFee(double passengerCount, double weight, int planeType);
+    abstract public double getArrivalFee(double weight, int planeType);
 
-        }
-        if (passengerCount > 200 || weight) {
-            return 
-        }
-    }
-
-    public double getDepartureFee() {
-
-    }
+    abstract public double getDepartureFee();
     
     public double getDistance(double x, double y) {
         return Math.sqrt(Math.pow(this.x - x, 2) + Math.pow(this.y - y, 2));
