@@ -9,5 +9,5 @@ public interface Aircraft {
     boolean hasFuel();
     boolean hasFuel(Double fuel);
     boolean addFuel(int fuel); //add fuel to the aircraft, checks weight and fuel capacity
-
+    
 }

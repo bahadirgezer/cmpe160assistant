@@ -24,6 +24,8 @@ public abstract class PassengerAircraft extends Aircraft implements Aircraft, Pa
         return true;
     }
 
+    
+
     void printContents() {
         for (Passenger passenger : passengers.values()) {
             System.out.println(passenger.toString());

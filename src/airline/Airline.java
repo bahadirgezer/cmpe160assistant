@@ -39,7 +39,7 @@ public class Airline {
         return false;
     }
 
-    public boolean addPassenger(Airport airport, Aircraft aircraft, Passenger passenger) {
+    public boolean loadPassenger(Airport airport, Aircraft aircraft, Passenger passenger) {
         if (aircraft.getCurrentAirport() != airport) {
             return false;
         }
@@ -72,7 +72,23 @@ public class Airline {
         return false;
     }
 
-    public unloadPassenger(Airc)
+    public boolean transferPassenger(Aircraft fromAircraft, Aircraft toAircraft, Passenger passenger) {
+        if (!fromAircraft.getCurrentAirport().equals(toAircraft.getCurrentAirport())) {
+            return false;
+        }
+        if (!fromAircraft.hasPassenger(passenger)) {
+            return false;
+        }
+        if (toAircraft.isFull()) {
+            return false;
+        }
+        if (toAircraft.loadPassenger(passenger)) {
+            fromAircraft.removePassenger(passenger);
+            passenger.transfer(fromAircraft.getCurrentAirport());
+            return true;
+        }
+        return false;
+    }
 
     public void printAircraft() {
         for (Aircraft aircraft : aircrafts) {

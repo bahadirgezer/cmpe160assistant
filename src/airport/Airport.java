@@ -4,18 +4,21 @@ import java.lang.Math;
 import aircraft.Aircraft;
 
 public abstract class Airport {
-    Aircraft planes[];
-    private int aircraftCapacity;
-    private final double x;
-    private final double y;
-    private int aircraftCount;
-    private final double fuelCost;
-    private final double fuelCapacity;
-    private double fuelAmount;
+    int aircraftCapacity;
+    int aircraftCount;
+    int x, y;
+    final int id;
+    final int type; //0 = regional, 1 = major, 2 = hub;
+
+    public Airport(int id, int x, int y) {
+        this.id = id;
+        this.x = x;
+        this.y = y;
+    }
     private final double operationFee;
     private final double airportTax;
-
-
+    
+    
     
     public Airport(int aircraftCapacity, double x, double y, double fuelCost, double fuelCapacity, double operationFee, double airportTax) {
         this.aircraftCapacity = aircraftCapacity;
@@ -27,47 +30,12 @@ public abstract class Airport {
         fuelAmount = fuelCapacity;
         this.operationFee = operationFee;
         this.airportTax = airportTax;
-
+        
     }
-    
-    /**
-     * Checkout if two airports are the same
-     */
+
     public boolean equals(Airport other) {
-        return (this.x == other.x && this.y == other.y);
+        return (this.id == other.id);
     }
-
-    //Print an array of Airports (for testing)
-    public static void printAirports(Airport[] airports) {
-        for (Airport airport : airports) {
-            System.out.println(airport.toString());
-        }
-    }
-
-    //toString method for testing
-    public String toString() {
-        return "Airport: " + x + "," + y;
-    }
-
-    //add fuel to the airport
-    public void addFuel(double fuel) {
-        fuelAmount += fuel;
-    }
-
-    //get the fuel amount
-    public double getFuelAmount() {
-        return fuelAmount;
-    }
-
-    
-    abstract boolean arrival(Aircraft aircraft);
-    abstract boolean departure(Aircraft aircraft);
-    abstract void loadFuel(double amount);
-
-    abstract public double getArrivalFee(double passengerCount, double weight, int planeType);
-    abstract public double getArrivalFee(double weight, int planeType);
-
-    abstract public double getDepartureFee();
     
     //get euclidean distance between two airports
     public double getDistance(Airport airport) {

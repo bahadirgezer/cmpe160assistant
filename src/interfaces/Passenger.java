@@ -5,6 +5,7 @@ public interface Passenger {
     boolean unloadPassenger(Passenger passenger);
     boolean loadAllPassenger();
     boolean unloadAllPassenger();
-    boolean setSeats();
+    boolean hasPassenger();
+    boolean setSeats(Passenger passenger);
 
 }

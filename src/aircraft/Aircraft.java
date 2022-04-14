@@ -11,11 +11,11 @@ public abstract class Aircraft implements Aircraft {
     boolean seats;
     final int speed;
 
-    Public Aircraft(int speed, double emptyWeight, double maxWeight) {
+    //aircraft constructor
+    public Aircraft(double fuel, Airport initialAirport) {
         seats = false;
-        this.speed = speed;
-        this.emptyWeight = emptyWeight;
-        this.maxWeight = maxWeight;
+        this.fuel = 0.0;
+        this.currentAirport = initialAirport;
     }
 
     boolean addFuel(double fuel) {
@@ -50,5 +50,9 @@ public abstract class Aircraft implements Aircraft {
         currentAirport = toAirport;
         
         return true;
+    }
+
+    public Airport getCurrentAirport() {
+        return currentAirport;
     }
 }
