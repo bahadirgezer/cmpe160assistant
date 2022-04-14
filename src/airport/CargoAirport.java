@@ -7,5 +7,4 @@ public abstract class CargoAirport extends Airport {
         super(aircraftCapacity, x, y, fuelCost, fuelCapacity, operationFee, airportTax);
         //TODO Auto-generated constructor stub
     }
-    
 }
