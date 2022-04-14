@@ -1,14 +1,15 @@
 package aircraft;
 
 public abstract class Aircraft implements Aircraft {
-    ArrayList<Passenger> passengers;
     Airport currentAirport;
-    boolean seats;
+    double weight, maxWeight;
+    double fuel, fuelCapacity;
+    statuc double fuelWeight;
+    
+
     int floorSpace;
-    double weight, emptyWeight, weightCapacity;
+    boolean seats;
     final int speed;
-    double fuel;
-    double fuelCapacity;
 
     Public Aircraft(int speed, double emptyWeight, double maxWeight) {
         seats = false;
@@ -17,11 +18,29 @@ public abstract class Aircraft implements Aircraft {
         this.maxWeight = maxWeight;
     }
 
-    boolean fly(Airport toAirport) {
-        if (toAirport.getAirportName() == currentAirport.getAirportName()) {
+    boolean addFuel(double fuel) {
+        if (fuelCapacity < fuel + this.fuel) {
             return false;
         }
-        double fuelNeeded = (toAirport.getDistance() / speed) * fuelConsumption;
+        if (maxWeight < weight + fuel * fuelWeight) {
+            return false;
+        }
+        this.fuel += fuel;
+        this.weight += fuel * fuelWeight;b
+        return true;
+    }
+
+    boolean hasFuel(double fuel) {
+        return this.fuel >= fuel ? true : false;
+    }
+
+    boolean hasFuel() {
+        return this.fuel > 0 ? true : false;
+    }
+
+    boolean fly(Airport toAirport) {
+        //fuel consumption needs to drop with weight loss, differential equation?
+        double fuelNeeded = (toAirport.getDistance(currentAirport) / speed) * fuelConsumption;
         
         if (fuelNeeded > fuel) {
             return false;
