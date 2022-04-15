@@ -8,6 +8,7 @@ public abstract class Passenger {
     int baggageCount;
     double budget;
     int currentDestination;
+    int previousDisembark;
 
     public Passenger(double weight, int baggageCount, double budget, ArrayList<Airport> destinations) {
         this.weight = weight;
@@ -15,6 +16,7 @@ public abstract class Passenger {
         this.budget = budget;
         currentDestination = 0;
         this.destinations = destinations;
+        previousDisembark = -1;
     }
 
 
@@ -22,7 +24,7 @@ public abstract class Passenger {
         return toAirport.equals(destinations.get(currentDestination));
     }
 
-    public boolean isFutureDestination(Airport toAirport) {
+    private boolean isFutureDestination(Airport toAirport) {
         for (int i = currentDestination; i < destinations.size(); i++) {
             if (destinations.get(i).equals(toAirport)) {
                 return true;
@@ -31,13 +33,18 @@ public abstract class Passenger {
         return false;
     }
 
-    public boolean disembark(Airport toAirport) {
+    public boolean canDisembark(Airport toAirport) {
         if (!isFutureDestination(toAirport)) {
             return false;
         }
-        currentDestination++;
         return true;
     }
+
+    public abstract double disembark(Airport toAirport);
+    //     currentDestination = destinations.indexOf(toAirport);
+    //     //calculate the cost of the flight
+    //     return expense;
+    // }
 
     public int findAirport(Airport airport) {
         for (Airport destination : destinations) {
@@ -47,7 +54,11 @@ public abstract class Passenger {
         }
     }
 
-    public void transfer(Airport currentAirport) {
+    public boolean transfer(Airport currentAirport) { //returns false if the passenger has reached its final destination
         currentDestination = findAirport(currentAirport);
+        if (currentDestination.equals(destinations.size() -1 )) {
+            return false;
+        }
+        return true;
     }
 }

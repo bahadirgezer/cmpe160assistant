@@ -45,4 +45,12 @@ public abstract class Airport {
     public double getDistance(double x, double y) {
         return Math.sqrt(Math.pow(this.x - x, 2) + Math.pow(this.y - y, 2));
     }
+
+    public boolean hasPassengerCapacity() {
+
+    }
+
+    public boolean hasCargoCapacity() {
+        return 
+    }
 }
