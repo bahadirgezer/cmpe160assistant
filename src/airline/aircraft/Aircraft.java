@@ -1,59 +1,57 @@
 package airline.aircraft;
 
-public abstract class Aircraft implements Aircraft {
-    Airport currentAirport;
-    double weight, maxWeight;
-    double fuel, fuelCapacity;
-    statuc double fuelWeight;
-    
+import airport.Airport;
+import interfaces.AircraftInterface;
 
-    int floorSpace;
-    boolean seats;
-    final int speed;
+public abstract class Aircraft implements AircraftInterface {
+    Airport currentAirport;
+    protected double weight, maxWeight;
+    protected double fuel, fuelCapacity;
+    protected double fuelWeight;
+    protected double floorSpace;
+
 
 
     //airline.aircraft constructor
-    protected Aircraft(double fuel, Airport initialAirport) {
-        seats = false;
-        this.fuel = 0.0;
-        this.currentAirport = initialAirport;
+    protected Aircraft(Airport initialAirport) {
+        currentAirport = initialAirport;
+        fuel = 0.0;
+        fuelWeight = 0.7;
     }
 
-    boolean addFuel(double fuel) {
+    public boolean canAddFuel(double fuel) {
         if (fuelCapacity < fuel + this.fuel) {
             return false;
         }
         if (maxWeight < weight + fuel * fuelWeight) {
             return false;
         }
-        this.fuel += fuel;
-        this.weight += fuel * fuelWeight;b
         return true;
     }
 
-    boolean hasFuel(double fuel) {
-        return this.fuel >= fuel ? true : false;
+    public double addFuel(double fuel) {
+        double fuelCost = currentAirport.getFuelCost(fuel);
+        this.fuel += fuel;
+        this.weight += fuel * fuelWeight;
+
+        return fuelCost;
     }
 
-    boolean hasFuel() {
-        return this.fuel > 0 ? true : false;
-    }
-
-    boolean fly(Airport toAirport) {
+    public boolean fly(Airport toAirport) {
         //fuel consumption needs to drop with weight loss, differential equation?
-        double fuelNeeded = (toAirport.getDistance(currentAirport) / speed) * fuelConsumption;
+        double fuelNeeded = getFuelConsumption(toAirport.getDistance(currentAirport));
         
         if (fuelNeeded > fuel) {
             return false;
         }
         fuel -= fuelNeeded;
+        //need to check the relationship between fuelWeight and fuelConsumption
+        weight -= fuelNeeded * fuelWeight;
 
         currentAirport = toAirport;
-        
         return true;
     }
 
-    public abstract boolean isEmpty();
 
     public Airport getCurrentAirport() {
         return currentAirport;
@@ -61,6 +59,18 @@ public abstract class Aircraft implements Aircraft {
 
     public double getWeightRatio() {
         return weight / maxWeight;
+    }
+
+    public boolean hasFuel(double fuel) {
+        return this.fuel >= fuel ? true : false;
+    }
+
+    public boolean hasFuel() {
+        return this.fuel > 0 ? true : false;
+    }
+
+    public double getFuelConsumption(double distance) { //not complete
+        return distance;
     }
 
 }

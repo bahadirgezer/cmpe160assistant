@@ -2,6 +2,8 @@ package passenger;
 
 import airport.Airport;
 
+import java.util.ArrayList;
+
 public abstract class Passenger {
     ArrayList<Airport> destinations;
     double weight;
@@ -42,19 +44,21 @@ public abstract class Passenger {
         return true;
     }
 
-    public abstract double disembark(Airport toAirport) 
+    public abstract double disembark(Airport toAirport) ;
 
-    public int findAirport(Airport airport) {
+    public int findAirport(Airport airport) { //checkThis
         for (Airport destination : destinations) {
             if (airport.equals(destination)) {
                 return destinations.indexOf(destination);
             }
         }
+        return -1;
     }
 
+    //check this
     public boolean transfer(Airport currentAirport) { //returns false if the passenger has reached its final destination
         currentDestination = findAirport(currentAirport);
-        if (currentDestination.equals(destinations.size() -1 )) {
+        if (currentDestination == destinations.size() -1) {
             return false;
         }
         return true;
@@ -62,5 +66,9 @@ public abstract class Passenger {
 
     public int getID() {
         return ID;
+    }
+
+    public double getWeight() {
+        return weight;
     }
 }
