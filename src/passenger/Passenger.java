@@ -9,8 +9,10 @@ public abstract class Passenger {
     double budget;
     int currentDestination;
     int previousDisembark;
+    final int ID;
 
-    public Passenger(double weight, int baggageCount, double budget, ArrayList<Airport> destinations) {
+    public Passenger(int ID, double weight, int baggageCount, double budget, ArrayList<Airport> destinations) {
+        this.ID = ID;
         this.weight = weight;
         this.baggageCount = baggageCount;
         this.budget = budget;
@@ -33,18 +35,14 @@ public abstract class Passenger {
         return false;
     }
 
-    public boolean canDisembark(Airport toAirport) {
-        if (!isFutureDestination(toAirport)) {
+    public boolean canDisembark(Airport airport) {
+        if (!isFutureDestination(airport)) {
             return false;
         }
         return true;
     }
 
-    public abstract double disembark(Airport toAirport);
-    //     currentDestination = destinations.indexOf(toAirport);
-    //     //calculate the cost of the flight
-    //     return expense;
-    // }
+    public abstract double disembark(Airport toAirport) 
 
     public int findAirport(Airport airport) {
         for (Airport destination : destinations) {
@@ -60,5 +58,9 @@ public abstract class Passenger {
             return false;
         }
         return true;
+    }
+
+    public int getID() {
+        return ID;
     }
 }

@@ -8,6 +8,7 @@ public interface Aircraft {
     boolean getCurrentAirport();
     boolean hasFuel();
     boolean hasFuel(Double fuel);
-    boolean addFuel(int fuel); //add fuel to the aircraft, checks weight and fuel capacity
+    boolean addFuel(int fuel); //add fuel to the airline.aircraft, checks weight and fuel capacity
+    double getFlightCost();
     
 }

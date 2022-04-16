@@ -1,4 +1,4 @@
-package aircraft;
+package airline.aircraft;
 
 public abstract class Aircraft implements Aircraft {
     Airport currentAirport;
@@ -11,8 +11,9 @@ public abstract class Aircraft implements Aircraft {
     boolean seats;
     final int speed;
 
-    //aircraft constructor
-    public Aircraft(double fuel, Airport initialAirport) {
+
+    //airline.aircraft constructor
+    protected Aircraft(double fuel, Airport initialAirport) {
         seats = false;
         this.fuel = 0.0;
         this.currentAirport = initialAirport;
@@ -52,7 +53,10 @@ public abstract class Aircraft implements Aircraft {
         return true;
     }
 
+    public abstract boolean isEmpty();
+
     public Airport getCurrentAirport() {
         return currentAirport;
     }
+
 }

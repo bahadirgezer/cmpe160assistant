@@ -1,6 +1,6 @@
-package aircraft.concrete;
+package airline.aircraft.concrete;
 
-import aircraft.CargoAircraft;
+import airline.aircraft.CargoAircraft;
 
 public class PropCargoAircraft extends CargoAircraft implements Cargo, Aircraft {
     
