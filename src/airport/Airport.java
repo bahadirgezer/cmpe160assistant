@@ -4,6 +4,8 @@ import java.lang.Math;
 import java.util.HashMap;
 
 import airline.aircraft.Aircraft;
+import airline.aircraft.CargoAircraft;
+import airline.aircraft.PassengerAircraft;
 import cargo.Cargo;
 import passenger.Passenger;
 
@@ -12,11 +14,10 @@ public abstract class Airport {
     HashMap<Integer, Cargo> cargos;
     private final int ID;
     private final double x, y;
-    private double operationFee, fuelCost;
-    protected int passengerAircraftCapacity;
-    protected int cargoAircraftCapacity;
+    protected double operationFee, fuelCost;
+    protected int passengerAircraftCapacity, cargoAircraftCapacity;
+    protected int passengerAircraftCount, cargoAircraftCount;
 
-    protected int fuelCost;
 
     public Airport(int ID, double x, double y, double fuelCost, double operationFee, int passengerAircraftCapacity, int cargoAircraftCapacity) {
         this.ID = ID;
@@ -28,9 +29,26 @@ public abstract class Airport {
         this.cargoAircraftCapacity = cargoAircraftCapacity;
     }
 
-    public abstract <T> boolean isFull(Aircraft aircraft);
+    public boolean isFull(Aircraft aircraft) {
+        if (aircraft instanceof PassengerAircraft) {
+            if (passengerAircraftCapacity == passengerAircraftCount) {
+                return true;
+            }
+            return false;
+        } else if (aircraft instanceof CargoAircraft) {
+            if (cargoAircraftCapacity == cargoAircraftCount) {
+                return true;
+            }
+            return false;
+        }
+        return true;
+    }
 
     public abstract double departAircraft(Aircraft aircraft);
+
+    public abstract double landAircraft(Aircraft aircraft);
+
+    public abstract double getFuelCost(double fuel);
 
     public boolean equals(Airport other) {
         return (this.ID == other.ID);

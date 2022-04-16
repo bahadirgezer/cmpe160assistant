@@ -59,4 +59,8 @@ public abstract class Aircraft implements Aircraft {
         return currentAirport;
     }
 
+    public double getWeightRatio() {
+        return weight / maxWeight;
+    }
+
 }
