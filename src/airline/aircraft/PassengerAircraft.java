@@ -8,6 +8,9 @@ import java.util.HashSet;
 import airport.Airport;
 import interfaces.AircraftInterface;
 import interfaces.PassengerInterface;
+import passenger.BusinessPassenger;
+import passenger.EconomyPassenger;
+import passenger.LuxuryPassenger;
 import passenger.Passenger;
 
 public abstract class PassengerAircraft extends Aircraft implements AircraftInterface, PassengerInterface {
@@ -17,6 +20,7 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
     int economySeats, businessSeats, firstClassSeats;
     int occupiedEconomySeats, occupiedBusinessSeats, occupiedFirstClassSeats;
     double floorArea;
+
 
     protected PassengerAircraft(Airport initialAirport) {
         super(initialAirport);
@@ -36,13 +40,119 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
 
     }
 
-    public boolean loadPassenger(Passenger passenger) {
-        if (passenger.)
+    public boolean canLoadPassenger(Passenger passenger) {
+        if (passengers.containsValue(passenger)) {
+            return false;
+        }
+        if (weight + passenger.getWeight() > maxWeight) {
+            return false;
+        }
+
+        if (passenger instanceof LuxuryPassenger) {
+            if (occupiedFirstClassSeats < firstClassSeats || occupiedBusinessSeats < businessSeats || occupiedEconomySeats < economySeats) {
+                return true;
+            } else {
+                return false;
+            }
+        } else if (passenger instanceof BusinessPassenger) {
+            if (occupiedBusinessSeats < businessSeats || occupiedEconomySeats < economySeats){
+                return true;
+            } else {
+                return false;
+            }
+        } else if (passenger instanceof EconomyPassenger) {
+            if (occupiedEconomySeats < economySeats) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return false;
     }
 
-    //passenger can disembark in the same airport
-    public boolean unloadPassenger(Passenger passenger) {
+    public double loadPassenger(Passenger passenger) {
+        if (passengers.containsValue(passenger)) {
+            return -operationFee;
+        }
+        if (weight + passenger.getWeight() > maxWeight) {
+            return -operationFee;
+        }
 
+        if (passenger instanceof LuxuryPassenger) {
+            if (occupiedFirstClassSeats < firstClassSeats) {
+                passenger.board(currentAirport,3);
+                passengers.put(passenger.getID(), passenger);
+                occupiedFirstClassSeats++;
+                return -operationFee * aircraftTypeMultiplier * 2.5;
+
+            } else if (occupiedBusinessSeats < businessSeats) {
+                passenger.board(currentAirport,2);
+                passengers.put(passenger.getID(), passenger);
+                occupiedBusinessSeats++;
+                return -operationFee * aircraftTypeMultiplier * 1.5;
+
+            } else if (occupiedEconomySeats < economySeats) {
+                passenger.board(currentAirport, 1);
+                passengers.put(passenger.getID(), passenger);
+                occupiedEconomySeats++;
+                return -operationFee * aircraftTypeMultiplier * 1.2;
+
+            } else {
+                return -operationFee;
+            }
+
+        } else if (passenger instanceof BusinessPassenger) {
+            if (occupiedBusinessSeats < businessSeats) {
+                passenger.board(currentAirport, 2);
+                passengers.put(passenger.getID(), passenger);
+                occupiedBusinessSeats++;
+                return -operationFee * aircraftTypeMultiplier * 1.5;
+
+            } else if (occupiedEconomySeats < economySeats){
+                passenger.board(currentAirport, 1); // TODO : should return operation fee if it cannot board
+                passengers.put(passenger.getID(), passenger);
+                occupiedEconomySeats++;
+                return -operationFee * aircraftTypeMultiplier * 1.2;
+
+            } else {
+                return -operationFee;
+            }
+        } else if (passenger instanceof EconomyPassenger) {
+            if (occupiedEconomySeats < economySeats) {
+                passenger.board(currentAirport, 1);
+                passengers.put(passenger.getID(), passenger);
+                occupiedEconomySeats++;
+                return -operationFee *  aircraftTypeMultiplier * 1.2;
+
+            } else {
+                return -operationFee;
+            }
+        }
+
+        return -operationFee;
+    }
+
+
+    //passenger can disembark in the same airport
+    public double unloadPassenger(Passenger passenger) {
+        if (!passenger.canDisembark(currentAirport)) {
+            return -operationFee;
+        }
+
+        double ticketPrice = 0;
+        if (passenger.getSeat() == 1) {
+            occupiedEconomySeats--;
+            ticketPrice = 1.0;
+        } else if (passenger.getSeat() == 2) {
+            occupiedBusinessSeats--;
+            ticketPrice = 2.8;
+        } else if (passenger.getSeat() == 3) {
+            occupiedFirstClassSeats--;
+            ticketPrice = 7.5;
+        }
+        ticketPrice = ticketPrice * passenger.disembark(currentAirport, aircraftTypeMultiplier);
+        passengers.remove(passenger.getID());
+        return ticketPrice;
     }
 
 

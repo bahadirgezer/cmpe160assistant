@@ -9,6 +9,8 @@ public abstract class Aircraft implements AircraftInterface {
     protected double fuel, fuelCapacity;
     protected double fuelWeight;
     protected double floorSpace;
+    protected double operationFee;
+    protected double aircraftTypeMultiplier;
 
 
 
