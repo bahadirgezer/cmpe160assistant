@@ -21,9 +21,9 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
     protected PassengerAircraft(Airport initialAirport) {
         super(initialAirport);
         passengers = new HashMap<Integer, Passenger>();
-        economyPassengerIDs = new HashSet<Integer>();
-        businessPassengerIDs = new HashSet<Integer>();
-        firstClassPassengerIDs = new HashSet<Integer>();
+        //economyPassengerIDs = new HashSet<Integer>();
+        //businessPassengerIDs = new HashSet<Integer>();
+        //firstClassPassengerIDs = new HashSet<Integer>();
         economySeatArea = 1.0;
         businessSeatArea = 2.5; //subject to change
         firstClassSeatArea = 5.0;
@@ -36,16 +36,26 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
 
     }
 
-    public Collection<Passenger> getPassengers() {
-        return (ArrayList<Passenger>) passengers.values(); //won't work
+    public boolean loadPassenger(Passenger passenger) {
+        if (passenger.)
     }
 
+    //passenger can disembark in the same airport
+    public boolean unloadPassenger(Passenger passenger) {
+
+    }
+
+
+
+
     public boolean loadPassenger(Passenger passenger, int seatClass) { //seatClass: 0 = economy, 1 = business, 2 = first class
-        if (seatClass == 0 && !(occupiedEconomySeats < economySeats)) {
-            return false;
-        } else if (seatClass == 1 && !(occupiedBusinessSeats < businessSeats)) {
-            return false;
-        } else if (seatClass == 2 && !(occupiedFirstClassSeats < firstClassSeats)) {
+        if (seatClass == 0 && (occupiedEconomySeats < economySeats)) {
+            occupiedEconomySeats += 1;
+        } else if (seatClass == 1 && (occupiedBusinessSeats < businessSeats)) {
+            occupiedBusinessSeats += 1;
+        } else if (seatClass == 2 && (occupiedFirstClassSeats < firstClassSeats)) {
+            occupiedFirstClassSeats += 1;
+        } else {
             return false;
         }
 
@@ -57,7 +67,7 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
         if (passengers.containsValue(passenger)) {
             return false;
         }
-        
+
         passengers.put(passenger.getID(), passenger);
         return true;
     }
@@ -71,7 +81,7 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
         for (Passenger passenger : passengers.values()) {
             if (passenger.canDisembark(airport)) {
                 double ticketPrice = passenger.disembark(airport);
-                passengers.remove(passenger.getId());
+                passengers.remove(passenger.getID());
                 airport.addPassenger(passenger);
                 totalTicketPrice += ticketPrice;
 
@@ -146,7 +156,7 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
         if (!isEmpty()) {
             return false;
         }
-        economySeats = (int) Math.floor((floorArea - (businessSeats * businessSeatArea + firstClassSeats * firstClassSeatArea)/ economySeatArea);
+        economySeats = (int) Math.floor((floorArea - (businessSeats * businessSeatArea + firstClassSeats * firstClassSeatArea)/ economySeatArea));
         return true;
     }
 
@@ -154,7 +164,7 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
         if (!isEmpty()) {
             return false;
         }
-        businessSeats = (int) Math.floor((floorArea - (economySeats * economySeatArea + firstClassSeats * firstClassSeatArea)/ businessSeatArea);
+        businessSeats = (int) Math.floor((floorArea - (economySeats * economySeatArea + firstClassSeats * firstClassSeatArea)/ businessSeatArea));
         return true;
     }
 
@@ -162,7 +172,7 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
         if (!isEmpty()) {
             return false;
         }
-        firstClassSeats = (int) Math.floor((floorArea - (economySeats * economySeatArea + businessSeats * businessSeatArea)/ firstClassSeatArea);
+        firstClassSeats = (int) Math.floor((floorArea - (economySeats * economySeatArea + businessSeats * businessSeatArea)/ firstClassSeatArea));
         return true;
     }
 

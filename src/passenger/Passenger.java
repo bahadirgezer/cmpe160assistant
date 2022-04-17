@@ -5,13 +5,14 @@ import airport.Airport;
 import java.util.ArrayList;
 
 public abstract class Passenger {
-    ArrayList<Airport> destinations;
-    double weight;
-    int baggageCount;
-    double budget;
-    int currentDestination;
-    int previousDisembark;
-    final int ID;
+    private ArrayList<Airport> destinations; //list of airports to visit, starts with the initial airport
+    private double weight;
+    private int baggageCount;
+    private double budget;
+    private int currentDestination, previousDisembark;
+    private final int ID;
+
+    protected int seatPreference, seatAssigned;
 
     public Passenger(int ID, double weight, int baggageCount, double budget, ArrayList<Airport> destinations) {
         this.ID = ID;
@@ -20,9 +21,12 @@ public abstract class Passenger {
         this.budget = budget;
         currentDestination = 0;
         this.destinations = destinations;
-        previousDisembark = -1;
+        previousDisembark = 0;
     }
 
+    public boolean board(int seatType) {
+
+    }
 
     public boolean isNextDestination(Airport toAirport) {
         return toAirport.equals(destinations.get(currentDestination));

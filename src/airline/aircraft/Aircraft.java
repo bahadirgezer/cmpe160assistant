@@ -29,6 +29,14 @@ public abstract class Aircraft implements AircraftInterface {
         return true;
     }
 
+    public double fillUpFuel() {
+        double fuelAmount = this.fuelCapacity - this.fuel;
+        double fuelCost = currentAirport.getFuelCost(fuelAmount);
+        this.fuel += fuelAmount;
+        this.weight += fuelAmount * fuelWeight;
+
+        return fuelCost;
+    }
     public double addFuel(double fuel) {
         double fuelCost = currentAirport.getFuelCost(fuel);
         this.fuel += fuel;
