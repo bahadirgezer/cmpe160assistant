@@ -60,14 +60,14 @@ public abstract class Airport {
     }
 
     //addCargo method adds cargo to the airport
-    public void addCargo(Cargo cargo) {
-        cargos.put(cargo.getID(), cargo);
-    }
+    //public void addCargo(Cargo cargo) {
+//        cargos.put(cargo.getID(), cargo);
+//    }
 
     //removecargo method removes cargo from the airport
-    public void removeCargo(Cargo cargo) {
-        cargos.remove(cargo.getID());
-    }
+    //public void removeCargo(Cargo cargo) {
+//        cargos.remove(cargo.getID());
+//    }
 
     public void addPassenger(Passenger passenger) {
         passengers.put(passenger.getID(), passenger);

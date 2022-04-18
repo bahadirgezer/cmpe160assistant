@@ -80,14 +80,35 @@ public abstract class Aircraft implements AircraftInterface {
     }
 
     private double getFuelConsumption(double distance) { //not complete
+        double potentialFuel = fuel;
+        double potentialWeight = weight;
         double fuelConsumption = 0.0;
 
-        fuelConsumption = getWeightRatio() * 100;
+        double takeOffFuelWeight = weight * 0.1;
+        double takeOffFuel = takeOffFuelWeight / fuelWeight;
 
-        
+        potentialFuel -= takeOffFuel;
+        potentialWeight -= takeOffFuelWeight;
+        fuelConsumption += takeOffFuel;
 
+        double range = 2000;
+        double fuelEquiv = (potentialWeight / fuelWeight);
+        double constant1 = (range * (1 - (fuelEquiv))) / (1 - Math.pow(Math.E, -fuelWeight * this.fuelConsumption * range));
+        double cruiseFuelConsumption = ((-constant1 * Math.pow(Math.E, -fuelWeight * this.fuelConsumption * distance)) + (fuelEquiv * distance) + constant1);
+        double cuiseFuelConsumptionWeight = cruiseFuelConsumption * fuelWeight;
 
-        return distance;
+        potentialFuel -= cruiseFuelConsumption;
+        potentialWeight -= cuiseFuelConsumptionWeight;
+        fuelConsumption += cruiseFuelConsumption;
+
+        double landingFuelWeight = weight * 0.09;
+        double landingFuel = landingFuelWeight /fuelWeight;
+
+        potentialFuel -= landingFuel;
+        potentialWeight -= landingFuelWeight;
+        fuelConsumption += cruiseFuelConsumption;
+
+        return fuelConsumption;
     }
 
 }
