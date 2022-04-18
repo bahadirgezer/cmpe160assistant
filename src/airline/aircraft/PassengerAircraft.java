@@ -1,7 +1,5 @@
 package airline.aircraft;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -13,13 +11,12 @@ import passenger.EconomyPassenger;
 import passenger.LuxuryPassenger;
 import passenger.Passenger;
 
-public abstract class PassengerAircraft extends Aircraft implements AircraftInterface, PassengerInterface {
-    HashMap<Integer, Passenger> passengers;
-    HashSet<Integer> economyPassengerIDs, businessPassengerIDs, firstClassPassengerIDs;
-    double economySeatArea, businessSeatArea, firstClassSeatArea;
-    int economySeats, businessSeats, firstClassSeats;
-    int occupiedEconomySeats, occupiedBusinessSeats, occupiedFirstClassSeats;
-    double floorArea;
+public abstract class PassengerAircraft extends Aircraft implements PassengerInterface {
+    private HashMap<Integer, Passenger> passengers;
+    private double economySeatArea, businessSeatArea, firstClassSeatArea;
+    private int economySeats, businessSeats, firstClassSeats;
+    private int occupiedEconomySeats, occupiedBusinessSeats, occupiedFirstClassSeats;
+    protected double floorArea;
 
 
     protected PassengerAircraft(Airport initialAirport) {
@@ -29,8 +26,8 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
         //businessPassengerIDs = new HashSet<Integer>();
         //firstClassPassengerIDs = new HashSet<Integer>();
         economySeatArea = 1.0;
-        businessSeatArea = 2.5; //subject to change
-        firstClassSeatArea = 5.0;
+        businessSeatArea = 3.0; //subject to change
+        firstClassSeatArea = 8.0;
         economySeats = 0;
         businessSeats = 0;
         firstClassSeats = 0;
@@ -40,8 +37,29 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
 
     }
 
-    public double transferPassenger(Passenger passenger) {
+    public boolean canTransferPassenger(Passenger passenger, PassengerAircraft toAircraft) {
+        if (!toAircraft.getCurrentAirport().equals(currentAirport)) {
+            return false;
+        }
+        if (toAircraft.canLoadPassenger(passenger)) {
+            passengers.remove(passenger.getID());
+            toAircraft.loadPassenger(passenger);
+            return true;
+        }
 
+        return false;
+    }
+
+    public double transferPassenger(Passenger passenger, PassengerAircraft toAircraft) {
+        if (!toAircraft.getCurrentAirport().equals(currentAirport)) {
+            return -operationFee;
+        }
+        if (toAircraft.canLoadPassenger(passenger)) {
+            passengers.remove(passenger.getID());
+            double loadingFee = toAircraft.loadPassenger(passenger);
+            return loadingFee;
+        }
+        return -operationFee;
     }
 
     public boolean canLoadPassenger(Passenger passenger) {
@@ -235,6 +253,10 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
         economySeats = 0;
         businessSeats = 0;
         return true;
+    }
+
+    public double getAircraftTypeMultiplier() {
+        return aircraftTypeMultiplier;
     }
 
     public boolean setRemainingEconomy() {

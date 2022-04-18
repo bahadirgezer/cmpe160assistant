@@ -8,9 +8,9 @@ public abstract class Aircraft implements AircraftInterface {
     protected double weight, maxWeight;
     protected double fuel, fuelCapacity;
     protected double fuelWeight;
-    protected double floorSpace;
     protected double operationFee;
     protected double aircraftTypeMultiplier;
+    protected double fuelConsumption;
 
 
 
@@ -79,7 +79,14 @@ public abstract class Aircraft implements AircraftInterface {
         return this.fuel > 0 ? true : false;
     }
 
-    public double getFuelConsumption(double distance) { //not complete
+    private double getFuelConsumption(double distance) { //not complete
+        double fuelConsumption = 0.0;
+
+        fuelConsumption = getWeightRatio() * 100;
+
+        
+
+
         return distance;
     }
 
