@@ -40,6 +40,10 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
 
     }
 
+    public double transferPassenger(Passenger passenger) {
+
+    }
+
     public boolean canLoadPassenger(Passenger passenger) {
         if (passengers.containsValue(passenger)) {
             return false;
@@ -132,6 +136,13 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
         return -operationFee;
     }
 
+    public boolean canUnloadPassenger(Passenger passenger) {
+        if (!passenger.canDisembark(currentAirport)) {
+            return false;
+        }
+        return true;
+    }
+
 
     //passenger can disembark in the same airport
     public double unloadPassenger(Passenger passenger) {
@@ -155,51 +166,15 @@ public abstract class PassengerAircraft extends Aircraft implements AircraftInte
         return ticketPrice;
     }
 
-
-
-
-    public boolean loadPassenger(Passenger passenger, int seatClass) { //seatClass: 0 = economy, 1 = business, 2 = first class
-        if (seatClass == 0 && (occupiedEconomySeats < economySeats)) {
-            occupiedEconomySeats += 1;
-        } else if (seatClass == 1 && (occupiedBusinessSeats < businessSeats)) {
-            occupiedBusinessSeats += 1;
-        } else if (seatClass == 2 && (occupiedFirstClassSeats < firstClassSeats)) {
-            occupiedFirstClassSeats += 1;
-        } else {
-            return false;
-        }
-
-        if (weight + passenger.getWeight() > maxWeight) {
-            return false;
-        }
-
-        //need to come back to this
-        if (passengers.containsValue(passenger)) {
-            return false;
-        }
-
-        passengers.put(passenger.getID(), passenger);
-        return true;
-    }
-
-    public boolean disembark(Passenger passenger) {
-        return false;
-    }
-
-    public double disembarkPassengers(Airport airport) {
+    public double unloadPassengers() {
         double totalTicketPrice = 0.0;
         for (Passenger passenger : passengers.values()) {
-            if (passenger.canDisembark(airport)) {
-                double ticketPrice = passenger.disembark(airport);
-                passengers.remove(passenger.getID());
-                airport.addPassenger(passenger);
-                totalTicketPrice += ticketPrice;
-
+            if (canUnloadPassenger(passenger)) {
+                totalTicketPrice += this.unloadPassenger(passenger);
             }
         }
         return totalTicketPrice;
     }
-
 
     public void printContents() {
         for (Passenger passenger : passengers.values()) {

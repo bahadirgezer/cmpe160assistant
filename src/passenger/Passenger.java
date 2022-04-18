@@ -10,13 +10,15 @@ import java.util.ArrayList;
 public abstract class Passenger {
     private ArrayList<Airport> destinations; //list of airports to visit, starts with the initial airport
     private double weight;
-    private int baggageCount;
+    protected int baggageCount;
     private double budget;
-    private Airport previousDestination;
+    protected Airport previousDestination;
     //private Airport previousDisembark;
     private final int ID;
 
     protected int seatAssigned;
+    protected double connectionMultiplier;
+    protected double seatMultiplier;
 
     public Passenger(int ID, double weight, int baggageCount, double budget, ArrayList<Airport> destinations) {
         destinations = new ArrayList<Airport>();
@@ -28,14 +30,42 @@ public abstract class Passenger {
         previousDestination = destinations.get(0);
         //previousDisembark = destinations.get(0);
         seatAssigned = -1;
+        connectionMultiplier = 1.0;
+        seatMultiplier = 1.0;
     }
 
-
-    public boolean board(Airport airport, int seatType) {
+    public boolean connection(Airport airport, int seatType) {
         if (seatAssigned == -1) {
             return false;
         }
+
+        if (seatAssigned == 1) {
+            seatMultiplier *= 0.6;
+        } else if (seatAssigned == 2) {
+                seatMultiplier *= 1.2;
+        } else if (seatAssigned == 3) {
+                seatMultiplier *= 3.2;
+        }
+
         seatAssigned = seatType;
+        connectionMultiplier *= 0.8;
+
+        return true;
+    }
+
+    public boolean board(Airport airport, int seatType) {
+        if (seatAssigned != -1) { //TODO check this
+            return false;
+        }
+        seatAssigned = seatType;
+        if (seatAssigned == 1) {
+            seatMultiplier = 0.6;
+        } else if (seatAssigned == 2) {
+            seatMultiplier = 1.2;
+        } else if (seatAssigned == 3) {
+            seatMultiplier = 3.2;
+        }
+
         previousDestination = airport; //TODO : if already at the airport,
 
         return true;
@@ -48,57 +78,24 @@ public abstract class Passenger {
         return true;
     }
 
-    public int getSeat() {
-        return seatAssigned;
-    }
+
+    abstract double calculateTicketPrice(Airport airport, double aircraftTypeMultiplier);
 
     public double disembark(Airport airport, double aircraftTypeMultiplier) {
         if (!isFutureDestination(airport)) {
             return 0.0;
         }
 
-        double ticketPrice = 0.0;
-        if (previousDestination instanceof HubAirport) {
-            if (airport instanceof HubAirport) {
-                ticketPrice = airport.getDistance(previousDestination) * 0.5 * aircraftTypeMultiplier;
-
-            } else if (airport instanceof MajorAirport) {
-                ticketPrice = airport.getDistance(previousDestination) * 0.7 * aircraftTypeMultiplier;
-
-            } else if (airport instanceof RegionalAirport) {
-                ticketPrice = airport.getDistance(previousDestination) * 1.0 * aircraftTypeMultiplier;
-
-            }
-        } else if (previousDestination instanceof MajorAirport) {
-            if (airport instanceof HubAirport) {
-                ticketPrice = airport.getDistance(previousDestination) * 0.6 * aircraftTypeMultiplier;
-
-            } else if (airport instanceof MajorAirport) {
-                ticketPrice = airport.getDistance(previousDestination) * 0.8 * aircraftTypeMultiplier;
-
-            } else if (airport instanceof RegionalAirport) {
-                ticketPrice = airport.getDistance(previousDestination) * 1.8 * aircraftTypeMultiplier;
-
-            }
-
-        } else if (previousDestination instanceof RegionalAirport) {
-            if (airport instanceof HubAirport) {
-                ticketPrice = airport.getDistance(previousDestination) * 0.9 * aircraftTypeMultiplier;
-
-            } else if (airport instanceof MajorAirport) {
-                ticketPrice = airport.getDistance(previousDestination) * 1.6 * aircraftTypeMultiplier;
-
-            } else if (airport instanceof RegionalAirport) {
-                ticketPrice = airport.getDistance(previousDestination) * 3.0 * aircraftTypeMultiplier;
-
-            }
-        }
-
+        double ticketPrice = calculateTicketPrice(airport, aircraftTypeMultiplier);
         previousDestination = airport;
         seatAssigned = -1;
+        seatMultiplier = 1.0;
         return ticketPrice;
     }
 
+    public int getSeat() {
+        return seatAssigned;
+    }
 
     public boolean isFutureDestination(Airport airport) {
         boolean after = false;
@@ -120,15 +117,6 @@ public abstract class Passenger {
             }
         }
         return -1;
-    }
-
-    //check this
-    public boolean transfer(Airport currentAirport) { //returns false if the passenger has reached its final destination
-        currentDestination = findAirport(currentAirport);
-        if (currentDestination == destinations.size() -1) {
-            return false;
-        }
-        return true;
     }
 
     public int getID() {
