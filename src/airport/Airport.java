@@ -1,13 +1,11 @@
 package airport;
 
-import java.lang.Math;
-import java.util.HashMap;
-
 import airline.aircraft.Aircraft;
 import airline.aircraft.CargoAircraft;
 import airline.aircraft.PassengerAircraft;
-import cargo.Cargo;
 import passenger.Passenger;
+
+import java.util.HashMap;
 
 public abstract class Airport {
     HashMap<Integer, Passenger> passengers;
@@ -68,6 +66,10 @@ public abstract class Airport {
     //public void removeCargo(Cargo cargo) {
 //        cargos.remove(cargo.getID());
 //    }
+
+    public int getID() {
+        return ID;
+    }
 
     public void addPassenger(Passenger passenger) {
         passengers.put(passenger.getID(), passenger);

@@ -1,9 +1,6 @@
 package passenger;
 
 import airport.Airport;
-import airport.HubAirport;
-import airport.MajorAirport;
-import airport.RegionalAirport;
 
 import java.util.ArrayList;
 

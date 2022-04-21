@@ -14,6 +14,13 @@ public class PropPassengerAircraft extends PassengerAircraft {
         aircraftTypeMultiplier = 0.9;
     }
 
+    @Override
+    protected double getFlightCost(Airport toAirport) {
+        double distance = this.getCurrentAirport().getDistance(toAirport);
+        double fullness = this.getFullness();
+        return distance * fullness * 0.1;
+    }
+
     protected double getFuelConsumption(double distance) {
         double takeoffFuel = weight * 0.08 / fuelWeight;
         double distanceRatio = distance / 2000;

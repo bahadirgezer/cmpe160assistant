@@ -1,15 +1,13 @@
 package airline.aircraft;
 
-import java.util.HashMap;
-import java.util.HashSet;
-
 import airport.Airport;
-import interfaces.AircraftInterface;
 import interfaces.PassengerInterface;
 import passenger.BusinessPassenger;
 import passenger.EconomyPassenger;
 import passenger.LuxuryPassenger;
 import passenger.Passenger;
+
+import java.util.HashMap;
 
 public abstract class PassengerAircraft extends Aircraft implements PassengerInterface {
     private HashMap<Integer, Passenger> passengers;
@@ -189,16 +187,12 @@ public abstract class PassengerAircraft extends Aircraft implements PassengerInt
         for (Passenger passenger : passengers.values()) {
             if (canUnloadPassenger(passenger)) {
                 totalTicketPrice += this.unloadPassenger(passenger);
+                currentAirport.addPassenger(passenger);
             }
         }
         return totalTicketPrice;
     }
 
-    public void printContents() {
-        for (Passenger passenger : passengers.values()) {
-            System.out.println(passenger.toString());
-        }    
-    }
 
     public boolean isFull() {
         return (occupiedEconomySeats == economySeats && occupiedBusinessSeats == businessSeats && occupiedFirstClassSeats == firstClassSeats) ? true : false;
@@ -281,6 +275,14 @@ public abstract class PassengerAircraft extends Aircraft implements PassengerInt
         }
         firstClassSeats = (int) Math.floor((floorArea - (economySeats * economySeatArea + businessSeats * businessSeatArea)/ firstClassSeatArea));
         return true;
+    }
+
+    public HashMap<Integer, Passenger> getPassengers() {
+        return passengers;
+    }
+
+    public double getFullness() {
+        return (occupiedEconomySeats + occupiedBusinessSeats + occupiedFirstClassSeats) / (double) (economySeats + businessSeats + firstClassSeats);
     }
 
 }

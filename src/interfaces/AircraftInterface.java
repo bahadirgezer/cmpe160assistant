@@ -1,7 +1,5 @@
 package interfaces;
 
-import airport.Airport;
-
 public interface AircraftInterface {
 //    boolean fly(Airport toAirport);
 //    void printContents();

@@ -14,6 +14,13 @@ public class JetPassengerAircraft extends PassengerAircraft {
         aircraftTypeMultiplier = 5;
     }
 
+    @Override
+    protected double getFlightCost(Airport toAirport) {
+        double distance = this.getCurrentAirport().getDistance(toAirport);
+        double fullness = this.getFullness();
+        return distance * fullness * 0.08;
+    }
+
     protected double getFuelConsumption(double distance) {
         double takeoffFuel = weight * 0.1 / fuelWeight;
         double distanceRatio = distance / 5000;

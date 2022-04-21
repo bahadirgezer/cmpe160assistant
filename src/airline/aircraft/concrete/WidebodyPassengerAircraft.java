@@ -2,9 +2,6 @@ package airline.aircraft.concrete;
 
 import airline.aircraft.PassengerAircraft;
 import airport.Airport;
-import passenger.Passenger;
-
-import java.util.HashMap;
 
 public class WidebodyPassengerAircraft extends PassengerAircraft {
     public WidebodyPassengerAircraft(Airport initialAirport) {
@@ -16,6 +13,14 @@ public class WidebodyPassengerAircraft extends PassengerAircraft {
         fuelConsumption = 3.0;
         aircraftTypeMultiplier = 0.7;
     }
+
+    @Override
+    protected double getFlightCost(Airport toAirport) {
+        double distance = this.getCurrentAirport().getDistance(toAirport);
+        double fullness = this.getFullness();
+        return distance * fullness * 0.15;
+    }
+
 
     protected double getFuelConsumption(double distance) {
         double takeoffFuel = weight * 0.1 / fuelWeight;

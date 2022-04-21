@@ -37,29 +37,41 @@ public abstract class Aircraft implements AircraftInterface {
         this.fuel += fuelAmount;
         this.weight += fuelAmount * fuelWeight;
 
-        return fuelCost;
+        return -fuelCost;
     }
     public double addFuel(double fuel) {
         double fuelCost = currentAirport.getFuelCost(fuel);
         this.fuel += fuel;
         this.weight += fuel * fuelWeight;
 
-        return fuelCost;
+        return -fuelCost;
     }
 
-    public boolean fly(Airport toAirport) {
-        //fuel consumption needs to drop with weight loss, differential equation?
-        double fuelNeeded = getFuelConsumption(toAirport.getDistance(currentAirport));
-        
-        if (fuelNeeded > fuel) {
+    public boolean dumpFuel(double fuel) {
+        if (this.fuel < fuel) {
             return false;
         }
-        fuel -= fuelNeeded;
-        //need to check the relationship between fuelWeight and fuelConsumption
-        weight -= fuelNeeded * fuelWeight;
-
-        currentAirport = toAirport;
+        this.fuel -= fuel;
+        this.weight -= fuel * fuelWeight;
         return true;
+    }
+
+
+    public boolean canFly(Airport toAirport) {
+        if (getFuelConsumption(toAirport.getDistance(currentAirport)) > fuel) {
+            return false;
+        }
+        return true;
+    }
+
+    protected abstract double getFlightCost(Airport toAirport); //must implement this
+
+    public double fly(Airport toAirport) { //must be used after canFly()
+        double fuelNeeded = getFuelConsumption(toAirport.getDistance(currentAirport));
+        fuel -= fuelNeeded;
+        weight -= fuelNeeded * fuelWeight;
+        currentAirport = toAirport;
+        return this.getFlightCost(toAirport);
     }
 
 

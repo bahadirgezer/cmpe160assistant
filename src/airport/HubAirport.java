@@ -1,6 +1,8 @@
 package airport;
 
-import airline.aircraft.*;
+import airline.aircraft.Aircraft;
+import airline.aircraft.CargoAircraft;
+import airline.aircraft.PassengerAircraft;
 
 public class HubAirport extends Airport {
 
