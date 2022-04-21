@@ -20,4 +20,12 @@ public class WidebodyPassengerAircraft extends PassengerAircraft {
 
         return 0;
     }
+
+    private double getFuelConsumption(double distance) {
+        double distanceRatio = distance / 14000;
+        double bathTubCoefficient = (25.9324 * Math.pow(distance, 4)) + (-50.5633 * Math.pow(distance, 3)) + (35.0554 * Math.pow(distance, 2)) + (-9.90346 * distance) + (1.97413);
+        double averageFuelConsumption = fuelConsumption * bathTubCoefficient;
+        if ()
+    }
+
 }
