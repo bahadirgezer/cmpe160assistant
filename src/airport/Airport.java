@@ -1,7 +1,6 @@
 package airport;
 
 import airline.aircraft.Aircraft;
-import airline.aircraft.CargoAircraft;
 import airline.aircraft.PassengerAircraft;
 import passenger.Passenger;
 
@@ -9,7 +8,6 @@ import java.util.HashMap;
 
 public abstract class Airport {
     HashMap<Integer, Passenger> passengers;
-    HashMap<Integer, Cargo> cargos;
     private final int ID;
     private final double x, y;
     protected double operationFee, fuelCost;
@@ -33,12 +31,13 @@ public abstract class Airport {
                 return true;
             }
             return false;
-        } else if (aircraft instanceof CargoAircraft) {
-            if (cargoAircraftCapacity == cargoAircraftCount) {
-                return true;
-            }
-            return false;
         }
+//        else if (aircraft instanceof CargoAircraft) {
+//            if (cargoAircraftCapacity == cargoAircraftCount) {
+//                    return true;
+//            }
+//            return false;
+//        }
         return true;
     }
 

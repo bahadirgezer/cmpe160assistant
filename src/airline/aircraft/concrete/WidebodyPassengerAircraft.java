@@ -18,8 +18,14 @@ public class WidebodyPassengerAircraft extends PassengerAircraft {
     protected double getFlightCost(Airport toAirport) {
         double distance = this.getCurrentAirport().getDistance(toAirport);
         double fullness = this.getFullness();
-        return distance * fullness * 0.15;
+        double cost = distance * fullness * 0.15;
+        cost += currentAirport.departAircraft(this);
+        cost += toAirport.landAircraft(this);
+        currentAirport = toAirport;
+        return cost;
+
     }
+
 
 
     protected double getFuelConsumption(double distance) {

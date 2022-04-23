@@ -18,7 +18,12 @@ public class PropPassengerAircraft extends PassengerAircraft {
     protected double getFlightCost(Airport toAirport) {
         double distance = this.getCurrentAirport().getDistance(toAirport);
         double fullness = this.getFullness();
-        return distance * fullness * 0.1;
+        double cost = distance * fullness * 0.1;
+        cost += currentAirport.departAircraft(this);
+        cost += toAirport.landAircraft(this);
+        currentAirport = toAirport;
+        return cost;
+
     }
 
     protected double getFuelConsumption(double distance) {

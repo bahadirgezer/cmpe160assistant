@@ -8,7 +8,6 @@ public abstract class Passenger {
     private ArrayList<Airport> destinations; //list of airports to visit, starts with the initial airport
     private double weight;
     protected int baggageCount;
-    private double budget;
     protected Airport previousDestination;
     //private Airport previousDisembark;
     private final int ID;
@@ -17,12 +16,11 @@ public abstract class Passenger {
     protected double connectionMultiplier;
     protected double seatMultiplier;
 
-    public Passenger(int ID, double weight, int baggageCount, double budget, ArrayList<Airport> destinations) {
+    public Passenger(int ID, double weight, int baggageCount, ArrayList<Airport> destinations) {
         destinations = new ArrayList<Airport>();
         this.ID = ID;
         this.weight = weight;
         this.baggageCount = baggageCount;
-        this.budget = budget;
         this.destinations = destinations;
         previousDestination = destinations.get(0);
         //previousDisembark = destinations.get(0);

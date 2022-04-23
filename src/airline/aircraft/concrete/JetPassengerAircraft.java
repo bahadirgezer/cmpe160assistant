@@ -18,8 +18,14 @@ public class JetPassengerAircraft extends PassengerAircraft {
     protected double getFlightCost(Airport toAirport) {
         double distance = this.getCurrentAirport().getDistance(toAirport);
         double fullness = this.getFullness();
-        return distance * fullness * 0.08;
+        double cost = distance * fullness * 0.08;
+        cost += currentAirport.departAircraft(this);
+        cost += toAirport.landAircraft(this);
+        currentAirport = toAirport;
+        return cost;
+
     }
+
 
     protected double getFuelConsumption(double distance) {
         double takeoffFuel = weight * 0.1 / fuelWeight;

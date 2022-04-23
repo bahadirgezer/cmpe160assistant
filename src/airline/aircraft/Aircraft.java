@@ -4,7 +4,7 @@ import airport.Airport;
 import interfaces.AircraftInterface;
 
 public abstract class Aircraft implements AircraftInterface {
-    Airport currentAirport;
+    protected Airport currentAirport;
     protected double weight, maxWeight;
     protected double fuel, fuelCapacity;
     protected double fuelWeight;
@@ -70,7 +70,7 @@ public abstract class Aircraft implements AircraftInterface {
         double fuelNeeded = getFuelConsumption(toAirport.getDistance(currentAirport));
         fuel -= fuelNeeded;
         weight -= fuelNeeded * fuelWeight;
-        currentAirport = toAirport;
+        //currentAirport = toAirport;
         return this.getFlightCost(toAirport);
     }
 

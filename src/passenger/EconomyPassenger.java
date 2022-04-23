@@ -8,8 +8,8 @@ import airport.RegionalAirport;
 import java.util.ArrayList;
 
 public class EconomyPassenger extends Passenger {
-    public EconomyPassenger(int ID, double weight, int baggageCount, double budget, ArrayList<Airport> destinations) {
-        super(ID, weight, baggageCount, budget, destinations);
+    public EconomyPassenger(int ID, double weight, int baggageCount, ArrayList<Airport> destinations) {
+        super(ID, weight, baggageCount, destinations);
         seatAssigned = 0;
     }
 

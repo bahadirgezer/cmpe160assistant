@@ -14,9 +14,10 @@ public class MajorAirport extends Airport{
     public double departAircraft(Aircraft aircraft) {
         if (aircraft instanceof PassengerAircraft) {
             passengerAircraftCount--;
-        } else if (aircraft instanceof CargoAircraft) {
-            cargoAircraftCount--;
         }
+//        else if (aircraft instanceof CargoAircraft) {
+//            cargoAircraftCount--;
+//        }
         double fullnessCoefficient = 0.6 * (Math.pow(Math.E, ((double) (cargoAircraftCount+passengerAircraftCount) / (cargoAircraftCapacity+passengerAircraftCapacity))));
         return operationFee * aircraft.getWeightRatio() * 1.05 * 0.95 * fullnessCoefficient;
     }
@@ -25,9 +26,10 @@ public class MajorAirport extends Airport{
     public double landAircraft(Aircraft aircraft) {
         if (aircraft instanceof PassengerAircraft) {
             passengerAircraftCount++;
-        } else if (aircraft instanceof CargoAircraft) {
-            cargoAircraftCount++;
         }
+//        else if (aircraft instanceof CargoAircraft) {
+//            cargoAircraftCount++;
+//        }
         double fullnessCoefficient = 0.6 * (Math.pow(Math.E, ((double) (cargoAircraftCount+passengerAircraftCount) / (cargoAircraftCapacity+passengerAircraftCapacity))));
         return operationFee * aircraft.getWeightRatio() * 1.05 * fullnessCoefficient;
     }
