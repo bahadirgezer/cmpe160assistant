@@ -17,7 +17,7 @@ public abstract class Passenger {
     protected double seatMultiplier;
 
     public Passenger(int ID, double weight, int baggageCount, ArrayList<Airport> destinations) {
-        destinations = new ArrayList<Airport>();
+        this.destinations = destinations;
         this.ID = ID;
         this.weight = weight;
         this.baggageCount = baggageCount;
@@ -29,7 +29,7 @@ public abstract class Passenger {
         seatMultiplier = 1.0;
     }
 
-    public boolean connection(Airport airport, int seatType) {
+    public boolean connection(int seatType) {
         if (seatAssigned == -1) {
             return false;
         }
@@ -48,7 +48,7 @@ public abstract class Passenger {
         return true;
     }
 
-    public boolean board(Airport airport, int seatType) {
+    public boolean board(int seatType) {
         if (seatAssigned != -1) { //TODO check this
             return false;
         }
@@ -61,7 +61,6 @@ public abstract class Passenger {
             seatMultiplier = 3.2;
         }
 
-        previousDestination = airport; //TODO : if already at the airport,
 
         return true;
     }

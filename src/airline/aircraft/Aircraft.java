@@ -15,10 +15,11 @@ public abstract class Aircraft implements AircraftInterface {
 
 
     //airline.aircraft constructor
-    protected Aircraft(Airport initialAirport) {
+    protected Aircraft(Airport initialAirport, double operationFee) {
         currentAirport = initialAirport;
         fuel = 0.0;
         fuelWeight = 0.7;
+        this.operationFee = operationFee;
     }
 
     public boolean canAddFuel(double fuel) {

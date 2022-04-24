@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class BusinessPassenger extends Passenger {
     public BusinessPassenger(int ID, double weight, int baggageCount, ArrayList<Airport> destinations) {
         super(ID, weight, baggageCount, destinations);
-        seatAssigned = 0;
+        seatAssigned = -1;
     }
 
     protected double calculateTicketPrice(Airport toAirport, double aircraftTypeMultiplier) {

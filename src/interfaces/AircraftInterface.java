@@ -1,6 +1,12 @@
 package interfaces;
 
 public interface AircraftInterface {
+    double addFuel(double fuel);
+    double fillUp();
+    boolean hasFuel(double fuel);
+    double fly(Airport toAirport);
+    double getWeightRatio();
+
 //    boolean fly(Airport toAirport);
 //    void printContents();
 //    boolean isEmpty();
