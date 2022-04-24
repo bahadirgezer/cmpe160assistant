@@ -14,20 +14,22 @@ public class HubAirport extends Airport {
     public double departAircraft(Aircraft aircraft) {
         if (aircraft instanceof PassengerAircraft) {
             passengerAircraftCount--;
-        } else if (aircraft instanceof CargoAircraft) {
-            cargoAircraftCount--;
         }
+//        else if (aircraft instanceof CargoAircraft) {
+//            cargoAircraftCount--;
+//        }
         double fullnessCoefficient = 0.6 * (Math.pow(Math.E, ((double) (cargoAircraftCount+passengerAircraftCount) / (cargoAircraftCapacity+passengerAircraftCapacity))));
-        return operationFee * aircraft.getWeightRatio() * 0.8 * 0.95 * fullnessCoefficient;
+        return operationFee * aircraft.getWeightRatio() * 0.7 * fullnessCoefficient;
     }
 
     @Override
     public double landAircraft(Aircraft aircraft) {
         if (aircraft instanceof PassengerAircraft) {
             passengerAircraftCount++;
-        } else if (aircraft instanceof CargoAircraft) {
-            cargoAircraftCount++;
         }
+//        else if (aircraft instanceof CargoAircraft) {
+//            cargoAircraftCount++;
+//        }
 
         double fullnessCoefficient = 0.6 * (Math.pow(Math.E, ((double) (cargoAircraftCount+passengerAircraftCount) / (cargoAircraftCapacity+passengerAircraftCapacity))));
         return operationFee * aircraft.getWeightRatio() * 0.8 * fullnessCoefficient;
@@ -35,6 +37,6 @@ public class HubAirport extends Airport {
 
     @Override
     public double getFuelCost(double fuel) {
-        return fuelCost * fuel * 0.8; //the fuel gets pricier as the airport gets smaller
+        return fuelCost * fuel; //the fuel gets pricier as the airport gets smaller
     }
 }

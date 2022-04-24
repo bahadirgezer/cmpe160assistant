@@ -2,16 +2,13 @@ package airline.aircraft;
 
 import airport.Airport;
 import interfaces.PassengerInterface;
-import passenger.BusinessPassenger;
-import passenger.EconomyPassenger;
-import passenger.LuxuryPassenger;
-import passenger.Passenger;
+import passenger.*;
 
 import java.util.HashMap;
 
 public abstract class PassengerAircraft extends Aircraft implements PassengerInterface {
     private HashMap<Integer, Passenger> passengers;
-    private double economySeatArea, businessSeatArea, firstClassSeatArea;
+    private final double economySeatArea, businessSeatArea, firstClassSeatArea;
     private int economySeats, businessSeats, firstClassSeats;
     private int occupiedEconomySeats, occupiedBusinessSeats, occupiedFirstClassSeats;
     protected double floorArea;
@@ -54,6 +51,7 @@ public abstract class PassengerAircraft extends Aircraft implements PassengerInt
         }
         if (toAircraft.canLoadPassenger(passenger)) {
             passengers.remove(passenger.getID());
+            weight -= passenger.getWeight();
             double loadingFee = toAircraft.loadPassenger(passenger);
             return loadingFee;
         }
@@ -68,7 +66,7 @@ public abstract class PassengerAircraft extends Aircraft implements PassengerInt
             return false;
         }
 
-        if (passenger instanceof LuxuryPassenger) {
+        if (passenger instanceof LuxuryPassenger || passenger instanceof FirstClassPassenger) {
             if (occupiedFirstClassSeats < firstClassSeats || occupiedBusinessSeats < businessSeats || occupiedEconomySeats < economySeats) {
                 return true;
             } else {
@@ -98,7 +96,7 @@ public abstract class PassengerAircraft extends Aircraft implements PassengerInt
             return -operationFee;
         }
 
-        if (passenger instanceof LuxuryPassenger) {
+        if (passenger instanceof LuxuryPassenger || passenger instanceof FirstClassPassenger) {
             if (occupiedFirstClassSeats < firstClassSeats) {
                 passenger.board(currentAirport,3);
                 passengers.put(passenger.getID(), passenger);
@@ -159,11 +157,10 @@ public abstract class PassengerAircraft extends Aircraft implements PassengerInt
         return true;
     }
 
-
     //passenger can disembark in the same airport
     public double unloadPassenger(Passenger passenger) {
         if (!passenger.canDisembark(currentAirport)) {
-            return -operationFee;
+            return -operationFee; // TODO : THIS IS AN EXPENSE IT SHOULD NOT BE ADDED TO REVENUE
         }
 
         double ticketPrice = 0;

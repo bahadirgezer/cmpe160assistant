@@ -19,7 +19,7 @@ public class MajorAirport extends Airport{
 //            cargoAircraftCount--;
 //        }
         double fullnessCoefficient = 0.6 * (Math.pow(Math.E, ((double) (cargoAircraftCount+passengerAircraftCount) / (cargoAircraftCapacity+passengerAircraftCapacity))));
-        return operationFee * aircraft.getWeightRatio() * 1.05 * 0.95 * fullnessCoefficient;
+        return operationFee * aircraft.getWeightRatio() * 0.9 * fullnessCoefficient;
     }
 
     @Override
@@ -31,12 +31,12 @@ public class MajorAirport extends Airport{
 //            cargoAircraftCount++;
 //        }
         double fullnessCoefficient = 0.6 * (Math.pow(Math.E, ((double) (cargoAircraftCount+passengerAircraftCount) / (cargoAircraftCapacity+passengerAircraftCapacity))));
-        return operationFee * aircraft.getWeightRatio() * 1.05 * fullnessCoefficient;
+        return operationFee * aircraft.getWeightRatio() * 1.00 * fullnessCoefficient;
     }
 
     @Override
     public double getFuelCost(double fuel) {
-        return fuelCost * fuel * 1.05; //the fuel gets pricier as the airport gets smaller
+        return fuelCost * fuel; //the fuel gets pricier as the airport gets smaller
     }
 }
 

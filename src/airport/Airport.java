@@ -7,7 +7,7 @@ import passenger.Passenger;
 import java.util.HashMap;
 
 public abstract class Airport {
-    HashMap<Integer, Passenger> passengers;
+    private HashMap<Integer, Passenger> passengers;
     private final int ID;
     private final double x, y;
     protected double operationFee, fuelCost;
@@ -23,6 +23,7 @@ public abstract class Airport {
         this.operationFee = operationFee;
         this.passengerAircraftCapacity = passengerAircraftCapacity;
         this.cargoAircraftCapacity = cargoAircraftCapacity;
+        passengers = new HashMap<Integer, Passenger>();
     }
 
     public boolean isFull(Aircraft aircraft) {

@@ -23,7 +23,6 @@ public class JetPassengerAircraft extends PassengerAircraft {
         cost += toAirport.landAircraft(this);
         currentAirport = toAirport;
         return cost;
-
     }
 
 

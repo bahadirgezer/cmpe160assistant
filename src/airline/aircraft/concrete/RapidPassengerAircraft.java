@@ -11,7 +11,7 @@ public class RapidPassengerAircraft extends PassengerAircraft {
         floorArea = 120;
         fuelCapacity = 120000;
         fuelConsumption = 5.3;
-        aircraftTypeMultiplier = 1.3;
+        aircraftTypeMultiplier = 1.9;
     }
 
     @Override
