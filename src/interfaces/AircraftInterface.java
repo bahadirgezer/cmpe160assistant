@@ -1,5 +1,7 @@
 package interfaces;
 
+import airport.Airport;
+
 public interface AircraftInterface {
     double addFuel(double fuel);
     double fillUp();

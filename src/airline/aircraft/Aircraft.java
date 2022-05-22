@@ -70,7 +70,7 @@ public abstract class Aircraft implements AircraftInterface {
     public double fly(Airport toAirport) { //must be used after canFly()
         double fuelNeeded = getFuelConsumption(toAirport.getDistance(currentAirport));
         fuel -= fuelNeeded;
-        weight -= fuelNeeded * fuelWeight;
+        weight -= fuelNeeded * fuelWeight; //fuelWeight should be subtracted later because flightcost depends on weight
         //currentAirport = toAirport;
         return this.getFlightCost(toAirport);
     }

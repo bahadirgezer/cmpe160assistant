@@ -14,8 +14,8 @@ public abstract class PassengerAircraft extends Aircraft implements PassengerInt
     protected double floorArea;
 
 
-    protected PassengerAircraft(Airport initialAirport) {
-        super(initialAirport);
+    protected PassengerAircraft(Airport initialAirport, double operationFee) {
+        super(initialAirport, operationFee);
         passengers = new HashMap<Integer, Passenger>();
         //economyPassengerIDs = new HashSet<Integer>();
         //businessPassengerIDs = new HashSet<Integer>();

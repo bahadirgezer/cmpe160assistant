@@ -4,8 +4,8 @@ import airline.aircraft.PassengerAircraft;
 import airport.Airport;
 
 public class WidebodyPassengerAircraft extends PassengerAircraft {
-    public WidebodyPassengerAircraft(Airport initialAirport) {
-        super(initialAirport);
+    public WidebodyPassengerAircraft(Airport initialAirport, double operationFee) {
+        super(initialAirport, operationFee);
         maxWeight = 250000;
         weight = 135000;
         floorArea = 450;
@@ -35,5 +35,20 @@ public class WidebodyPassengerAircraft extends PassengerAircraft {
         double averageFuelConsumption = fuelConsumption * bathTubCoefficient * distance;
         averageFuelConsumption += takeoffFuel;
         return averageFuelConsumption;
+    }
+
+    @Override
+    public double fillUp() {
+        return 0;
+    }
+
+    @Override
+    public boolean isFull(int seatType) {
+        return false;
+    }
+
+    @Override
+    public double getAvailableWeight() {
+        return 0;
     }
 }

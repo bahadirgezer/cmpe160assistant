@@ -1,303 +1,170 @@
-from locale import DAY_1
-from operator import truediv
 import random
-from re import L
+import math
 import numpy as np
 import matplotlib.pyplot as plt
-import math
-import sys
 
 
 class Passenger:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+    def __init__(self, ID, type, weight, baggage_count, destinations):
+        self.type = type
+        self.ID = ID
+        self.weight = weight
+        self.baggage_count = baggage_count
+        self.destinations = destinations
+    
 class Point:
     def __init__(self, x, y):
         self.x = x
         self.y = y
 
 class Airport:
-    def __init__(self, type, ID, x, y, clusterIDs):
+    def __init__(self, type, ID, x, y, fuel_cost, operation_fee, aircraft_capacity):
         self.type = type
         self.ID = ID
         self.x = x
         self.y = y
-        self.clusterIDs = clusterIDs
+        self.clusterIDs = {}
+        self.fuel_cost = fuel_cost
+        self.operation_fee = operation_fee
+        self.aircraft_capacity = aircraft_capacity
+    
+    def __str__(self):
+        return "Airport: " + self.type + " " + self.ID + " " + str(self.x) + " " + str(self.y) + " "
 
-
-def cleanup(xk, yk, distance):
-    x_clean = []
-    y_clean = []
-    bad_indices = []
-    list_lenght = len(xk)
-    #double for loop to iterate over xk and yk
-    for i in range(list_lenght):
-        if (i % 50 == 0):
-            print(f"cleanup: {i}")
-        for j in range(list_lenght):
-            #if the distance between two points is less than range, add the index of the point to bad_indices
-            if (i == j):
-                continue
-            if ((xk[i] - xk[j])**2 + (yk[i] - yk[j])**2) < distance**2:
-                bad_indices.append(i)
-    #remove the bad indices from xk and yk
-    for i in range(list_lenght):
-        if i not in bad_indices:
-            x_clean.append(xk[i])
-            y_clean.append(yk[i])
-    return  x_clean, y_clean
-
-def get_hub_points_linear_loop(count, x=[], y=[]):
-    point1 = Point(0,0)
+def generate_airport_points(count, x = [], y = []):
     for i in range(count):
-        if (i % 50 == 0):
-            print(f"hub_points: {i}")
-
-        alpha1 = random.randint(-5, 5)
-        d1 = random.randint(10000, 14000)
-        x1 = point1.x + d1 * math.cos(alpha1)
-        y1 = point1.y + d1 * math.sin(alpha1)
-        x.append(x1)
-        y.append(y1)
-
-        point1 = Point(x1, y1)
-    return x, y
-
-def get_hub_points_linear(count, point1, x=[], y=[]):
-    if count == 0:
-        return 
-    #plot points x2, y2 that is d away from and shifted alpha degrees from x1, y1
-    alpha1 = random.randint(-5, 5)
-    d1 = random.randint(10000, 14000)
-    x1 = point1.x + d1 * math.cos(alpha1)
-    y1 = point1.y + d1 * math.sin(alpha1)
-    x.append(x1)
-    y.append(y1)
-
-    # alpha2 = alpha1 + random.randint(-5, 5)
-    # d2 = random.randint(10000, 14000)
-    # x2 = x1 + d2 * math.cos(alpha2)
-    # y2 = y1 + d2 * math.sin(alpha2)
-    # x.append(x2)
-    # y.append(y2)
-
-    get_hub_points_linear(count-1, Point(x1, y1), x, y)
+        while(True):
+            alpha = random.randint(0, 360)
+            r = random.randint(50, 3500)
+            x_curr = r * math.cos(alpha)
+            y_curr = r * math.sin(alpha)
+            point_ok = True
+            for i in range(len(x)):
+                if (x[i] - x_curr)**2 + (y[i] - y_curr)**2 < 400**2:
+                    point_ok = False
+                    break
+            if point_ok:
+                x.append(x_curr)
+                y.append(y_curr)
+                break
     return
 
-def get_hub_points_original(count, point1, x=[], y=[]):
-    if count == 0:
-        return 
-    #plot points x2, y2 that is d away from and shifted alpha degrees from x1, y1
-    alpha1 = random.randint(0, 90)
-    d1 = random.randint(10000, 14000)
-    x1 = point1.x + d1 * math.cos(alpha1)
-    y1 = point1.y + d1 * math.sin(alpha1)
-    x.append(x1)
-    y.append(y1)
+def assign_random_airports(x, y, M):
+    airports = []
+    airport_IDs = set()
 
-    alpha2 = alpha1 + random.randint(-60, 60)
-    d2 = random.randint(10000, 14000)
-    x2 = x1 + d2 * math.cos(alpha2)
-    y2 = y1 + d2 * math.sin(alpha2)
-    x.append(x2)
-    y.append(y2)
-
-    get_hub_points_original(count-1, Point(x2, y2), x, y)
-    return
-
-def get_regional_points(x_hub, y_hub, x=[], y=[]):
-    for i in range(len(x_hub)):
-        if (i % 50 == 0):
-            print(f"regional_points: {i}")
-
-        for j in range(random.randint(2, 3)):
-            alpha = random.randint(0 + 120 * j, 120 + 120 * j)
-            d = random.randint(400, 5000)
-            y1 = y_hub[i] + d * math.sin(alpha)
-            x1 = x_hub[i] + d * math.cos(alpha)
-            x.append(x1)
-            y.append(y1)
-    return 
-
-def get_major_points_linear(x_hub, y_hub, x_major = [], y_major = []):
-    for i in range(len(x_hub)):
-        if (i % 50 == 0):
-            print(f"major_points: {i}")
+    for i in range(len(x)):
+        type = np.random.choice([0, 1, 2], p=[0.5, 0.3, 0.2])
         
-        for j in range(random.randint(2,4)):
-            alpha = random.randint(0 + 90 * j, 90 + 90 * j)
-            d = random.randint(5000, 10000)
-            y1 = y_hub[i] + d * math.sin(alpha)
-            x1 = x_hub[i] + d * math.cos(alpha)
-            is_ok = True
-            for i in range(len(x_hub)):
-                x_hub_elem = x_hub[i]
-                y_hub_elem = y_hub[i]
-                #if distance between the point and the hub is less than the distance between the hub and the point, add the point to the list
-                if (x1 - x_hub_elem)**2 + (y1 - y_hub_elem)**2 < 3000**2:
-                    is_ok = False
-                    break
-            if is_ok:
-                x_major.append(x1)
-                y_major.append(y1)
+        #aircraft per airport
+        apa = M // len(x) + 1 
+        if (type == 0):
+            aircraft_capacity = random.randint(apa, apa * 2)
+            operation_fee = (random.randint(500, 1000)) * 200
+            fuel_cost = random.randint(600, 1000) / 100 * 11
+        elif (type == 1):
+            aircraft_capacity = random.randint(apa * 1.5 // 1, apa * 3)
+            operation_fee = (random.randint(500, 1000)) * 250
+            fuel_cost = random.randint(400, 700) / 100 * 11
+        elif (type == 2):
+            aircraft_capacity = random.randint(apa * 2, apa * 5)
+            operation_fee = (random.randint(500, 1000)) * 300
+            fuel_cost = random.randint(300, 600) / 100 * 11
 
-    return
-
-def get_major_points_original(x_hub, y_hub, x_major = [], y_major = []):
-    for i in range(len(x_hub)):
-        for j in range(i, len(x_hub)):
-            if i == j:
-                continue
-            #get the angle between the two points
-            alpha = math.atan2(y_hub[i] - y_hub[j], x_hub[i] - x_hub[j])
-            #get the distance between the two points
-            d = math.sqrt((y_hub[i] - y_hub[j])**2 + (x_hub[i] - x_hub[j])**2)
-            alpha = alpha + alpha * random.randint(-10, 10) / 100
-            d = d * random.randint(400, 600) / 1000
-
-            x1 = x_hub[j] + d * math.cos(alpha)
-            y1 = y_hub[j] + d * math.sin(alpha)
-
-            is_ok = True
-            for i in range(len(x_hub)):
-                x_hub_elem = x_hub[i]
-                y_hub_elem = y_hub[i]
-                #if distance between the point and the hub is less than the distance between the hub and the point, add the point to the list
-                if (x1 - x_hub_elem)**2 + (y1 - y_hub_elem)**2 < 2500**2:
-                    is_ok = False
-                    break
-            if is_ok:
-                x_major.append(x1)
-                y_major.append(y1)
-    return
-
-
-def convert_to_airports(type, list_x, list_y, airportIDs, airports = [], regionals = []):
-    for i in range(len(list_x)):
-        clusterIDs = find_cluster_IDs(list_x[i], list_y[i], regionals)
         airportID = random.randint(100000, 999999)
-        while airportID in airportIDs:
+        while airportID in airport_IDs:
             airportID = random.randint(100000, 999999)
-        airportIDs.add(airportID)
-        airports.append(Airport(type, airportID, list_x[i], list_y[i], clusterIDs))
+        
+        airport_IDs.add(airportID)
+        #cluster IDs are an empty set
+        airports.append(Airport(type, airportID, x[i], y[i], fuel_cost, operation_fee, aircraft_capacity))
     return airports
 
-def find_cluster_IDs(x, y, regionals):
-    clusterIDs = []
-    for i in range(len(regionals)):
-        if (x - regionals[i].x)**2 + (y - regionals[i].y)**2 < 2500**2:
-            clusterIDs.append(regionals[i].ID)
-    return clusterIDs
 
-def draw_ranges(x, y, rang_low, rang_high, plt):
-    for i in range(len(x)):
-        circ = plt.Circle((x[i], y[i]), rang_low, color='r', fill=True, alpha = .05)
-        plt.gca().add_artist(circ)
-        circ = plt.Circle((x[i], y[i]), rang_high, color='g', fill=True, alpha = .3)
-        plt.gca().add_artist(circ)
-        
-    plt.scatter(x, y, c='black')
+def generate_destinations(airports):
+    destinations = []
+    selected_indices = set()
+    #for i in range(random.randint(2, 4)): #number of airports must not be smaller than 4
+    for i in range(2):
+        index = random.randint(0, len(airports) - 1)
+        while index in selected_indices:
+            index = random.randint(0, len(airports) - 1)
+        selected_indices.add(index)
+        destinations.append(airports[index].ID)
+    return destinations
+
+def generate_passengers(count, airports):
+    passengers = []
+    passenger_IDs = set()
+    for i in range(count):
+        type = np.random.choice([0, 1, 2, 3], p=[0.7, 0.2, 0.07, 0.03])
+
+        if type == 0:
+            pass
+        elif type == 1:
+            pass
+        elif type == 2:
+            pass
+        elif type == 3:
+            pass
+
+        passenger_ID = random.randint(math.pow(10, 9), math.pow(10, 10)-1)
+        while passenger_ID in passenger_IDs:
+            passenger_ID = random.randint(math.pow(10, 9), math.pow(10, 10)-1)
+        passenger_IDs.add(passenger_ID)
+        weight = random.randint(40, 200)
+        baggage_count = np.random.choice([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], p=[0.15, 0.3, 0.25, 0.1, 0.05, 0.04, 0.03, 0.02, 0.02, 0.02, 0.02])
+        destinations = generate_destinations(airports)
+        passengers.append(Passenger(passenger_ID, type, weight, baggage_count, destinations))
+    return passengers
+
+def write_passengers(passengers, file):
+    for passenger in passengers:
+        if passenger.type == 0:
+            file.write("economy : " + str(passenger.ID) + ", " + str(passenger.weight) + ", " + str(passenger.baggage_count) + ", " + str(passenger.destinations) + "\n")
+        elif passenger.type == 1:
+            file.write("business : " + str(passenger.ID) + ", " + str(passenger.weight) + ", " + str(passenger.baggage_count) + ", " + str(passenger.destinations) + "\n")
+        elif passenger.type == 2:
+            file.write("first : " + str(passenger.ID) + ", " + str(passenger.weight) + ", " + str(passenger.baggage_count) + ", " + str(passenger.destinations) + "\n")
+        elif passenger.type == 3:
+            file.write("luxury : " + str(passenger.ID) + ", " + str(passenger.weight) + ", " + str(passenger.baggage_count) + ", " + str(passenger.destinations) + "\n")
+
+def write_airports(airports, file):
+    for airport in airports:
+        if airport.type == 0:
+            file.write("regional : " + str(airport.ID) + ", " + str(round(airport.x)) + ", " + str(round(airport.y)) + ", " + str(round(airport.fuel_cost, 3)) + ", " + str(round(airport.operation_fee, 3)) + ", " + str(airport.aircraft_capacity) + "\n")
+        elif airport.type == 1:
+            file.write("major : " + str(airport.ID) + ", " + str(round(airport.x)) + ", " + str(round(airport.y)) + ", " + str(round(airport.fuel_cost, 3)) + ", " + str(round(airport.operation_fee, 3)) + ", " + str(airport.aircraft_capacity) + "\n")
+        elif airport.type == 2:
+            file.write("hub : " + str(airport.ID) + ", " + str(round(airport.x)) + ", " + str(round(airport.y)) + ", " + str(round(airport.fuel_cost, 3)) + ", " + str(round(airport.operation_fee, 3)) + ", " + str(airport.aircraft_capacity) + "\n")
+
+for testcase in range(0, 10):
+    M = random.randint(1, 20)
+    A = 10 #random.randint(25, 35)
+    P = random.randint(700, 3000)
+
+    prop = (random.randint(500, 700)) * 2 * 9
+    widebody = (random.randint(500, 700)) * 2.5 * 9
+    rapid = (random.randint(500, 700)) * 3 * 9
+    jet = (random.randint(500, 700)) * 4 * 9
+
+    x = []
+    y = []
+    generate_airport_points(A, x, y)
+    airports = assign_random_airports(x, y, M)
+    passengers = generate_passengers(P, airports)
+
+    #"""
+    plt.scatter(x, y)
     plt.axis("equal")
     plt.show()
-    return
+    #"""
 
-def draw_connectivity(x, y, rang, plt):
-    for i in range(len(x)):
-        circ = plt.Circle((x[i], y[i]), rang, color='g', fill=True)
-        plt.gca().add_artist(circ)
-        
-    plt.scatter(x, y, c='black')
-    plt.axis("equal")
-    plt.show()
-    return
+    file_name = "testcases/input{}.txt".format(testcase)
+    file = open(file_name, "w")
+    file.write("{} {} {}\n".format(M, A, P))
+    file.write("{} {} {} {}\n".format(round(prop, 3), round(widebody, 3), round(rapid, 3), round(jet, 3)))
+    write_airports(airports, file)
+    write_passengers(passengers, file)
 
-#sys.setrecursionlimit(10**6)
-
-for testcase in range(1, 2):
-    print(f"generating airports for testcase: {testcase}")
-
-    hub_count = 10000
-
-    x_hub = []
-    y_hub = []
-    #get_hub_points_linear(hub_count, Point(0, 0), x_hub, y_hub)
-    x_hub, y_hub = get_hub_points_linear_loop(hub_count, x_hub, y_hub)
-    #x_hub, y_hub = cleanup(x_hub, y_hub, 4500)
-
-    x_regional = []
-    y_regional = []
-    get_regional_points(x_hub, y_hub, x_regional, y_regional)
-    #x_regional, y_regional = cleanup(x_regional, y_regional, 1000)
-
-    x_major = []
-    y_major = []
-    get_major_points_linear(x_hub, y_hub, x_major, y_major)
-    #x_major, y_major = cleanup(x_major, y_major, 3500)
-
-    x_major_regional = []
-    y_major_regional = []
-    get_regional_points(x_major, y_major, x_major_regional, y_major_regional)
-    #x_major_regional, y_major_regional = cleanup(x_major_regional, y_major_regional, 1000)
-
-    x_regional = x_regional + x_major_regional
-    y_regional = y_regional + y_major_regional
-    
-
-    # #plt.scatter(x_regional, y_regional, c='blue')
-    # plt.scatter(x_hub, y_hub, c='red')
-    # #plt.scatter(x_major, y_major, c='green')
-    # plt.show()
-
-    #plt.scatter(x_regional, y_regional, c='blue')
-    
-    #plt.scatter(x_hub, y_hub, c='red')
-    #plt.scatter(x_major, y_major, c='green')
-    #plt.axis("equal")
-    #plt.show()
-
-    # #plt.scatter(x_regional, y_regional, c='blue')
-    # plt.scatter(x_hub, y_hub, c='red')
-    # plt.scatter(x_major, y_major, c='green')
-    # plt.axis("equal")
-    # plt.show()
-
-    #plt.scatter(x_regional, y_regional, c='blue')
-    # plt.scatter(x_hub, y_hub, c='red')
-    # plt.scatter(x_major, y_major, c='green')
-    # plt.axis("equal")
-    # plt.show()
-
-    #draw_ranges(x_hub, y_hub, 10000, 14000, plt)
-    #draw_ranges(x_hub + x_major, y_hub + y_major, 5000, 14000, plt)
-    
-    #draw_connectivity(x_hub + x_major + x_regional, y_hub + y_major + y_regional, 7000, plt)
-
-
-    file_name = "testcases/input_{}.txt".format(testcase)
-    current_file = open(file_name, "w")
-    
-    airport_IDs = set()
-    regional = convert_to_airports(0, x_regional, y_regional, airport_IDs, [])
-    hub = convert_to_airports(2, x_hub, y_hub, airport_IDs, regional)
-    major = convert_to_airports(1, x_major, y_major, airport_IDs, regional)
-    all = hub + major + regional
-    random.shuffle(all)
-    
-    print(f"writin airports for testcase: {testcase}")
-    #enumarate all airports with the index
-
-
-    for i, airport in enumerate(all):
-       if (i % 1000 == 0):
-           print(f"airport {i}")
-       current_file.write(str(airport.type) + " : " + str(airport.ID) + ", " + str(round(airport.x)) + ", " + str(round(airport.y)) + "\n")
-    
-    print(f"writin passengers for testcase: {testcase}")    
-    for i in range(1000000000):
-        if (i % 1000) == 0:
-            print("passenger : ", i)
-        current_file.write(str(i) + ", " + str(round(random.uniform(0, 1000))) + ", " + str(round(random.uniform(0, 1000))) + "\n")
-
-    current_file.close()
-
+    file.close()

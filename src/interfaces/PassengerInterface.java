@@ -1,5 +1,8 @@
 package interfaces;
 
+import airline.aircraft.PassengerAircraft;
+import passenger.Passenger;
+
 public interface PassengerInterface {
     double transferPassenger(Passenger passenger, PassengerAircraft toAircraft);
     double loadPassenger(Passenger passenger);

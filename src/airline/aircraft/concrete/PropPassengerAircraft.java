@@ -22,7 +22,7 @@ public class PropPassengerAircraft extends PassengerAircraft {
         cost += currentAirport.departAircraft(this);
         cost += toAirport.landAircraft(this);
         currentAirport = toAirport;
-        return cost;
+        return cost;1
 
     }
 
