@@ -1,0 +1,2 @@
+airport generation is more clustered with only occasional linearity
+passengers are the same as scatter 5.  regional to big (major|hub) at the start. big to regional at the end

@@ -1,0 +1,9 @@
+this project did not have any output files so syntax errors can be a major problem when testing your code.
+
+you can use this validity checker to check if you have any typos or unnecessary syntax errors in your code. 
+
+you can run the executable with two command line arguemnts. The first should be the input file, and the next should be the special output log for that input file.
+
+The validity checker output log is different from the normal output log. For the validity checker output log you should append "= <profit>" to each line. <profit> is the change in profit for that output log line.
+
+By default the validity checker outputs a status for every line. You can disable this and make it so that only wrong lines are outputted if you give the third command line arguments as 1. 

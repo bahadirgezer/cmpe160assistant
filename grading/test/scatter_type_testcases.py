@@ -1,8 +1,55 @@
+from curses.ascii import SO
 import random
 import math
 import numpy as np
 import matplotlib.pyplot as plt
+from sortedcontainers import SortedList
 
+
+class Comparable(object):
+    def _compare(self, other, method):
+        try:
+            return method(self._cmpkey(), other._cmpkey())
+        except (AttributeError, TypeError):
+            # _cmpkey not implemented, or return different type,
+            # so I can't compare with "other".
+            return NotImplemented
+
+    def __lt__(self, other):
+        return self._compare(other, lambda s, o: s < o)
+
+    def __le__(self, other):
+        return self._compare(other, lambda s, o: s <= o)
+
+    def __eq__(self, other):
+        return self._compare(other, lambda s, o: s == o)
+
+    def __ge__(self, other):
+        return self._compare(other, lambda s, o: s >= o)
+
+    def __gt__(self, other):
+        return self._compare(other, lambda s, o: s > o)
+
+    def __ne__(self, other):
+        return self._compare(other, lambda s, o: s != o)
+
+class Point():
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+class SortedByXPoint(Comparable, Point):
+    def __init__(self, x, y):
+        super().__init__(x, y)
+
+    def _cmpkey(self):
+        return (self.x, self.y)
+
+class SortedByYPoint(Comparable, Point):
+    def __init__(self, x, y):
+        super().__init__(x, y)
+
+    def _cmpkey(self):
+        return (self.y, self.x)
 
 class Passenger:
     def __init__(self, ID, type, weight, baggage_count, destinations):
@@ -11,11 +58,6 @@ class Passenger:
         self.weight = weight
         self.baggage_count = baggage_count
         self.destinations = destinations
-    
-class Point:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
 
 class Airport:
     def __init__(self, type, ID, x, y, fuel_cost, operation_fee, aircraft_capacity):
@@ -31,41 +73,154 @@ class Airport:
     def __str__(self):
         return "Airport: " + self.type + " " + self.ID + " " + str(self.x) + " " + str(self.y) + " "
 
-def generate_hub_points(count, x = [], y = []):
-    d = random.randint(10000, 14000)
-    alpha_prev = random.randint(0, 360)
-    x_prev = d * math.cos(alpha_prev)
-    y_prev = d * math.sin(alpha_prev)
-    x.append(x_prev)
-    y.append(y_prev)
+def mirror_by_x(y_hub, y_major):
+    mirrored_y_hub = []
+    mirrored_y_major = []
+    for i in range(len(y_hub)):
+        mirrored_y_hub.append(y_hub[i] * -1)
+    for i in range(len(y_major)):
+        mirrored_y_major.append(y_major[i] * -1)
+    return mirrored_y_hub, mirrored_y_major
 
-    for i in range(count-1):
-        while(True):
-            alpha = alpha_prev + random.randint(-15, 15)
-            d = random.randint(10000, 14000)
-            x_curr = x_prev + d * math.cos(alpha)
-            y_curr = y_prev + d * math.sin(alpha)
+def mirror_by_y(x_hub, x_major):
+    mirrored_x_hub = []
+    mirrored_x_major = []
+    for i in range(len(x_hub)):
+        mirrored_x_hub.append(x_hub[i] * -1)
+    for i in range(len(x_major)):
+        mirrored_x_major.append(x_major[i] * -1)
+    return mirrored_x_hub, mirrored_x_major
 
-            connected = False
-            point_ok = True
-            for i in range(len(x)):
-                euc_distance = ((x[i] - x_curr)**2 + (y[i] - y_curr)**2) ** 0.5
-                if euc_distance < 10000:
-                    point_ok = False
-                    break
-                if euc_distance < 14000 and not connected:
-                    connected = True
+def mirror_by_x_y(x_hub, y_hub, x_major, y_major):
+    mirrored_y_hub, mirrored_y_major = mirror_by_x(y_hub, y_major)
+    mirrored_x_hub, mirrored_x_major = mirror_by_y(x_hub, x_major)
+    return mirrored_x_hub, mirrored_y_hub, mirrored_x_major, mirrored_y_major
 
-            if point_ok and connected:
-                x.append(x_curr)
-                y.append(y_curr)
-                x_prev = x_curr
-                y_prev = y_curr
-                alpha_prev = alpha
-                break
-    return
+def invert_x_y(x_hub, y_hub, x_major, y_major):
+    x_hub_inverted = []
+    y_hub_inverted = []
+    x_major_inverted = []
+    y_major_inverted = []
+    for i in range(len(x_hub)):
+        x_hub_inverted.append(y_hub[i])
+        y_hub_inverted.append(x_hub[i])
+    for i in range(len(x_major)):
+        x_major_inverted.append(y_major[i])
+        y_major_inverted.append(x_major[i])
 
-def generate_hub_and_major_points(count, x_hub = [], y_hub = [], x_major = [], y_major = []):
+    return x_hub_inverted, y_hub_inverted, x_major_inverted, y_major_inverted
+
+def stitch_points_on_y(x_hub, y_hub, x_major, y_major, x_hub_other, y_hub_other, x_major_other, y_major_other):
+    stitched_x_hub = []
+    stitched_y_hub = []
+    stitched_x_major = []
+    stitched_y_major = []
+
+    x_airport_sorted = SortedList()
+    y_airport_sorted = SortedList()
+    for i in range(len(x_hub)):
+        x_airport_sorted.add(SortedByXPoint(x_hub[i], y_hub[i]))
+        y_airport_sorted.add(SortedByYPoint(x_hub[i], y_hub[i]))
+    for i in range(len(x_major)):
+        x_airport_sorted.add(SortedByXPoint(x_major[i], y_major[i]))
+        y_airport_sorted.add(SortedByYPoint(x_major[i], y_major[i]))
+
+    x_airport_other_sorted = SortedList()
+    y_airport_other_sorted = SortedList()
+    for i in range(len(x_hub_other)):
+        x_airport_other_sorted.add(SortedByXPoint(x_hub_other[i], y_hub_other[i]))
+        y_airport_other_sorted.add(SortedByYPoint(x_hub_other[i], y_hub_other[i]))
+    for i in range(len(x_major_other)):
+        x_airport_other_sorted.add(SortedByXPoint(x_major_other[i], y_major_other[i]))
+        y_airport_other_sorted.add(SortedByYPoint(x_major_other[i], y_major_other[i]))
+    
+    x_diff = y_airport_sorted[0].x - y_airport_other_sorted[-1].x
+    y_diff = y_airport_sorted[0].y - y_airport_other_sorted[-1].y - 7000
+
+    stitched_x_hub = x_hub.copy()
+    stitched_y_hub = y_hub.copy()
+    for i in range(len(x_hub_other)):
+        stitched_x_hub.append(x_hub_other[i] + x_diff)
+        stitched_y_hub.append(y_hub_other[i] + y_diff)
+    stitched_x_major = x_major.copy()
+    stitched_y_major = y_major.copy()
+    for i in range(len(x_major_other)):
+        stitched_x_major.append(x_major_other[i] + x_diff)
+        stitched_y_major.append(y_major_other[i] + y_diff)
+
+    recenter(stitched_x_hub, stitched_y_hub, stitched_x_major, stitched_y_major)
+    return stitched_x_hub, stitched_y_hub, stitched_x_major, stitched_y_major
+
+def stitch_points_on_x(x_hub, y_hub, x_major, y_major, x_hub_other, y_hub_other, x_major_other, y_major_other):
+    stitched_x_hub = []
+    stitched_y_hub = []
+    stitched_x_major = []
+    stitched_y_major = []
+
+    recenter(stitched_x_hub, stitched_y_hub, stitched_x_major, stitched_y_major)
+    return stitched_x_hub, stitched_y_hub, stitched_x_major, stitched_y_major
+
+def recenter(x_hub, y_hub, x_major, y_major):
+    x_airport_sorted = SortedList()
+    y_airport_sorted = SortedList()
+    for i in range(len(x_hub)):
+        x_airport_sorted.add(SortedByXPoint(x_hub[i], y_hub[i]))
+        y_airport_sorted.add(SortedByYPoint(x_hub[i], y_hub[i]))
+    for i in range(len(x_major)):
+        x_airport_sorted.add(SortedByXPoint(x_major[i], y_major[i]))
+        y_airport_sorted.add(SortedByYPoint(x_major[i], y_major[i]))
+    
+    lowest_y_point = y_airport_sorted[0]
+    highest_y_point = y_airport_sorted[-1]
+    lowest_x_point = x_airport_sorted[0]
+    highest_x_point = x_airport_sorted[-1]
+    y_diff = highest_y_point.y - lowest_y_point.y
+    x_diff = highest_x_point.x - lowest_x_point.x
+    
+    x_shift = -(x_diff / 2) - lowest_x_point.x
+    y_shift = -(y_diff / 2) - lowest_y_point.y
+    
+    for i in range(len(x_hub)):
+        x_hub[i] += x_shift
+        y_hub[i] += y_shift
+    for i in range(len(x_major)):
+        x_major[i] += x_shift
+        y_major[i] += y_shift
+    return x_hub, y_hub, x_major, y_major
+
+def copy_on_y(x_hub, y_hub, x_major, y_major):
+    x_airport_sorted = SortedList()
+    y_airport_sorted = SortedList()
+    for i in range(len(x_hub)):
+        x_airport_sorted.add(SortedByXPoint(x_hub[i], y_hub[i]))
+        y_airport_sorted.add(SortedByYPoint(x_hub[i], y_hub[i]))
+    for i in range(len(x_major)):
+        x_airport_sorted.add(SortedByXPoint(x_major[i], y_major[i]))
+        y_airport_sorted.add(SortedByYPoint(x_major[i], y_major[i]))
+    
+    lowest_y_point = y_airport_sorted[0]
+    highest_y_point = y_airport_sorted[-1]
+    shift_y = lowest_y_point.y - highest_y_point.y - 7000
+    shift_x = lowest_y_point.x - highest_y_point.x
+
+    x_hub_shifted = []
+    y_hub_shifted = []
+    for i in range(len(x_hub)):
+        x_hub_shifted.append(x_hub[i] + shift_x)
+        y_hub_shifted.append(y_hub[i] + shift_y)
+    x_major_shifted = []
+    y_major_shifted = []
+    for i in range(len(x_major)):
+        x_major_shifted.append(x_major[i] + shift_x)
+        y_major_shifted.append(y_major[i] + shift_y)
+
+    x_hub = x_hub_shifted + x_hub
+    y_hub = y_hub_shifted + y_hub
+    x_major = x_major_shifted + x_major
+    y_major = y_major_shifted + y_major
+    return x_hub, y_hub, x_major, y_major
+
+def generate_hub_and_major_points(count, x_hub=[], y_hub=[], x_major=[], y_major=[]):
     d = random.randint(10000, 14000)
     alpha_prev = random.randint(0, 360)
     x_prev = d * math.cos(alpha_prev)
@@ -76,9 +231,9 @@ def generate_hub_and_major_points(count, x_hub = [], y_hub = [], x_major = [], y
     for i in range(count-1):
         if i % 5 == 0:
             print("Generating hub point: " + str(i))
-
         try_count_1 = 0
 
+        # reduces linearity of hub generation
         if np.random.choice([True, False], p=[0.3, 0.7,]):
             random_index = random.randint(0, len(x_hub)-1)
             x_prev = x_hub[random_index]
@@ -99,6 +254,7 @@ def generate_hub_and_major_points(count, x_hub = [], y_hub = [], x_major = [], y
 
             connected = False
             point_ok = True
+
             for ij in range(len(x_hub)):
                 euc_distance = ((x_hub[ij] - x_curr)**2 + (y_hub[ij] - y_curr)**2) ** 0.5
                 if euc_distance < 10000:
@@ -154,6 +310,135 @@ def generate_hub_and_major_points(count, x_hub = [], y_hub = [], x_major = [], y
                                     connected = True  
 
                             if (point_ok and connected) or len(x_major) == 0: 
+                                x_major.append(x_major_curr)
+                                y_major.add(y_major_curr)
+                                break
+                break
+    return
+
+def generate_hub_and_major_points_efficient(count, x_hub = [], y_hub = [], x_major = [], y_major = []):
+    x_hub_sorted = SortedList()
+    y_hub_sorted = SortedList()
+    x_major_sorted = SortedList()
+    y_major_sorted = SortedList()
+    d = random.randint(10000, 14000)
+    alpha_prev = random.randint(0, 360)
+    x_prev = d * math.cos(alpha_prev)
+    y_prev = d * math.sin(alpha_prev)
+    x_hub.append(x_prev)
+    y_hub.append(y_prev)
+    x_hub_sorted.add(SortedByXPoint(x_prev, y_prev))
+    y_hub_sorted.add(SortedByYPoint(x_prev, y_prev))
+
+    for i in range(count-1):
+        if i % 5 == 0:
+            print("Generating hub point: " + str(i))
+
+        try_count_1 = 0
+
+        # reduces linearity of hub generation
+        if np.random.choice([True, False], p=[0.3, 0.7,]):
+            random_index = random.randint(0, len(x_hub)-1)
+            x_prev = x_hub[random_index]
+            y_prev = y_hub[random_index]
+            alpha_prev = random.randint(0, 360)
+
+        while(True):
+            try_count_1 += 1
+            if try_count_1%5000==0:
+                x_prev = x_hub[try_count_1//5000]
+                y_prev = y_hub[try_count_1//5000]
+                alpha = random.randint(0, 360)
+                
+            alpha = alpha_prev + random.randint(-15, 15)
+            d = random.randint(10000, 14000)
+            x_curr = x_prev + d * math.cos(alpha)
+            y_curr = y_prev + d * math.sin(alpha)
+
+            connected = False
+            point_ok = True
+            for x_sorted in x_hub_sorted.irange(SortedByXPoint(x_curr - 14000, y_curr), SortedByXPoint(x_curr + 14000, y_curr)):
+                euc_distance = ((x_sorted.x - x_curr)**2 + (x_sorted.y - y_curr)**2) ** 0.5
+                if euc_distance < 10000:
+                    point_ok = False
+                    break
+                if euc_distance < 14000 and not connected:
+                    connected = True
+            if point_ok:
+                for y_sorted in y_hub_sorted.irange(SortedByYPoint(x_curr, y_curr - 14000), SortedByYPoint(x_curr, y_curr + 14000)):
+                    euc_distance = ((y_sorted.x - x_curr)**2 + (y_sorted.y - y_curr)**2) ** 0.5
+                    if euc_distance < 10000:
+                        point_ok = False
+                        break
+                    if euc_distance < 14000 and not connected:
+                        connected = True
+
+            if (point_ok and connected) or len(x_hub) == 0:
+                alpha_prev_prev = alpha_prev
+                x_hub.append(x_curr)
+                y_hub.append(y_curr)
+                x_hub_sorted.add(SortedByXPoint(x_curr, y_curr))
+                y_hub_sorted.add(SortedByYPoint(x_curr, y_curr))
+                x_prev = x_curr
+                y_prev = y_curr
+                alpha_prev = alpha
+
+                for ijk in range(random.randint(0, 3)):
+                    try_count = 0
+                    while(True):
+                        try_count += 1
+                        if try_count > 5000:
+                            break
+
+                        if (random.randint(0, 1) == 0):
+                            alpha_major = (alpha_prev_prev) + random.randint(60 ,120)
+                        else:
+                            alpha_major = (alpha_prev_prev) - random.randint(60 ,120)
+
+                        d = random.randint(5000, 10000)
+                        x_major_curr = x_curr + d * math.cos(alpha_major)
+                        y_major_curr = y_curr + d * math.sin(alpha_major)
+
+                        connected = False
+                        point_ok = True
+                        for x_sorted in x_hub_sorted.irange(SortedByXPoint(x_curr - 14000, y_curr), SortedByXPoint(x_curr + 14000, y_curr)):
+                            euc_distance = ((x_sorted.x - x_curr)**2 + (x_sorted.y - y_curr)**2) ** 0.5
+                            if euc_distance < 10000:
+                                point_ok = False
+                                break
+                            if euc_distance < 14000 and not connected:
+                                connected = True
+                        if point_ok:
+                            for y_sorted in y_hub_sorted.irange(SortedByYPoint(x_curr, y_curr - 14000), SortedByYPoint(x_curr, y_curr + 14000)):
+                                euc_distance = ((y_sorted.x - x_curr)**2 + (y_sorted.y - y_curr)**2) ** 0.5
+                                if euc_distance < 10000:
+                                    point_ok = False
+                                    break
+                                if euc_distance < 14000 and not connected:
+                                    connected = True
+
+                        if point_ok and connected:
+                            connected = False
+                            point_ok = True
+                            for x_sorted in x_major_sorted.irange(SortedByXPoint(x_curr - 14000, y_curr), SortedByXPoint(x_curr + 14000, y_curr)):
+                                euc_distance = ((x_sorted.x - x_curr)**2 + (x_sorted.y - y_curr)**2) ** 0.5
+                                if euc_distance < 10000:
+                                    point_ok = False
+                                    break
+                                if euc_distance < 14000 and not connected:
+                                    connected = True
+                            if point_ok:
+                                for y_sorted in y_major_sorted.irange(SortedByYPoint(x_curr, y_curr - 14000), SortedByYPoint(x_curr, y_curr + 14000)):
+                                    euc_distance = ((y_sorted.x - x_curr)**2 + (y_sorted.y - y_curr)**2) ** 0.5
+                                    if euc_distance < 10000:
+                                        point_ok = False
+                                        break
+                                    if euc_distance < 14000 and not connected:
+                                        connected = True
+
+                            if (point_ok and connected) or len(x_major) == 0: 
+                                x_major_sorted.add(x_major_curr)
+                                y_major_sorted.add(y_major_curr)
                                 x_major.append(x_major_curr)
                                 y_major.append(y_major_curr)
                                 break
@@ -449,7 +734,7 @@ def draw_connectivity(x, y, rang, plt):
     plt.show()
     return
 
-def draw_connectivity(x_hub, y_hub, x_major, y_major, plt):
+def draw_connectivity_not_regional(x_hub, y_hub, x_major, y_major, plt):
     for i in range(len(x_hub)):
         circ = plt.Circle((x_hub[i], y_hub[i]), 7000, color='g', fill=True)
         plt.gca().add_artist(circ)
@@ -493,10 +778,10 @@ def plot(x, y, plt):
     plt.axis("equal")
     plt.show()
 
-for testcase in range(0, 10):
+for testcase in range(2, 3):
     M = random.randint(1, 5)
-    A = random.randint(100, 150) #random.randint(40, 60) #initial hub count
-    P = random.randint(10000, 20000)
+    A = 50 #random.randint(200, 300) #random.randint(40, 60) #initial hub count
+    P = random.randint(4000, 5000)
 
     prop = (random.randint(500, 700)) * 2 * 9
     widebody = (random.randint(500, 700)) * 1 * 9
@@ -510,8 +795,14 @@ for testcase in range(0, 10):
     x_major = []
     y_major = []
     print("1")
-    generate_hub_and_major_points(A, x_hub, y_hub, x_major, y_major)
-    #draw_connectivity(x_hub, y_hub, x_major, y_major, plt)
+    generate_hub_and_major_points_efficient(A, x_hub, y_hub, x_major, y_major)
+    draw_connectivity_not_regional(x_hub, y_hub, x_major, y_major, plt)
+    for i in range(3):
+        x_hub_2, y_hub_2, x_major_2, y_major_2 = mirror_by_x_y(x_hub, y_hub, x_major, y_major)
+        x_hub, y_hub, x_major, y_major = stitch_points_on_y(x_hub, y_hub, x_major, y_major, x_hub_2, y_hub_2, x_major_2, y_major_2)
+        draw_connectivity_not_regional(x_hub, y_hub, x_major, y_major, plt)
+    x_hub, y_hub, x_major, y_major = recenter(x_hub, y_hub, x_major, y_major)
+    draw_connectivity_not_regional(x_hub, y_hub, x_major, y_major, plt)
     print("2")
     airports = assign_hub_and_major_airports(x_hub, y_hub, x_major, y_major, M)
     x_regional = []
@@ -525,7 +816,7 @@ for testcase in range(0, 10):
     print("5", str(P))
     #passengers = generate_passengers_not_regional(P, airports)
     #passengers = generate_passengers_special(P, airports)
-    passengers = generate_passengers_cluster(P, airports)
+    passengers = generate_passengers_special(P, airports)
 
     print("6")
     file_name = "testcases/input{}.txt".format(testcase)

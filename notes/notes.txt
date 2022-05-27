@@ -1,0 +1,208 @@
+
+
+Cargo Airport
+
+Military Airport
+
+International Passenger Airport 
+Domestic Passenger Airport
+
+
+why planes don't fly faster
+
+plane speed.
+
+plane seat arrangement
+
+economy, premium economy to buiness to first class
+
+faster planes, different fuel economies.
+
+3 different plane types.
+Fast -> concorde
+Big -> A380
+Standart -> 737
+Small -> propeller
+
+
+make you choose the types of planes,
+
+ways to compete?
+
+
+
+month to month, day to day for one year.
+
+schedule
+
+steady input stream of passenger, the input will be just passengers and cargo and their information.
+
+where they want to go.
+The money they're willing to spend.
+If you can't get them to where they want to go they'll pay you less.
+
+There will be a function of how much they're willing to spend.
+
+The revenue will come when 
+
+Need to keep track of planes, their fullness, max number of planes,
+
+
+
+output will be a log of your actions. And then the total revenue
+
+
+
+airline.aircraft -> will have square footage. The student will have to decide on how much of each class to utilise. Will have id?
+Passenger:
+    Jet,
+    Rapid, 
+    Widebody,
+    Prop,
+Cargo:
+    Heavy,
+    Widebody,
+    Prop,
+
+Both:
+    Widebody, 
+    Prop,
+
+
+++++++++++AIRCRAFTS+++++++++++
+
+NewPassengerWidebody
+OldPassengerWidebody
+
+NewPassengerProp
+OldPassengerProp
+
+NewCargoWidebody
+OldCargoWidebody
+
+NewCargoProp
+OldCargoProp
+
+Jet
+Rapid
+Heavy
+
+++++++++++AIRCRAFTS+++++++++++
+
+
+No more military;;;;;;;;
+
+
+no range -> weight and fuel load will determine the range.
+
+*Interfaces*
+Passenger 
+Cargo 
+
+will need to incentivize small airline.aircraft usage for small destinations.
+
+
+Will be able to choose what kind of airline they will be (need to model that) 
+
+budget, domestic focused, international focused etc.
+
+
+
+The seat configuration of the plane will be decided by the student.
+
+Which plane with which configuration will fly between which routes will be decided
+by the student.
+
+
+
+intellij
+ne yazmam gerekiyor
+comment gerek var mi
+
+
+
+
+
+
+
+Interface -> to generalize the class and subclasses
+
+Abstract class is to add parent fields
+
+
+
+Main -> Airport list
+Main -> Airplane list
+
+Airport -> Passenger list / cargo
+Airplane -> Passenger list / cargo
+
+
+Airline -> Aircraft list -> Passenger list / cargo + currentAirport
+Main -> Airports
+
+
+HashMap<Passenger>
+HashMap<Cargo>
+
+
+interface 
+
+passenger
+cargo
+airline.aircraft
+
+
+get a certain percentage of price payed from the passenger
+
+
+
+/*INPUT*\
+maximumAmountOfAircraftAvailable
+passengerToCargoRatio
+
+numberOfAirports
+Airport = <id> <x> <y> <type>
+//Airport types: low, high, extreme
+
+Passenger = <id> <weight> <baggage_count> <destination> <budget>
+
+
+<destination> = <hub> | <hub> <hubs>
+<hubs> = <major> | <major> <regionals>
+<regionals> = <regional> | <regional> <regionals>
+
+
+Cargo = <id> <weight> <destination> <budget>    //destination is the destination airport id 
+
+
+disembark
+
+
+
+1.0 < 1.5
+
+0.8 < 1.3
+
+0.6 < 1.1
+
+0.5 < 1.0
+
+0.4 < 0.9
+
+0.2 < 0.8
+
+0.0 < 0.7
+
+units are in kg
+
+EconomySeatArea -> 1.0 ; BusinessSeatArea -> 2.5 ; FirstSeatArea -> 5.0
+Passenger Weights => 40 < W < 150
+
+
+        weight  maxWeight    floorArea  fuelCapacity  fuelConsumption   aircraftTypeMultiplier
+PPA
+//maxcapaciy -> 50 maxWeight -> 25000
+WBPA
+RPA
+JPA

@@ -1,0 +1,165 @@
+fuelConsumption = weight * dx
+
+weight = fuelWeight + emptyWeight + payload
+
+fuelWeight = fuel * fuelWeightPerLiter
+
+d) / d(x) = weight
+
+
+
+fuelConsumptionPerL = weight / dx
+
+fuelConsumptionPerL = ((fuel * fuelWeightPerLiter) + constantWeight) / dx
+
+d Fuel / dx = 
+
+
+double fuelConsumption() {
+	double fuelConsumption;
+
+	fuelConsumtion = 
+	return fuelConsumption
+}
+
+
+
+0.34 -> 1.0
+
+0.94 -> 3.0
+
+3.25 -> 8.0
+
+PPA
+60 m2 (60, 30, 7) //maybe no firstClass
+
+weight -> 	14000 M
+maxWeight ->	23000 M
+payload ->	 5800 M
+fuel ->		 4000 V
+fuelWeight -> 	 3200 M //fuelWeightPerV = 0.8 M
+range -> 	~2000 L
+
+y = -C1 * e^(-0.8 * C2 * x)
+x = 2000
+
+
+WBPA 
+450 m2 (450, 150, 56)
+
+weight -> 	135000 M
+maxWeight -> 	250000 M
+payload ->	 45000 M //max (min: 3000)
+fuel ->		140000 V
+fuelWeight ->	112000 M
+range ->	~14000 L
+
+RPA
+120 m2 (120, 40, 15)
+
+weight ->	 80000 M
+maxWeight ->	185000 M
+payload ->	 
+fuel ->		120000 V
+fuelWeight ->	 95000 M 
+range ->	  7000 L // 13 M/L
+
+JPA
+30m2 (3 luxury)
+
+weight ->	 10000 M
+maxWeight ->	 18000 M
+payload ->	  1500 M
+fuel ->		 10000 V
+fuelWeight ->	  1200 M
+range ->	  5000 L
+
+
+
+
+
+
+fuelConsumption -> 
+
+takeoffFuelWeight -> weight * 0.90
+takeoffFuelConsumption -> takeoffFuelWeight / 0.8 (fuelWeightPerV)
+
+landingFuelWeight -> weight * 1.20
+landingFuelConsumption -> landingFuelWeight / 0.8 (fuelWeightPerV)
+
+fuelConsumption -> weight * fuelConsumptionConstant
+
+weight -> fuelWeight + payloadWight(constant)
+
+fuelWeight -> fuel * 0.8
+
+fuel = fuel - antiderivative of (fuelConsumption)
+
+
+weight -> (fuel * 0.8) + payloadWeight
+
+fuelConsumption -> ((fuel * 0.8) + payloadWeight) * fuelConstumptionConstant
+
+
+
+y = fuelConstumption
+
+y' = fuelConsumption per distance 
+
+y' = (fuel * 0.8 + payload) 
+
+dfC/dx = -fC * 0.8 * fCC
+
+dfC / fC = - 0.8 * fCC * dx
+
+ln(fC) = -0.8 * fCC * x + constant
+
+fC = e^(-0.8 * fCC * x) + constant
+
+fC = e^(-0.8 * fCC * x) - 1
+
+
+fC' + fC * 0.8 * fCC = 0
+
+mu = e^(integrate(0.8 * fCC * dx))
+
+mu = e^(0.8 * fCC * x)
+
+y = 1/mu * (inegrate
+
+
+weight_ratio	average_fuel_consumption
+0.54 -> fcc * 1.0
+
+
+250		
+
+(0.0, 2.0),
+(0.1, 1.2),
+(0.2, 1.05),
+(0.3, 1.02),
+(0.4, 1.0),
+(0.5, 1.03),
+(0.6, 1.07),
+(0.7, 1.13),
+(0.8, 1.18),
+(0.9, 1.6),
+(1.0, 2.5)
+
+
+(0.0, 2.0),(0.1, 1.6),(0.2, 1.3),(0.3, 1.2),(0.4, 1.1),(0.5, 1.0),(0.6, 1.2),(0.7, 1.5),(0.8, 2.0),(0.9, 2.6),(1.0, 3.4)
+
+
+(0.0, 2.0),(0.1, 1.2),(0.2, 1.1),(0.3, 1.05),(0.4, 1.0),(0.5, 1.05),(0.6, 1.1),(0.7, 1.15),(0.8, 1.2),(0.9, 1.6),(1.0, 2.5)
+
+
+
+(0.0, 2.0),(0.1, 1.2),(0.2, 1.1),(0.3, 1.05),(0.4, 1.0),(0.5, 1.05),(0.6, 1.08),(0.7, 1.12),(0.8, 1.15),(0.9, 1.6),(1.0, 2.5)
+
+
+(0.0, 2.0),(0.1, 1.2),(0.2, 1.05),(0.3, 1.02),(0.4, 1.0),(0.5, 1.03),(0.6, 1.07),(0.7, 1.13),(0.8, 1.18),(0.9, 1.6),(1.0, 2.5)
+
+
+best curve:
+
+25.9324x^{4}-50.5633x^{3}+35.0554x^{2}-9.90346x+1.97413
