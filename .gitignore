@@ -1,4 +1,4 @@
-*.txt
-*.docx
-*.doxc
+*.zip
+grading/grader/validity/build/
 *.iml
+.*
