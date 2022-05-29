@@ -116,22 +116,16 @@ def stitch_points_on_y(x_hub, y_hub, x_major, y_major, x_hub_other, y_hub_other,
     stitched_x_major = []
     stitched_y_major = []
 
-    x_airport_sorted = SortedList()
     y_airport_sorted = SortedList()
     for i in range(len(x_hub)):
-        x_airport_sorted.add(SortedByXPoint(x_hub[i], y_hub[i]))
         y_airport_sorted.add(SortedByYPoint(x_hub[i], y_hub[i]))
     for i in range(len(x_major)):
-        x_airport_sorted.add(SortedByXPoint(x_major[i], y_major[i]))
         y_airport_sorted.add(SortedByYPoint(x_major[i], y_major[i]))
 
-    x_airport_other_sorted = SortedList()
     y_airport_other_sorted = SortedList()
     for i in range(len(x_hub_other)):
-        x_airport_other_sorted.add(SortedByXPoint(x_hub_other[i], y_hub_other[i]))
         y_airport_other_sorted.add(SortedByYPoint(x_hub_other[i], y_hub_other[i]))
     for i in range(len(x_major_other)):
-        x_airport_other_sorted.add(SortedByXPoint(x_major_other[i], y_major_other[i]))
         y_airport_other_sorted.add(SortedByYPoint(x_major_other[i], y_major_other[i]))
     
     x_diff = y_airport_sorted[0].x - y_airport_other_sorted[-1].x
@@ -156,6 +150,32 @@ def stitch_points_on_x(x_hub, y_hub, x_major, y_major, x_hub_other, y_hub_other,
     stitched_y_hub = []
     stitched_x_major = []
     stitched_y_major = []
+
+    x_airport_sorted = SortedList()
+    for i in range(len(x_hub)):
+        x_airport_sorted.add(SortedByXPoint(x_hub[i], y_hub[i]))
+    for i in range(len(x_major)):
+        x_airport_sorted.add(SortedByXPoint(x_major[i], y_major[i]))
+
+    x_airport_other_sorted = SortedList()
+    for i in range(len(x_hub_other)):
+        x_airport_other_sorted.add(SortedByXPoint(x_hub_other[i], y_hub_other[i]))
+    for i in range(len(x_major_other)):
+        x_airport_other_sorted.add(SortedByXPoint(x_major_other[i], y_major_other[i]))
+    
+    x_diff = x_airport_sorted[-1].x - x_airport_other_sorted[0].x + 7000
+    y_diff = x_airport_sorted[-1].y - x_airport_other_sorted[0].y
+
+    stitched_x_hub = x_hub.copy()
+    stitched_y_hub = y_hub.copy()
+    for i in range(len(x_hub_other)):
+        stitched_x_hub.append(x_hub_other[i] + x_diff)
+        stitched_y_hub.append(y_hub_other[i] + y_diff)
+    stitched_x_major = x_major.copy()
+    stitched_y_major = y_major.copy()
+    for i in range(len(x_major_other)):
+        stitched_x_major.append(x_major_other[i] + x_diff)
+        stitched_y_major.append(y_major_other[i] + y_diff)
 
     recenter(stitched_x_hub, stitched_y_hub, stitched_x_major, stitched_y_major)
     return stitched_x_hub, stitched_y_hub, stitched_x_major, stitched_y_major
@@ -218,6 +238,32 @@ def copy_on_y(x_hub, y_hub, x_major, y_major):
     y_hub = y_hub_shifted + y_hub
     x_major = x_major_shifted + x_major
     y_major = y_major_shifted + y_major
+    return x_hub, y_hub, x_major, y_major
+
+def generate_hub_and_major_points_by_point_manupulation(x_hub, y_hub, x_major, y_major, cycle, original_airport_count, plt):
+    generate_hub_and_major_points_efficient(original_airport_count, x_hub, y_hub, x_major, y_major)
+    for i in range(cycle):
+        which_new_manupualtor = np.random.choice([0,1,2,3,4,5], p=[0.15,0.15,0.15,0.15,0.15,0.25])
+        if which_new_manupualtor == 0:
+            x_hub_new, y_hub_new, x_major_new, y_major_new = x_hub.copy(), y_hub.copy(), x_major.copy(), y_major.copy()
+        elif which_new_manupualtor == 1:
+            x_hub_new, y_hub_new, x_major_new, y_major_new = invert_x_y(x_hub, y_hub, x_major, y_major)
+        elif which_new_manupualtor == 2:
+            x_hub_new, y_hub_new, x_major_new, y_major_new = mirror_by_x_y(x_hub, y_hub, x_major, y_major)
+        elif which_new_manupualtor == 3:
+            x_hub_new, x_major_new = mirror_by_y(x_hub, x_major)
+            y_hub_new, y_major_new = y_hub.copy(), y_major.copy()
+        elif which_new_manupualtor == 4:
+            y_hub_new, y_major_new = mirror_by_x(y_hub, y_major)
+            x_hub_new, x_major_new = x_hub.copy(), x_major.copy()
+        elif which_new_manupualtor == 5:
+            x_hub_new, y_hub_new, x_major_new, y_major_new = [], [], [], []
+            generate_hub_and_major_points_efficient(original_airport_count, x_hub_new, y_hub_new, x_major_new, y_major_new)
+        if (max(x_hub_new) > max(y_hub_new)):
+            x_hub, y_hub, x_major, y_major = stitch_points_on_y(x_hub, y_hub, x_major, y_major, x_hub_new, y_hub_new, x_major_new, y_major_new)
+        else:
+            x_hub, y_hub, x_major, y_major = stitch_points_on_x(x_hub, y_hub, x_major, y_major, x_hub_new, y_hub_new, x_major_new, y_major_new)        
+        draw_connectivity_not_regional(x_hub, y_hub, x_major, y_major, plt)
     return x_hub, y_hub, x_major, y_major
 
 def generate_hub_and_major_points(count, x_hub=[], y_hub=[], x_major=[], y_major=[]):
@@ -337,7 +383,7 @@ def generate_hub_and_major_points_efficient(count, x_hub = [], y_hub = [], x_maj
         try_count_1 = 0
 
         # reduces linearity of hub generation
-        if np.random.choice([True, False], p=[0.3, 0.7,]):
+        if np.random.choice([True, False], p=[0.6, 0.4]):
             random_index = random.randint(0, len(x_hub)-1)
             x_prev = x_hub[random_index]
             y_prev = y_hub[random_index]
@@ -452,7 +498,11 @@ def generate_regional_airports(airports, x_regional, y_regional, M):
 
     airport_IDs = set(airports.keys())
     airport_objects = list(airports.values())
+    count = 0
     for  airport in airport_objects:
+        count += 1
+        if count % 100 == 0:
+            print(f"generating regionals for {count}th airport ")
         for i in range(random.randint(1, 5)):
             alpha = random.randint(0, 360)
             d = random.randint(400, 4000)
@@ -772,16 +822,15 @@ def draw_connectivity(x_hub, y_hub, x_major, y_major, x_regional, y_regional, pl
     plt.show()
     return
 
-
 def plot(x, y, plt):
     plt.scatter(x, y)
     plt.axis("equal")
     plt.show()
 
-for testcase in range(2, 3):
+for testcase in range(0, 10):
     M = random.randint(1, 5)
-    A = 50 #random.randint(200, 300) #random.randint(40, 60) #initial hub count
-    P = random.randint(4000, 5000)
+    A = 200 #random.randint(200, 300) #random.randint(40, 60) #initial hub count
+    P = random.randint(20000, 100000)
 
     prop = (random.randint(500, 700)) * 2 * 9
     widebody = (random.randint(500, 700)) * 1 * 9
@@ -795,28 +844,24 @@ for testcase in range(2, 3):
     x_major = []
     y_major = []
     print("1")
-    generate_hub_and_major_points_efficient(A, x_hub, y_hub, x_major, y_major)
-    draw_connectivity_not_regional(x_hub, y_hub, x_major, y_major, plt)
-    for i in range(3):
-        x_hub_2, y_hub_2, x_major_2, y_major_2 = mirror_by_x_y(x_hub, y_hub, x_major, y_major)
-        x_hub, y_hub, x_major, y_major = stitch_points_on_y(x_hub, y_hub, x_major, y_major, x_hub_2, y_hub_2, x_major_2, y_major_2)
-        draw_connectivity_not_regional(x_hub, y_hub, x_major, y_major, plt)
-    x_hub, y_hub, x_major, y_major = recenter(x_hub, y_hub, x_major, y_major)
-    draw_connectivity_not_regional(x_hub, y_hub, x_major, y_major, plt)
+
+    x_hub, y_hub, x_major, y_major = generate_hub_and_major_points_by_point_manupulation(x_hub, y_hub, x_major, y_major, 8, A, plt)    
+    
     print("2")
     airports = assign_hub_and_major_airports(x_hub, y_hub, x_major, y_major, M)
+    print("number of hub and major airports: " + str(len(airports)))
     x_regional = []
     y_regional = []
     print("3")
     generate_regional_airports(airports, x_regional, y_regional, M)
-    draw_connectivity(x_hub, y_hub, x_major, y_major, x_regional, y_regional, plt)
     print("4", str(A))
     A = len(airports)
 
     print("5", str(P))
+    passengers = generate_passengers_cluster(P, airports)
     #passengers = generate_passengers_not_regional(P, airports)
     #passengers = generate_passengers_special(P, airports)
-    passengers = generate_passengers_special(P, airports)
+    #passengers = generate_passengers_special(P, airports)
 
     print("6")
     file_name = "testcases/input{}.txt".format(testcase)

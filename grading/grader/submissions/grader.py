@@ -171,7 +171,7 @@ class RegionalAirport(Airport):
         super().__init__(ID, x, y, fuel_cost, op_fee, capacity)
 
     def depart_aircraft(self, weight_ratio):
-        print("regional depart" + str(0.6 * math.e ** (float(self.current / self.capacity))))
+        #print("regional depart" + str(0.6 * math.e ** (float(self.current / self.capacity))))
 
         fulness_coefficient = 0.6 * math.e ** (float(self.current / self.capacity)) # USE THE VALUES BEFORE THE ACTUAL OPERATION
         return self.op_fee * weight_ratio * 1.2 * fulness_coefficient
@@ -878,7 +878,7 @@ if __name__ == "__main__":
                     grade_file.close()
                     continue
             '''
-        except Exception as e:
+        except:
             print("-------------11----------------")
             try:
                 project_dir_string = ""
