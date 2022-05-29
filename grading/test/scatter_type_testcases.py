@@ -243,7 +243,11 @@ def copy_on_y(x_hub, y_hub, x_major, y_major):
 def generate_hub_and_major_points_by_point_manupulation(x_hub, y_hub, x_major, y_major, cycle, original_airport_count, plt):
     generate_hub_and_major_points_efficient(original_airport_count, x_hub, y_hub, x_major, y_major)
     for i in range(cycle):
-        which_new_manupualtor = np.random.choice([0,1,2,3,4,5], p=[0.15,0.15,0.15,0.15,0.15,0.25])
+        new_generation_chance = 1/cycle
+        othr_chnc = (1 - new_generation_chance) / 5
+        new_generation_chance = 1 - (othr_chnc * 5)
+
+        which_new_manupualtor = np.random.choice([0,1,2,3,4,5], p=[othr_chnc, othr_chnc,othr_chnc, othr_chnc, othr_chnc, new_generation_chance])
         if which_new_manupualtor == 0:
             x_hub_new, y_hub_new, x_major_new, y_major_new = x_hub.copy(), y_hub.copy(), x_major.copy(), y_major.copy()
         elif which_new_manupualtor == 1:
@@ -258,7 +262,8 @@ def generate_hub_and_major_points_by_point_manupulation(x_hub, y_hub, x_major, y
             x_hub_new, x_major_new = x_hub.copy(), x_major.copy()
         elif which_new_manupualtor == 5:
             x_hub_new, y_hub_new, x_major_new, y_major_new = [], [], [], []
-            generate_hub_and_major_points_efficient(original_airport_count, x_hub_new, y_hub_new, x_major_new, y_major_new)
+            x_hub_new, y_hub_new, x_major_new, y_major_new = generate_hub_and_major_points_by_point_manupulation(x_hub_new, y_hub_new, x_major_new, y_major_new, i, original_airport_count, plt)
+        
         if (max(x_hub_new) > max(y_hub_new)):
             x_hub, y_hub, x_major, y_major = stitch_points_on_y(x_hub, y_hub, x_major, y_major, x_hub_new, y_hub_new, x_major_new, y_major_new)
         else:
@@ -829,7 +834,7 @@ def plot(x, y, plt):
 
 for testcase in range(0, 10):
     M = random.randint(1, 5)
-    A = 200 #random.randint(200, 300) #random.randint(40, 60) #initial hub count
+    A = 40 #random.randint(200, 300) #random.randint(40, 60) #initial hub count
     P = random.randint(20000, 100000)
 
     prop = (random.randint(500, 700)) * 2 * 9
@@ -845,23 +850,38 @@ for testcase in range(0, 10):
     y_major = []
     print("1")
 
-    x_hub, y_hub, x_major, y_major = generate_hub_and_major_points_by_point_manupulation(x_hub, y_hub, x_major, y_major, 8, A, plt)    
+    x_hub, y_hub, x_major, y_major = generate_hub_and_major_points_by_point_manupulation(x_hub, y_hub, x_major, y_major, random.randint(5, 8), A, plt)    
     
     print("2")
     airports = assign_hub_and_major_airports(x_hub, y_hub, x_major, y_major, M)
     print("number of hub and major airports: " + str(len(airports)))
     x_regional = []
     y_regional = []
-    print("3")
     generate_regional_airports(airports, x_regional, y_regional, M)
     print("4", str(A))
     A = len(airports)
 
     print("5", str(P))
-    passengers = generate_passengers_cluster(P, airports)
-    #passengers = generate_passengers_not_regional(P, airports)
-    #passengers = generate_passengers_special(P, airports)
-    #passengers = generate_passengers_special(P, airports)
+    passenger_generation_type = random.randint(0, 3)
+    if passenger_generation_type == 0:
+        P = random.randint(20000, 150000)
+        M = ((P // A) + 1) * random.randint(10, 20)
+        passengers = generate_passengers_cluster(P, airports)
+
+    elif passenger_generation_type == 1:
+        P = random.randint(4000, 6000)
+        M = ((P // A) + 1) * random.randint(1, 3)
+        passengers = generate_passengers_special(P, airports)
+
+    elif passenger_generation_type == 2:
+        P = random.randint(20000, 70000)
+        M =((P // A) + 1) * random.randint(5, 15)
+        passengers = generate_passengers_not_regional(P, airports)
+
+    elif passenger_generation_type == 3:
+        P = random.randint(20000, 50000)
+        M = ((P // A) + 1) * random.randint(5, 10)
+        passengers = generate_passengers_hub2hub(P, airports)
 
     print("6")
     file_name = "testcases/input{}.txt".format(testcase)

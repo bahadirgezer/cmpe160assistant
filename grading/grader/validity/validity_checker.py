@@ -220,14 +220,162 @@ class testing:
         self.profit = 0.0
     
     def run(self):
-        print(self.input_file, self.output_file)
-        self.read_input()
-        self.read_output()
+        if self.testingmode == 2:
+            self.check_test_case_validity()
+        else:
+            print(self.input_file, self.output_file)
+            self.read_input()
+            self.read_output()
     #                                       ARRANGE THESE TWO METHODS SO THAT THE CODE RUNS WELL
     def error(self, error_id):
         #print("Error{}".format(error_id))
         return
-        
+    
+    def check_test_case_validity(self):
+        with open(self.input_file, 'r') as f:
+            first_line = f.readline().split()
+            self.max_aircrafts = int(first_line[0])
+            num_airports = int(first_line[1])
+            num_passengers = int(first_line[2])
+            second_line = f.readline().split()
+            self.prop_op_fee = float(second_line[0])
+            self.wide_op_fee = float(second_line[1])
+            self.rapid_op_fee = float(second_line[2])
+            self.jet_op_fee = float(second_line[3])
+            self.op_cost = float(second_line[4])
+            # if (not(0 <= self.prop_op_fee <= 1000) or not(0 <= self.wide_op_fee <= 1000) or not(0 <= self.rapid_op_fee <= 1000) or not(0 <= self.jet_op_fee <= 1000) or not(0 <= self.op_cost <= 1000)):
+            #     print("operation fee out of range")
+            #     return
+            if (not(1 <= self.max_aircrafts <= math.pow(10, 5))):
+                print("max aircrafts out of range")
+                return
+            if (not(1 <= num_airports <= math.pow(10, 5))):
+                print("num airports out of range")
+                return
+            if (not(1 <= num_passengers <= math.pow(10, 9))):
+                print("num passengers out of range")
+                return 
+
+            for i in range(num_airports):
+                line = f.readline()
+                #                                           1       2           3           4               5          6
+                regional_match = re.search(r"^regional : (\d+), ([-]?\d+), ([-]?\d+), (\d+[\.]?\d+), (\d+[\.]?\d+), (\d+)", line)
+                major_match = re.search(r"^major : (\d+), ([-]?\d+), ([-]?\d+), (\d+[\.]?\d+), (\d+[\.]?\d+), (\d+)", line)
+                hub_match = re.search(r"^hub : (\d+), ([-]?\d+), ([-]?\d+), (\d+[\.]?\d+), (\d+[\.]?\d+), (\d+)", line)
+                if regional_match:
+                    if not (100000 <= int(regional_match.group(1)) <= 999999):
+                        print("Airport ID out of range.")
+                        return
+                    if not (-math.pow(10, 9) <= int(regional_match.group(2)) <= math.pow(10, 9)):
+                        print("Airport x coordinate out of range.")
+                        return
+                    if not (-math.pow(10, 9) <= int(regional_match.group(3)) <= math.pow(10, 9)):
+                        print("Airport y coordinate out of range.")
+                        return
+                    if not (0 <= float(regional_match.group(4)) <= 1000):
+                        print("Airport fuel cost out of range.")
+                        return
+                    # if not (0 <= float(regional_match.group(5)) <= 1000):
+                    #     print("Airport operation fee out of range.")
+                    #     return
+                    if not (0 <= int(regional_match.group(6)) <= 1000):
+                        print("Airport capacity out of range.")
+                        return
+                    
+                elif major_match:
+                    if not (100000 <= int(major_match.group(1)) <= 999999):
+                        print("Airport ID out of range.")
+                        return
+                    if not (-math.pow(10, 9) <= int(major_match.group(2)) <= math.pow(10, 9)):
+                        print("Airport x coordinate out of range.")
+                        return
+                    if not (-math.pow(10, 9) <= int(major_match.group(3)) <= math.pow(10, 9)):
+                        print("Airport y coordinate out of range.")
+                        return
+                    if not (0 <= float(major_match.group(4)) <= 1000):
+                        print("Airport fuel cost out of range.")
+                        return
+                    # if not (0 <= float(major_match.group(5)) <= 1000):
+                    #     print("Airport operation fee out of range.")
+                    #     return
+                    if not (0 <= int(major_match.group(6)) <= 1000):
+                        print("Airport capacity out of range.")
+                        return
+                elif hub_match:
+                    if not (100000 <= int(hub_match.group(1)) <= 999999):
+                        print("Airport ID out of range.")
+                        return
+                    if not (-math.pow(10, 9) <= int(hub_match.group(2)) <= math.pow(10, 9)):
+                        print("Airport x coordinate out of range.")
+                        return
+                    if not (-math.pow(10, 9) <= int(hub_match.group(3)) <= math.pow(10, 9)):
+                        print("Airport y coordinate out of range.")
+                        return
+                    if not (0 <= float(hub_match.group(4)) <= 1000):
+                        print("Airport fuel cost out of range.")
+                        return
+                    # if not (0 <= float(hub_match.group(5)) <= 1000):
+                    #     print("Airport operation fee out of range.")
+                    #     return
+                    if not (0 <= int(hub_match.group(6)) <= 1000):
+                        print("Airport capacity out of range.")
+                        return                        
+                else:
+                    print("AIRPORT INPUT NOT MATCHED")
+            
+            for i in range(num_passengers):
+                line = f.readline()
+                economy_match = re.search(r"economy : (\d+), (\d+), (\d+), \[(.+)\]", line)
+                business_match = re.search(r"business : (\d+), (\d+), (\d+), \[(.+)\]", line)
+                first_match = re.search(r"first : (\d+), (\d+), (\d+), \[(.+)\]", line)
+                luxury_match = re.search(r"luxury : (\d+), (\d+), (\d+), \[(.+)\]", line)
+                if economy_match:
+                    if not (math.pow(10, 9) <= int(economy_match.group(1)) <= math.pow(10, 10) - 1):
+                        print("Passenger ID out of range.")
+                        return
+                    if not (40 <= int(economy_match.group(2)) <= 200):
+                        print("Passenger weight out of range.")
+                        return
+                    if not (0 <= int(economy_match.group(3)) <= 10):
+                        print("Passenger baggage count out of range.")
+                        return
+ 
+                elif business_match:
+                    if not (math.pow(10, 9) <= int(business_match.group(1)) <= math.pow(10, 10) - 1):
+                        print("Passenger ID out of range.")
+                        return
+                    if not (40 <= int(business_match.group(2)) <= 200):
+                        print("Passenger weight out of range.")
+                        return
+                    if not (0 <= int(business_match.group(3)) <= 10):
+                        print("Passenger baggage count out of range.")
+                        return
+
+                elif first_match:
+                    if not (math.pow(10, 9) <= int(first_match.group(1)) <= math.pow(10, 10) - 1):
+                        print("Passenger ID out of range.")
+                        return
+                    if not (40 <= int(first_match.group(2)) <= 200):
+                        print("Passenger weight out of range.")
+                        return
+                    if not (0 <= int(first_match.group(3)) <= 10):
+                        print("Passenger baggage count out of range.")
+                        return
+
+                elif luxury_match:
+                    if not (math.pow(10, 9) <= int(luxury_match.group(1)) <= math.pow(10, 10) - 1):
+                        print("Passenger ID out of range.")
+                        return
+                    if not (40 <= int(luxury_match.group(2)) <= 200):
+                        print("Passenger weight out of range.")
+                        return
+                    if not (0 <= int(luxury_match.group(3)) <= 10):
+                        print("Passenger baggage count out of range.")
+                        return
+                else:
+                    print("PASSENGER INPUT NOT MATHCED")
+        print("VALID")
+
     def read_input(self):
         with open(self.input_file, 'r') as f:
             first_line = f.readline().split()
