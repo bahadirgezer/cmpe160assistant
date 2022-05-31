@@ -1,1 +1,0 @@
-scatter type 6 but passengers have the same 2 airport destination list

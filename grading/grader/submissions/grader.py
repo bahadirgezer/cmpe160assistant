@@ -234,9 +234,9 @@ class testing:
     def grade(self):
         self.read_input()
         if not self.grade_output():
-            print("invalid output")
-            txt = re.findall(r"input\d+.+", self.input_file)[0]
-            self.grade_file.write("{}: 0".format(input_txt) + ", invalid output.\n")
+            print("bad output")
+            input_txt = re.findall(r"input\d+.+", self.input_file)[0]
+            self.grade_file.write("{}: 0".format(input_txt) + ", grading failed bad output.\n")
             return
     #                                       ARRANGE THESE TWO METHODS SO THAT THE CODE RUNS WELL
     def error(self, error_id):
@@ -310,7 +310,20 @@ class testing:
                     input_txt = re.findall(r"input\d+.+", self.input_file)[0]
                     #check if at least one unload is made:::::
                     if not self.valid:
-                        self.grade_file.write("{}: 0".format(self.input_file) + ", invalid output.\n")
+                        try:
+                            difference = (abs(self.profit - float(tokens[0])) / self.profit)
+                        except:
+                            difference = (abs(self.profit - float(tokens[0])))
+
+                        if difference < math.pow(10, -7):
+                            self.grade_file.write("{}: 50".format(input_txt) + ", invalid output\n")
+                            #self.grade_file.write("profit: {}, flight count: {}, unload count: {}\n".format(round(self.profit), self.flight_count, self.unload_count))
+                        elif difference < math.pow(10, -6):
+                            self.grade_file.write("{}: {}".format(input_txt, 30 + round((2 * difference * math.pow(10, 6)))) + ", invalid output profit difference higher than 10^-5.\n")
+                        elif difference < math.pow(10, -5):
+                            self.grade_file.write("{}: {}".format(input_txt, 10 + round((2 * difference * math.pow(10, 5)))) + ", invalid output profit difference higher than 10^-3.\n")
+                        else:
+                            self.grade_file.write("{}: {}".format(input_txt, "0" + ", invalid output and profit difference higher than 10^-2.\n"))
                         return True
 
                     try:
@@ -341,47 +354,65 @@ class testing:
                         print("aircraft creation error: airport not found")
                         self.error(101)
                         return False
+
                     if not self.aircraft_creation(airport, int(tokens[2])):
-                        print("line number: "+ str(line_number))
-                        print("line: " + line)
+                        print("aircraft creation error: aircraft creation failed")
                         self.error(1)
                         return  False
                     profit_index = 3
 
                 elif tokens[0] == '1':
                     to_airport = self.airports.get(int(tokens[1]))
-                    aircraft = self.aircrafts.get(int(tokens[2]))
                     if not to_airport:
                         print("flight operation error: airport not found")
                         self.error(2)
                         return False
+
+                    aircraft = self.aircrafts.get(int(tokens[2]))
                     if not aircraft:
                         print("flight operation error: aircraft not found")
                         self.error(3)
                         return False
-                    
-                    self.flight_operation(to_airport, aircraft)
+                        
+                    if not self.flight_operation(to_airport, aircraft):
+                        print("flight operation error: flight operation failed")
+                        self.error(4)
+                        return False
                     profit_index = 3
 
                 elif tokens[0] == '2':
-                    if not self.seat_assignment(self.aircrafts.get(int(tokens[1])), int(tokens[2]), int(tokens[3]), int(tokens[4])):
+                    aircraft = self.aircrafts.get(int(tokens[1]))
+                    if not aircraft:
+                        print("seat assignment error: aircraft not found")
+                        self.error(4)
+                        return False
+
+                    if not self.seat_assignment(aircraft, int(tokens[2]), int(tokens[3]), int(tokens[4])):
+                        print("seat assignment error: seat assignment failed")
                         self.error(4)
                         return False
                     profit_index = 5
 
                 elif tokens[0] == '3':
-                    if not self.fuel_loading(self.aircrafts.get(int(tokens[1])), float(tokens[2])):
+                    aircraft = self.aircrafts.get(int(tokens[1]))
+                    if not aircraft:
+                        print("fuel loading error: aircraft not found")
+                        self.error(4)
+                        return False
+                        
+                    if not self.fuel_loading(aircraft, float(tokens[2])):
                         self.error(5)
                         return False
                     profit_index = 3
                     
                 elif tokens[0] == '4':
                     airport = self.airports.get(int(tokens[3]))
-                    aircraft = self.aircrafts.get(int(tokens[2]))
                     if not airport:
                         print("passenger loading error: airport not found")
                         self.error(6)
                         return False
+                    
+                    aircraft = self.aircrafts.get(int(tokens[2]))
                     if not aircraft:
                         print("passenger loading error: aircraft not found")
                         self.error(7)
@@ -389,19 +420,24 @@ class testing:
 
                     passenger = airport.passengers.get(int(tokens[1]))
                     if not passenger:
-                        print("passenger loading error: passenger not at airport") ##TODO: object NONE ERRORS WILL BE ADDED LATER
+                        print("passenger loading error: passenger not found")
                         self.error(8)
                         return False
-                    self.passenger_loading(passenger, aircraft, airport)
+
+                    if not self.passenger_loading(passenger, aircraft, airport):
+                        print("passenger loading error: passenger loading failed")
+                        self.error(9)
+                        return False
+
                     profit_index = 4
 
                 elif tokens[0] == '5':
                     airport = self.airports.get(int(tokens[3]))
-                    aircraft = self.aircrafts.get(int(tokens[2]))
                     if not airport:
                         print("passenger unloading error: airport not found")
                         self.error(9)
                         return False
+                    aircraft = self.aircrafts.get(int(tokens[2]))
                     if not aircraft:
                         print("passenger unloading error: aircraft not found")
                         self.error(10)
@@ -409,24 +445,32 @@ class testing:
 
                     passenger = aircraft.passengers.get(int(tokens[1]))
                     if not passenger:
-                        print("passenger unloading error: passenger not at aircraft") ##TODO: object NONE ERRORS WILL BE ADDED LATER
+                        print("passenger unloading error: passenger not found")
                         self.error(11)
                         return False
-                    self.passenger_unloading(passenger, aircraft, airport)
+
+                    if not self.passenger_unloading(passenger, aircraft, airport):
+                        print("passenger unloading error: passenger unloading failed")
+                        self.error(12)
+                        return False
+
                     profit_index = 4
 
                 elif tokens[0] == '6':
+                
                     airport = self.airports.get(int(tokens[4]))
-                    from_aircraft = self.aircrafts.get(int(tokens[2]))
-                    to_aircraft = self.aircrafts.get(int(tokens[3]))
                     if not airport:
                         print("passenger transfer error: airport not found")
                         self.error(12)
                         return False
+
+                    from_aircraft = self.aircrafts.get(int(tokens[2]))
                     if not from_aircraft:
                         print("passenger transfer error: from aircraft not found")
                         self.error(13)
                         return False
+
+                    to_aircraft = self.aircrafts.get(int(tokens[3]))
                     if not to_aircraft:
                         print("passenger transfer error: to aircraft not found")
                         self.error(14)
@@ -437,7 +481,9 @@ class testing:
                         print("passenger transfer error: passenger not at from aircraft")
                         self.error(15)
                         return False
-                    self.passenger_transfer(passenger, from_aircraft, to_aircraft, airport)
+
+                    if not self.passenger_transfer(passenger, from_aircraft, to_aircraft, airport):
+                        print("passenger transfer error: passenger not at from aircraft")
                     profit_index = 5
 
                 else:
@@ -511,18 +557,18 @@ class testing:
             if self.runmode:
                 print("passenger transfer error: from aircraft is not at the correct airport.")
             self.profit -= from_aircraft.operation_fee
-            return False
+            return True
         if (to_aircraft.current_airport.ID != airport.ID):
             if self.runmode:
                 print("passenger transfer error: to aircraft is not at the correct airport.")
             self.profit -= from_aircraft.operation_fee # FROM OPERATION FEE SHOULD BE RETURNED
-            return False
+            return True
         
         if to_aircraft.weight + passenger.weight > to_aircraft.max_weight:
             if self.runmode:
                 print("passenger transfer error: to aircraft weight exceeded.")
             self.profit -= from_aircraft.operation_fee
-            return False
+            return True
 
         if passenger.seat_assigned == 1:
             from_aircraft.economy_occupied -= 1
@@ -534,7 +580,7 @@ class testing:
             if self.runmode:
                 print("passenger transfer error: passenger seat type is invalid.")
             self.profit -= from_aircraft.operation_fee
-            return False                                                #TODO: MIGHT BE REDUNDANT
+            return True                                                #TODO: MIGHT BE REDUNDANT
 
         if isinstance(passenger, LuxuryPassenger) or isinstance(passenger, FirstClassPassenger):
             if to_aircraft.first_seats > to_aircraft.first_occupied:
@@ -556,7 +602,7 @@ class testing:
                 if self.runmode:
                     print("passenger loading error: no seats available.")
                 self.profit -= from_aircraft.operation_fee #                         FROM OPERATION FEE SHOULD BE RETURNED
-                return False
+                return True
                 
         elif isinstance(passenger, BusinessPassenger):
             if to_aircraft.business_seats > to_aircraft.business_occupied:
@@ -573,7 +619,7 @@ class testing:
                 if self.runmode:
                     print("passenger loading error: no seats available.")
                 self.profit -= from_aircraft.operation_fee
-                return False
+                return True
 
         elif isinstance(passenger, EconomyPassenger):
             if to_aircraft.economy_seats > to_aircraft.economy_occupied:
@@ -585,7 +631,7 @@ class testing:
                 if self.runmode:
                     print("passenger loading error: no seats available.")
                 self.profit -= from_aircraft.operation_fee
-                return False
+                return True
 
         passenger.connection_multiplier *= 0.8
         to_aircraft.weight -= passenger.weight
@@ -601,19 +647,19 @@ class testing:
             if self.runmode:
                 print("passenger loading error: aircraft is not at the correct airport") #TODO: MIGHT BE ERROR
             self.profit -= aircraft.operation_fee
-            return False
+            return True
 
         if aircraft.weight + passenger.weight > aircraft.max_weight:
             if self.runmode:
                 print("passenger loading error: aircraft weight exceeded.")
             self.profit -= aircraft.operation_fee
-            return False
+            return True
         
         if passenger.seat_assigned != -1:
             if self.runmode:
                 print("passenger loading error: passenger was still assigned to a seat") #TODO: MAYBE REDUNDANT
             self.profit -= aircraft.operation_fee
-            return False
+            return True
 
         if isinstance(passenger, LuxuryPassenger) or isinstance(passenger, FirstClassPassenger):
             if aircraft.first_seats > aircraft.first_occupied:
@@ -635,7 +681,7 @@ class testing:
                 if self.runmode:
                     print("passenger loading error: no seats available.")
                 self.profit -= aircraft.operation_fee
-                return False
+                return True
                 
         elif isinstance(passenger, BusinessPassenger):
             if aircraft.business_seats > aircraft.business_occupied:
@@ -652,7 +698,7 @@ class testing:
                 if self.runmode:
                     print("passenger loading error: no seats available.")
                 self.profit -= aircraft.operation_fee
-                return False
+                return True
 
         elif isinstance(passenger, EconomyPassenger):
             if aircraft.economy_seats > aircraft.economy_occupied:
@@ -664,7 +710,7 @@ class testing:
                 if self.runmode:
                     print("passenger loading error: no seats available.")
                 self.profit -= aircraft.operation_fee
-                return False
+                return True
 
         self.profit -= fee
         del airport.passengers[passenger.ID]
@@ -678,13 +724,13 @@ class testing:
             if self.runmode:
                 print("passenger unloading error: aircraft is not at the correct airport") #TODO: MIGHT BE ERROR
             self.profit -= aircraft.operation_fee
-            return False 
+            return True
         
         if airport.ID not in passenger.destinations:
             if self.runmode:
                 print("passenger unloading error: passenger is not at one of the destinations") #TODO: MIGHT BE ERROR
             self.profit -= aircraft.operation_fee
-            return False
+            return True
 
         if passenger.seat_assigned == 1:
             aircraft.economy_occupied -= 1
@@ -697,9 +743,13 @@ class testing:
             ticket_price = 7.5
         else:
             self.profit -= aircraft.operation_fee
-            return False
+            return True
 
         previous_destionation_object = self.airports.get(passenger.previous_destination)
+        if not previous_destionation_object:
+            print("passenger unloading error: previous destination not found")
+            return False
+
         if isinstance(previous_destionation_object, HubAirport):
             if isinstance(airport, HubAirport):
                 ticket_price *= 0.5
@@ -733,8 +783,8 @@ class testing:
         else:
             print("passenger unloading error: passenger is not a passenger") #TODO MIGHT BE REDUNTANT
             self.profit -= aircraft.operation_fee
-            return False
-
+            return True
+        
         ticket_price *= self.airports.get(passenger.previous_destination).distance(airport) * aircraft.aircraft_multiplier * passenger.connection_multiplier * passenger.seat_multiplier
         ticket_price *= (1 + (passenger.baggage_count * 0.05))
 
@@ -892,7 +942,9 @@ if __name__ == "__main__":
                     continue
             
         print("running...")
-        for input in os.listdir(input_dir):
+        inputs = [item for item in os.listdir(input_dir) if os.path.isfile(os.path.join(input_dir, item))]
+        inputs.sort()
+        for input in inputs:
             if not input.endswith(".txt"):
                 continue
 
@@ -916,7 +968,7 @@ if __name__ == "__main__":
             print(input_txt + " testing...")
             process = subprocess.Popen(['java', '-cp', bin_path, executable_package_name, input_file, output_file])
             try:
-                if process.wait(timeout=4) != 0:
+                if process.wait(timeout=60) != 0:
                     print("runtime error.")
                     grade_file.write("{}: {}".format(input_txt, 0) + ", runtime error.\n")
                     continue

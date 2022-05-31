@@ -1,6 +1,7 @@
 from curses.ascii import SO
 import random
 import math
+from matplotlib.style import available
 import numpy as np
 import matplotlib.pyplot as plt
 from sortedcontainers import SortedList
@@ -268,7 +269,7 @@ def generate_hub_and_major_points_by_point_manupulation(x_hub, y_hub, x_major, y
             x_hub, y_hub, x_major, y_major = stitch_points_on_y(x_hub, y_hub, x_major, y_major, x_hub_new, y_hub_new, x_major_new, y_major_new)
         else:
             x_hub, y_hub, x_major, y_major = stitch_points_on_x(x_hub, y_hub, x_major, y_major, x_hub_new, y_hub_new, x_major_new, y_major_new)        
-        draw_connectivity_not_regional(x_hub, y_hub, x_major, y_major, plt)
+        #draw_connectivity_not_regional(x_hub, y_hub, x_major, y_major, plt)
     return x_hub, y_hub, x_major, y_major
 
 def generate_hub_and_major_points(count, x_hub=[], y_hub=[], x_major=[], y_major=[]):
@@ -538,6 +539,59 @@ def generate_regional_airports(airports, x_regional, y_regional, M):
 
                 continue                
     return
+
+def generate_regional_airports_less_and_efficient(airports, x_regional, y_regional, M):
+    x_regional_sorted = SortedList()
+    y_regional_sorted = SortedList()
+    apa = M // (len(airports) * 3) + 1
+    type = 0
+    airport_IDs = set(airports.keys())
+    airport_objects = list(airports.values())
+    count = 0
+    for  airport in airport_objects:
+        count += 1
+        if count % 100 == 0:
+            print(f"generating regionals for {count}th airport ")
+
+        for i in range(np.random.choice([1, 2], p=[0.7, 0.3])):
+            while True:
+                alpha = random.randint(0, 360)
+                d = random.randint(400, 4000)
+                x_curr = airport.x + d * math.cos(alpha)
+                y_curr = airport.y + d * math.sin(alpha)
+                
+                connected = True
+                point_ok = True
+                for x_sorted in x_regional_sorted.irange(SortedByXPoint(x_curr - 4000, y_curr), SortedByXPoint(x_curr + 4000, y_curr)):
+                    euc_distance = ((x_sorted.x - x_curr)**2 + (x_sorted.y - y_curr)**2) ** 0.5
+                    if euc_distance < 1000:
+                        point_ok = False
+                        break
+                if point_ok:
+                    for y_sorted in y_regional_sorted.irange(SortedByYPoint(x_curr, y_curr - 4000), SortedByYPoint(x_curr, y_curr + 4000)):
+                        euc_distance = ((y_sorted.x - x_curr)**2 + (y_sorted.y - y_curr)**2) ** 0.5
+                        if euc_distance < 1000:
+                            point_ok = False
+                            break
+                
+                if (point_ok and connected) or (len(x_regional) == 0):
+                    x_regional.append(x_curr)
+                    y_regional.append(y_curr)
+                    x_regional_sorted.add(SortedByXPoint(x_curr, y_curr))
+                    y_regional_sorted.add(SortedByYPoint(x_curr, y_curr))
+
+                    aircraft_capacity = random.randint(apa, apa * 2)
+                    operation_fee = (random.randint(500, 1000)) * 200
+                    fuel_cost = random.randint(600, 1000) / 100 * 11
+                    regional_airportID = random.randint(100000, 999999)
+                    while regional_airportID in airport_IDs:
+                        regional_airportID = random.randint(100000, 999999)
+                    airport_IDs.add(regional_airportID)
+                    airports.update({regional_airportID : Airport(type, regional_airportID, x_curr, y_curr, fuel_cost, operation_fee, aircraft_capacity)})
+                    airport.clusterIDs.add(regional_airportID)
+
+                    break                
+    return
     
 def assign_hub_and_major_airports(x_hub, y_hub, x_major, y_major, M):
     airports = dict()
@@ -592,28 +646,27 @@ def generate_destinations_not_regional(airports, destination_count):
         destinations.append(airport_keys[index])
     return destinations
 
-def find_last_hub_key(airports):
-    index = len(airports) - 1
-    airport_keys = list(airports.keys())
-    found = False
-    while not found:
-        if airports.get(airport_keys[index]).type == 2:
-            found = True
-            break
-        index -= 1
-    return airport_keys[index]
+def find_first_and_last_hub_key(airports):
+    first_hub_key = None
+    last_hub_key = None
+    first_hub_y = 0
+    last_hub_y = 0
+    for airport in airports.values():
+        if airport.type == 2:
+            if first_hub_y < airport.y:
+                first_hub_y = airport.y
+                first_hub_key = airport.ID
+            elif last_hub_y > airport.y:
+                last_hub_y = airport.y
+                last_hub_key = airport.ID
 
-def find_first_hub_key(airports):
-    index = 0
-    airport_keys = list(airports.keys())
-    found = False
-    while not found:
-        if airports.get(airport_keys[index]).type == 2:
-            found = True
-            break
-        index += 1
-    return airport_keys[index]
+    return first_hub_key, last_hub_key
 
+def get_hub_key(airports, avaiable):
+    last_hub_key = random.choice(list(avaiable))
+    if random.randint(0, 2) == 0:
+        avaiable.remove(last_hub_key)
+    return last_hub_key
 
 def generate_cluster_destinations(airports, destination_count):
     destinations = []
@@ -638,7 +691,6 @@ def generate_cluster_destinations(airports, destination_count):
         selected_indices.add(index)
         destinations.append(airport_keys[index])
 
-
     index = random.randint(0, len(airport_keys) - 1)
     first_airport_list = list(airports.get(airport_keys[index]).clusterIDs)
     while index in selected_indices or airports.get(airport_keys[index]).type == 0 or len(first_airport_list) == 0:
@@ -652,14 +704,56 @@ def generate_cluster_destinations(airports, destination_count):
 
     return destinations
 
+def generate_passengers_special_cluster(count, airports):
+    passengers = []
+    passenger_IDs = set()
+    available_hubs = set()
+    for airport in airports.values():
+        if airport.type == 2:
+            available_hubs.add(airport.ID)
+
+    for i in range(count):
+        if i % 100 == 0:
+            print(f"generating special passenger {i}")
+        type = np.random.choice([0, 1, 2, 3], p=[0.7, 0.29, 0.009, 0.001])
+
+        index_1 = get_hub_key(airports, available_hubs)
+        index_2 = get_hub_key(airports, available_hubs)
+        while index_2 == index_1:
+            index_2 = get_hub_key(airports, available_hubs)
+
+        if type == 0:
+            pass
+        elif type == 1:
+            pass
+        elif type == 2:
+            pass
+        elif type == 3:
+            pass
+
+        passenger_ID = random.randint(math.pow(10, 9), math.pow(10, 10)-1)
+        while passenger_ID in passenger_IDs:
+            passenger_ID = random.randint(math.pow(10, 9), math.pow(10, 10)-1)
+        passenger_IDs.add(passenger_ID)
+        weight = random.randint(40, 200)
+        baggage_count = np.random.choice([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], p=[0.15, 0.3, 0.25, 0.1, 0.05, 0.04, 0.03, 0.02, 0.02, 0.02, 0.02])
+        
+        index_0 = random.choice(list(airports.get(index_1).clusterIDs))
+        index_3 = random.choice(list(airports.get(index_2).clusterIDs))
+
+        destinations = [index_0, index_1, index_2, index_3]
+        passengers.append(Passenger(passenger_ID, type, weight, baggage_count, destinations))
+    return passengers 
+
 def generate_passengers_special(count, airports):
     passengers = []
     passenger_IDs = set()
 
-    index_1 = find_first_hub_key(airports)
-    index_2 = find_last_hub_key(airports)
+    index_1, index_2 = find_first_and_last_hub_key(airports)
 
     for i in range(count):
+        if i % 100 == 0:
+            print(f"generating special passenger {i}")
         type = np.random.choice([0, 1, 2, 3], p=[0.7, 0.29, 0.009, 0.001])
 
         if type == 0:
@@ -686,6 +780,8 @@ def generate_passengers_cluster(count, airports):
     passenger_IDs = set()
 
     for i in range(count):
+        if i % 100 == 0:
+            print(f"generating cluster passenger {i}")
         type = np.random.choice([0, 1, 2, 3], p=[0.7, 0.29, 0.009, 0.001])
 
         if type == 0:
@@ -712,6 +808,8 @@ def generate_passengers_not_regional(count, airports):
     passengers = []
     passenger_IDs = set()
     for i in range(count):
+        if i % 100 == 0:
+            print(f"generating hub and major passenger {i}")
         type = np.random.choice([0, 1, 2, 3], p=[0.7, 0.29, 0.009, 0.001])
 
         if type == 0:
@@ -737,6 +835,8 @@ def generate_passengers_hub2hub(count, airports):
     passengers = []
     passenger_IDs = set()
     for i in range(count):
+        if i % 100 == 0:
+            print(f"generating hub to hub passenger {i}")
         type = np.random.choice([0, 1, 2, 3], p=[0.7, 0.29, 0.009, 0.001])
 
         if type == 0:
@@ -832,9 +932,10 @@ def plot(x, y, plt):
     plt.axis("equal")
     plt.show()
 
-for testcase in range(0, 10):
-    M = random.randint(1, 5)
-    A = 40 #random.randint(200, 300) #random.randint(40, 60) #initial hub count
+for testcase in range(22, 23):
+    print(f"input{testcase}.txt")
+    M = random.randint(1, 100)
+    A = random.randint(42, 42) #random.randint(200, 300) #random.randint(40, 60) #initial hub count
     P = random.randint(20000, 100000)
 
     prop = (random.randint(500, 700)) * 2 * 9
@@ -850,37 +951,50 @@ for testcase in range(0, 10):
     y_major = []
     print("1")
 
-    x_hub, y_hub, x_major, y_major = generate_hub_and_major_points_by_point_manupulation(x_hub, y_hub, x_major, y_major, random.randint(5, 8), A, plt)    
+    x_hub, y_hub, x_major, y_major = generate_hub_and_major_points_by_point_manupulation(x_hub, y_hub, x_major, y_major, random.randint(10, 10), A, plt)    
     
     print("2")
     airports = assign_hub_and_major_airports(x_hub, y_hub, x_major, y_major, M)
     print("number of hub and major airports: " + str(len(airports)))
+    
+    hub_airport_count = 0
+    for airport in airports.values():
+        if airport.type == 2:
+            hub_airport_count += 1
+    print()
+
     x_regional = []
     y_regional = []
-    generate_regional_airports(airports, x_regional, y_regional, M)
+    generate_regional_airports_less_and_efficient(airports, x_regional, y_regional, M)
+    #generate_regional_airports(airports, x_regional, y_regional, M)
     print("4", str(A))
     A = len(airports)
 
-    print("5", str(P))
-    passenger_generation_type = random.randint(0, 3)
+    passenger_generation_type = 0
+    #passenger_generation_type = random.randint(0, 3)
     if passenger_generation_type == 0:
-        P = random.randint(20000, 150000)
+        P = random.randint(hub_airport_count//4, hub_airport_count // 2 - 10)
         M = ((P // A) + 1) * random.randint(10, 20)
-        passengers = generate_passengers_cluster(P, airports)
+        print("5", str(P))
+        passengers = generate_passengers_special_cluster(P, airports)
+        #passengers = generate_passengers_cluster(P, airports)
 
     elif passenger_generation_type == 1:
         P = random.randint(4000, 6000)
         M = ((P // A) + 1) * random.randint(1, 3)
+        print("5", str(P))
         passengers = generate_passengers_special(P, airports)
 
     elif passenger_generation_type == 2:
         P = random.randint(20000, 70000)
         M =((P // A) + 1) * random.randint(5, 15)
+        print("5", str(P))
         passengers = generate_passengers_not_regional(P, airports)
 
     elif passenger_generation_type == 3:
         P = random.randint(20000, 50000)
         M = ((P // A) + 1) * random.randint(5, 10)
+        print("5", str(P))
         passengers = generate_passengers_hub2hub(P, airports)
 
     print("6")

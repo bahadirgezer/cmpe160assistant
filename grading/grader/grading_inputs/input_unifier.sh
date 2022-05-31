@@ -6,9 +6,11 @@ for d in */ ; do
     if ! [ $d -ef ./unified/ \] ; then
         #echo $d;
         cd "$d";
-        for f in *.txt; do
+        for f in *.txt ; do
+        
             cp $f ../unified/"input${num}.txt";
             num=$((num+1));
+            
         done
         cd ..;
     fi

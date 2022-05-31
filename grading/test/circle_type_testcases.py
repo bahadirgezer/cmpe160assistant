@@ -35,7 +35,7 @@ def generate_airport_points(count, x = [], y = []):
     for i in range(count):
         while(True):
             alpha = random.randint(0, 360)
-            r = random.randint(50, 3500)
+            r = random.randint(300, 20000)
             x_curr = r * math.cos(alpha)
             y_curr = r * math.sin(alpha)
             point_ok = True
@@ -138,10 +138,10 @@ def write_airports(airports, file):
         elif airport.type == 2:
             file.write("hub : " + str(airport.ID) + ", " + str(round(airport.x)) + ", " + str(round(airport.y)) + ", " + str(round(airport.fuel_cost, 3)) + ", " + str(round(airport.operation_fee, 3)) + ", " + str(airport.aircraft_capacity) + "\n")
 
-for testcase in range(0, 10):
-    M = random.randint(1, 20)
-    A = 10 #random.randint(25, 35)
-    P = random.randint(700, 3000)
+for testcase in range(20, 25):
+    M = random.randint(20, 40)
+    A = random.randint(10, 30)
+    P = random.randint(8000, 15000)
 
     prop = (random.randint(500, 700)) * 2 * 9
     widebody = (random.randint(500, 700)) * 2.5 * 9
