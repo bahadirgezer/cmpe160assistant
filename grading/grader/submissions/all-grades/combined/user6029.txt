@@ -86,4 +86,4 @@ compile: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airp
 
 class structure: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
 
-total grade: 79.22999999999999/100
+total grade: 79.23/100
