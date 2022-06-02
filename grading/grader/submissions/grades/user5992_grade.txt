@@ -1,0 +1,35 @@
+input0.txt: 100, passed, profit: 123475455, flight count: 8, unload count: 24
+input1.txt: 100, passed, profit: 31976953, flight count: 3, unload count: 9
+input10.txt: 100, passed, profit: 141886812, flight count: 28, unload count: 291
+input11.txt: 100, passed, profit: 2765277, flight count: 1, unload count: 25
+input12.txt: 100, passed, profit: 9082324, flight count: 1, unload count: 3
+input13.txt: 100, passed, profit: 45400281, flight count: 24, unload count: 578
+input14.txt: 100, passed, profit: 25671705, flight count: 33, unload count: 717
+input15.txt: 100, passed, profit: 167498835, flight count: 35, unload count: 904
+input16.txt: 100, passed, profit: 140477349, flight count: 32, unload count: 753
+input17.txt: 100, passed, profit: 107699446, flight count: 25, unload count: 535
+input18.txt: 100, passed, profit: 122153600, flight count: 7, unload count: 21
+input19.txt: 100, passed, profit: 59028462, flight count: 6, unload count: 72
+input2.txt: 100, passed, profit: 219956494, flight count: 32, unload count: 296
+input20.txt: 0, runtime error.
+input21.txt: 100, passed, profit: 106885649, flight count: 10, unload count: 30
+input22.txt: 100, passed, profit: 65113684, flight count: 7, unload count: 18
+input23.txt: 100, passed, profit: 128714006, flight count: 9, unload count: 27
+input24.txt: 100, passed, profit: 16206542, flight count: 4, unload count: 12
+input25.txt: 0, time out.
+input26.txt: 0, time out.
+input27.txt: 50, invalid output
+input28.txt: 50, invalid output
+input29.txt: 0, time out.
+input3.txt: 100, passed, profit: 198279566, flight count: 28, unload count: 416
+input30.txt: 0, time out.
+input31.txt: 0, time out.
+input32.txt: 100, passed, profit: 8722132, flight count: 1, unload count: 3
+input33.txt: 100, passed, profit: -22675702, flight count: 11, unload count: 67
+input34.txt: 0, time out.
+input4.txt: 100, passed, profit: -283023213, flight count: 27, unload count: 603
+input5.txt: 100, passed, profit: -2358918067, flight count: 36, unload count: 362
+input6.txt: 100, passed, profit: -560358305, flight count: 31, unload count: 321
+input7.txt: 100, passed, profit: -1399455561, flight count: 28, unload count: 271
+input8.txt: 100, passed, profit: 139986353, flight count: 31, unload count: 390
+input9.txt: 0, runtime error.

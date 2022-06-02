@@ -23,26 +23,11 @@ input28.txt: 100, passed, profit: -22694637, flight count: 5, unload count: 5
 input29.txt: 100, passed, profit: -5670223961, flight count: 2084, unload count: 13
 input3.txt: 100, passed, profit: 162841545, flight count: 25, unload count: 258
 input30.txt: 100, passed, profit: 1784443370, flight count: 769, unload count: 13
-input31.txt: 100, passed, profit: 5721821923, flight count: 1086, unload count: 13
+input31.txt: 0, time out.
 input32.txt: 100, passed, profit: 9286673, flight count: 1, unload count: 5
 input33.txt: 100, passed, profit: -19741208, flight count: 11, unload count: 29
 input34.txt: 100, passed, profit: -6043913172, flight count: 6318, unload count: 13
-input35.txt: 100, passed, profit: -2439314032, flight count: 6959, unload count: 13
-input36.txt: 100, passed, profit: -3818444590, flight count: 3815, unload count: 13
-input37.txt: 100, passed, profit: 441157041, flight count: 828, unload count: 13
-input38.txt: 0, time out.
-input39.txt: 100, passed, profit: 3002387, flight count: 14, unload count: 14
 input4.txt: 100, passed, profit: 143080844, flight count: 28, unload count: 290
-input40.txt: 100, passed, profit: -14779212, flight count: 20, unload count: 29
-input41.txt: 100, passed, profit: -91823793, flight count: 20, unload count: 20
-input42.txt: 100, passed, profit: -1751470285, flight count: 336, unload count: 3973
-input43.txt: 100, passed, profit: -30836159, flight count: 8, unload count: 8
-input44.txt: 100, passed, profit: -130597659, flight count: 35, unload count: 35
-input45.txt: 100, passed, profit: 63788820, flight count: 310, unload count: 13
-input46.txt: 100, passed, profit: 1738160257, flight count: 644, unload count: 13
-input47.txt: 100, passed, profit: 377893475, flight count: 216, unload count: 13
-input48.txt: 0, time out.
-input49.txt: 0, time out.
 input5.txt: 100, passed, profit: -2089247536, flight count: 29, unload count: 184
 input6.txt: 100, passed, profit: -590678404, flight count: 28, unload count: 155
 input7.txt: 100, passed, profit: -1004486763, flight count: 25, unload count: 152

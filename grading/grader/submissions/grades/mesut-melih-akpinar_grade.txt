@@ -1,0 +1,35 @@
+input0.txt: 100, passed, profit: -6844386, flight count: 1, unload count: 1
+input1.txt: 100, passed, profit: -10684365, flight count: 1, unload count: 1
+input10.txt: 100, passed, profit: -8517931, flight count: 1, unload count: 1
+input11.txt: 100, passed, profit: -15276232, flight count: 1, unload count: 1
+input12.txt: 100, passed, profit: -10875832, flight count: 1, unload count: 1
+input13.txt: 0, grading failed bad output flight operation error
+input14.txt: 100, passed, profit: -14875412, flight count: 1, unload count: 1
+input15.txt: 100, passed, profit: -7478737, flight count: 1, unload count: 1
+input16.txt: 100, passed, profit: -4833255, flight count: 1, unload count: 1
+input17.txt: 0, grading failed bad output flight operation error
+input18.txt: 100, passed, profit: -7689884, flight count: 1, unload count: 1
+input19.txt: 100, passed, profit: -7595820, flight count: 1, unload count: 1
+input2.txt: 100, passed, profit: -13679611, flight count: 1, unload count: 1
+input20.txt: 100, passed, profit: -13371124, flight count: 1, unload count: 1
+input21.txt: 100, passed, profit: -9561452, flight count: 1, unload count: 1
+input22.txt: 100, passed, profit: -10299763, flight count: 1, unload count: 1
+input23.txt: 100, passed, profit: -6121759, flight count: 1, unload count: 1
+input24.txt: 100, passed, profit: -5656182, flight count: 1, unload count: 1
+input25.txt: 0, grading failed bad output flight operation error
+input26.txt: 0, grading failed bad output flight operation error
+input27.txt: 0, grading failed bad output flight operation error
+input28.txt: 0, grading failed bad output flight operation error
+input29.txt: 0, grading failed bad output flight operation error
+input3.txt: 100, passed, profit: -13920075, flight count: 1, unload count: 1
+input30.txt: 0, grading failed bad output flight operation error
+input31.txt: 0, grading failed bad output flight operation error
+input32.txt: 100, passed, profit: -13503166, flight count: 1, unload count: 1
+input33.txt: 100, passed, profit: -10851682, flight count: 1, unload count: 1
+input34.txt: 0, grading failed bad output flight operation error
+input4.txt: 100, passed, profit: -12396031, flight count: 1, unload count: 1
+input5.txt: 100, passed, profit: -7882323, flight count: 1, unload count: 1
+input6.txt: 100, passed, profit: -8520236, flight count: 1, unload count: 1
+input7.txt: 100, passed, profit: -15112319, flight count: 1, unload count: 1
+input8.txt: 100, passed, profit: -10031800, flight count: 1, unload count: 1
+input9.txt: 100, passed, profit: -10687581, flight count: 1, unload count: 1

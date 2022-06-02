@@ -1,0 +1,35 @@
+input0.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input1.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input10.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input11.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input12.txt: 0, grading failed bad outputlog '2' has wrong number of arguments in the output log
+input13.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input14.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input15.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input16.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input17.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input18.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input19.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input2.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input20.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input21.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input22.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input23.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input24.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input25.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input26.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input27.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input28.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input29.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input3.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input30.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input31.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input32.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input33.txt: 0, time out.
+input34.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input4.txt: 0, grading failed bad outputlog '2' has wrong number of arguments in the output log
+input5.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input6.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input7.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input8.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input9.txt: 0, grading failed bad output fuel loading error: weight exceeded

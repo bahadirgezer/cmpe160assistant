@@ -1,0 +1,89 @@
+input  0,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input  1,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input  2,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input  3,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input  4,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input  5,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input  6,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input  7,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input  8,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input  9,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 10,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 11,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 12,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 13,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 14,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 15,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 16,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 17,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 18,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 19,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 20,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 21,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 22,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 23,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 24,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 25,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 26,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 27,   0.00,  0.00, time out
+
+input 28,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 29,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 30,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 31,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 32,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 33,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+input 34,   0.00,  0.00, grading failed bad outputlog '3' has wrong number of arguments in the output log
+
+total test case grade,   0.00
+
+javadoc grade: 10.0/10
+compile grade: 10.0/10
+correct class structure grade: 10.0/10
+
+javadoc comment: javadoc: True, param keyword: True, returns keyword: True, author: True
+
+compile comment: airline: True, passenger_aircraft: True, jet: True, rapid: True, widebody: True, prop: True, airport: True, hub: True, major: True, regional: True, passenger: True, economy: True, business: True, first: True, luxury: False, aircraft_interface: True, passenger_interface: True, main: True
+
+class structure comment: airline: True, passenger_aircraft: True, jet: True, rapid: True, widebody: True, prop: True, airport: True, hub: True, major: True, regional: True, passenger: True, economy: True, business: True, first: True, luxury: True, aircraft_interface: True, passenger_interface: True, main: True
+
+javadoc: 5p, param keyword: 3p, returns keyword: 2p, author: 1p
+
+compile: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
+
+class structure: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
+
+total grade: 30.0/100

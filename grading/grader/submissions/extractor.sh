@@ -1,7 +1,6 @@
 #! bin/bash
 
 rm -rf submitted;
-rm -rf grades;
 #mkdir submitted
 unzip p1.zip;
 mv section146_question1223_jobID_12199_202205010842+0300_202205240100+0300 submitted;

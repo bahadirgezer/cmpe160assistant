@@ -1,0 +1,4 @@
+7.5
+airline: True, passenger_aircraft: True, jet: False, rapid: False, widebody: False, prop: False, airport: True, hub: True, major: True, regional: True, passenger: True, economy: True, business: False, first: True, luxury: True, aircraft_interface: True, passenger_interface: True, main: True
+class structure: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
+

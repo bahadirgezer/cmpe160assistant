@@ -1,0 +1,3 @@
+Your code had too much unnecessary prints to the standart output. I didn't add your terminal output. If you have any questions contact me.
+
+bahadir.gezer@boun.edu.tr

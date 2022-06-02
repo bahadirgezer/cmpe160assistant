@@ -1,0 +1,35 @@
+input0.txt: 0, grading failed bad output flight operation error
+input1.txt: 0, grading failed bad output flight operation error
+input10.txt: 0, grading failed bad output flight operation error
+input11.txt: 1, profit difference higher than 1.
+input12.txt: 1, profit difference higher than 1.
+input13.txt: 0, grading failed bad output flight operation error
+input14.txt: 0, grading failed bad output flight operation error
+input15.txt: 0, grading failed bad output flight operation error
+input16.txt: 0, grading failed bad output flight operation error
+input17.txt: 0, grading failed bad output flight operation error
+input18.txt: 0, grading failed bad output flight operation error
+input19.txt: 0, grading failed bad output flight operation error
+input2.txt: 0, grading failed bad output flight operation error
+input20.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input21.txt: 0, grading failed bad output flight operation error
+input22.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input23.txt: 0, grading failed bad output flight operation error
+input24.txt: 100, passed, profit: -4444221, flight count: 18, unload count: 345
+input25.txt: 0, runtime error.
+input26.txt: 0, runtime error.
+input27.txt: 0, time out.
+input28.txt: 0, runtime error.
+input29.txt: 0, runtime error.
+input3.txt: 0, grading failed bad output flight operation error
+input30.txt: 0, runtime error.
+input31.txt: 0, time out.
+input32.txt: 0, time out.
+input33.txt: 0, time out.
+input34.txt: 0, time out.
+input4.txt: 0, grading failed bad output flight operation error
+input5.txt: 0, grading failed bad output flight operation error
+input6.txt: 0, grading failed bad output flight operation error
+input7.txt: 0, grading failed bad output flight operation error
+input8.txt: 0, grading failed bad output flight operation error
+input9.txt: 0, grading failed bad output flight operation error

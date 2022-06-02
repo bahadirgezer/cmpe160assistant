@@ -1,0 +1,35 @@
+input0.txt: 100, passed, profit: -10133470, flight count: 1, unload count: 68
+input1.txt: 100, passed, profit: -10769446, flight count: 1, unload count: 118
+input10.txt: 100, passed, profit: -13538218, flight count: 1, unload count: 15
+input11.txt: 100, passed, profit: -14659145, flight count: 1, unload count: 14
+input12.txt: 0, grading failed bad output flight operation error
+input13.txt: 100, passed, profit: -9055440, flight count: 1, unload count: 15
+input14.txt: 100, passed, profit: -12954045, flight count: 1, unload count: 12
+input15.txt: 100, passed, profit: -7761644, flight count: 1, unload count: 38
+input16.txt: 100, passed, profit: -16759635, flight count: 1, unload count: 20
+input17.txt: 100, passed, profit: -33137071, flight count: 1, unload count: 26
+input18.txt: 100, passed, profit: -15532352, flight count: 1, unload count: 56
+input19.txt: 100, passed, profit: -8108777, flight count: 1, unload count: 42
+input2.txt: 100, passed, profit: -10239247, flight count: 1, unload count: 15
+input20.txt: 100, passed, profit: -13376873, flight count: 1, unload count: 63
+input21.txt: 100, passed, profit: -15265849, flight count: 1, unload count: 74
+input22.txt: 100, passed, profit: -13237749, flight count: 1, unload count: 90
+input23.txt: 100, passed, profit: -9726126, flight count: 1, unload count: 87
+input24.txt: 100, passed, profit: -8563478, flight count: 1, unload count: 65
+input25.txt: 0, time out.
+input26.txt: 0, time out.
+input27.txt: 0, time out.
+input28.txt: 0, runtime error.
+input29.txt: 0, time out.
+input3.txt: 100, passed, profit: -9722646, flight count: 1, unload count: 26
+input30.txt: 0, time out.
+input31.txt: 0, time out.
+input32.txt: 0, runtime error.
+input33.txt: 100, passed, profit: -12856017, flight count: 1, unload count: 2
+input34.txt: 0, time out.
+input4.txt: 100, passed, profit: -14062790, flight count: 1, unload count: 25
+input5.txt: 100, passed, profit: -11677049, flight count: 1, unload count: 13
+input6.txt: 100, passed, profit: -17500641, flight count: 1, unload count: 9
+input7.txt: 100, passed, profit: -12448093, flight count: 1, unload count: 10
+input8.txt: 100, passed, profit: -32634894, flight count: 1, unload count: 16
+input9.txt: 100, passed, profit: -11131191, flight count: 1, unload count: 19

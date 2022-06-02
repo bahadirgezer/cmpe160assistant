@@ -1,0 +1,44 @@
+All grades:
+	class-structure-grades
+	compile-grades
+	javadoc-grades
+
+These are for the 30 points we arranged besides the test case grades. Each is worth 10 points. The first line for each .txt file is the grade point out of 10. The second line is comments on where the student got points and where they did not. 
+The third line is the grading rubric. This format is true for all three constant grade types.
+
+All grades:
+	polished
+
+Polished is the main part 70 point test case part of the grade. There are 35 test cases. The first 35 lines are the outputs for each test case. These lines have comma seperated values. First csv is the input name, the second csv is the total grade they got for that test case (out of 110), the third csv is the bonus points they got for that test case and the fourth csv is the comment for that test case.
+
+The line after these 35 lines has the total average points they got from these test cases (out of 110) after the first comma. The last line is the grade they got, adjusted to 70%.
+
+All grades:
+	combined
+
+This file is just the combination of all of the four grades above. Each combined file is combined with the following python code:
+
+'''
+        combined_file = open(combined_path, "w")
+        for i in range(35):
+            combined_file.write(inputs[i] + '\n')
+
+        combined_file.write(test_cases_total + '\n')
+        combined_file.write("javadoc grade: " + str(javadoc_grade) + "/10" + '\n')
+        combined_file.write("compile grade: " + str(compile_grade) + "/10" + '\n')
+        combined_file.write("correct class structure grade: " + str(class_structure_grade) + "/10" + '\n')
+        combined_file.write('\n')
+        combined_file.write("javadoc comment: " + javadoc_comment + '\n')
+        combined_file.write("compile comment: " + compile_comment + '\n')
+        combined_file.write("class structure comment: " + class_structure_comment + '\n')
+        combined_file.write(javadoc_rubric + '\n')
+        combined_file.write(compile_rubric+ '\n')
+        combined_file.write(class_structure_rubric + '\n')
+        combined_file.write("total grade: " + str(polished_grade + class_structure_grade + compile_grade + javadoc_grade)  + "/100" + '\n')
+'''
+
+All grades:
+	terminal-logs
+
+These are the terminal outputs I got while grading each student. Adding these outputs might be useful because in some of my test case comments I wrote run time error while actually it was a compile error but I couldn't catch the compile exception through the os.system() function in python and subprocess.Popen() didn't work for 'java', I dont know why.
+

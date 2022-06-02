@@ -1,0 +1,37 @@
+input  0, 100.04,  0.04, passed
+input  1, 100.02,  0.02, passed
+input  2, 100.11,  0.11, passed
+input  3, 100.22,  0.22, passed
+input  4, 100.11,  0.11, passed
+input  5, 100.46,  0.46, passed
+input  6, 100.61,  0.61, passed
+input  7, 100.67,  0.67, passed
+input  8, 100.28,  0.28, passed
+input  9, 101.09,  1.09, passed
+input 10, 100.05,  0.05, passed
+input 11, 100.09,  0.09, passed
+input 12, 100.14,  0.14, passed
+input 13, 100.06,  0.06, passed
+input 14, 100.09,  0.09, passed
+input 15, 100.04,  0.04, passed
+input 16, 100.08,  0.08, passed
+input 17, 100.05,  0.05, passed
+input 18,  25.00,  0.00, invalid output
+input 19,  25.00,  0.00, invalid output
+input 20,  25.00,  0.00, invalid output
+input 21,  25.00,  0.00, invalid output
+input 22,  25.00,  0.00, invalid output
+input 23, 100.14,  0.14, passed
+input 24,  25.00,  0.00, invalid output
+input 25,  25.00,  0.00, invalid output
+input 26,  25.00,  0.00, invalid output
+input 27,  25.00,  0.00, invalid output
+input 28,  25.00,  0.00, invalid output
+input 29, 105.92,  5.92, passed
+input 30, 106.03,  6.03, passed
+input 31, 106.04,  6.04, passed
+input 32, 106.12,  6.12, passed
+input 33, 100.16,  0.16, passed
+input 34, 100.15,  0.15, passed
+total test case grade,  79.39
+ 55.58

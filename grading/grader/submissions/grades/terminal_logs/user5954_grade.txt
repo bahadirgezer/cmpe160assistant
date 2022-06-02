@@ -1,0 +1,284 @@
+
+user5954
+compiling...
+running...
+input0.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input1.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input10.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input11.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input12.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input13.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input14.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input15.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input16.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input17.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input18.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input19.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input2.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input20.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input21.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input22.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input23.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input24.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input25.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input3.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input30.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input4.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input5.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input6.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input7.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input8.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.
+input9.txt testing...
+Exception in thread "main" java.io.FileNotFoundException: /Users/utku/Desktop/shared/test cases/scatter1/input2.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.util.Scanner.<init>(Scanner.java:639)
+	at project.executable.Main.main(Main.java:18)
+runtime error.

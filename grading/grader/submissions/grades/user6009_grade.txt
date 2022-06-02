@@ -1,0 +1,35 @@
+input0.txt: 100, passed, profit: -11741612, flight count: 3, unload count: 3
+input1.txt: 100, passed, profit: -9170120, flight count: 2, unload count: 3
+input10.txt: 100, passed, profit: -60130628, flight count: 16, unload count: 3
+input11.txt: 100, passed, profit: -83669440, flight count: 22, unload count: 3
+input12.txt: 100, passed, profit: -23024884, flight count: 7, unload count: 3
+input13.txt: 100, passed, profit: -30416835, flight count: 8, unload count: 3
+input14.txt: 100, passed, profit: -45027146, flight count: 11, unload count: 3
+input15.txt: 100, passed, profit: -55159706, flight count: 13, unload count: 3
+input16.txt: 100, passed, profit: -13900156, flight count: 4, unload count: 3
+input17.txt: 100, passed, profit: -68001795, flight count: 16, unload count: 3
+input18.txt: 100, passed, profit: -21649158, flight count: 5, unload count: 3
+input19.txt: 100, passed, profit: -23339273, flight count: 6, unload count: 3
+input2.txt: 100, passed, profit: -71622871, flight count: 22, unload count: 3
+input20.txt: 100, passed, profit: -19581751, flight count: 6, unload count: 3
+input21.txt: 100, passed, profit: -35397241, flight count: 9, unload count: 3
+input22.txt: 100, passed, profit: -17541457, flight count: 5, unload count: 3
+input23.txt: 100, passed, profit: -30413196, flight count: 9, unload count: 3
+input24.txt: 100, passed, profit: -12312736, flight count: 3, unload count: 3
+input25.txt: 50, invalid output
+input26.txt: 50, invalid output
+input27.txt: 50, invalid output
+input28.txt: 50, invalid output
+input29.txt: 50, invalid output
+input3.txt: 100, passed, profit: -69251546, flight count: 21, unload count: 3
+input30.txt: 50, invalid output
+input31.txt: 50, invalid output
+input32.txt: 50, invalid output
+input33.txt: 50, invalid output
+input34.txt: 50, invalid output
+input4.txt: 100, passed, profit: -16598274, flight count: 4, unload count: 3
+input5.txt: 100, passed, profit: -16144565, flight count: 5, unload count: 3
+input6.txt: 100, passed, profit: -20874039, flight count: 5, unload count: 3
+input7.txt: 100, passed, profit: -56076741, flight count: 17, unload count: 3
+input8.txt: 100, passed, profit: -66016486, flight count: 19, unload count: 3
+input9.txt: 100, passed, profit: -48283056, flight count: 16, unload count: 3

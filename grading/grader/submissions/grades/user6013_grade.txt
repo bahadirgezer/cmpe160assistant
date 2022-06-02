@@ -1,0 +1,35 @@
+input0.txt: 100, passed, profit: -11184069, flight count: 4, unload count: 40
+input1.txt: 100, passed, profit: -7655592, flight count: 2, unload count: 20
+input10.txt: 100, passed, profit: -60247713, flight count: 14, unload count: 140
+input11.txt: 100, passed, profit: -4378770, flight count: 1, unload count: 10
+input12.txt: 100, passed, profit: -4017881, flight count: 1, unload count: 10
+input13.txt: 0, grading failed bad output aircraft creation error: airport capacity violated aircraft creation error
+input14.txt: 0, grading failed bad output passenger unloading error: previous destination not found passenger unloading error
+input15.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input16.txt: 0, grading failed bad output aircraft creation error: airport capacity violated aircraft creation error
+input17.txt: 100, passed, profit: -74405171, flight count: 12, unload count: 120
+input18.txt: 0, grading failed bad output flight operation error
+input19.txt: 100, passed, profit: -10816556, flight count: 3, unload count: 30
+input2.txt: 0, grading failed bad output aircraft creation error: airport capacity violated aircraft creation error
+input20.txt: 100, passed, profit: -3591105, flight count: 1, unload count: 10
+input21.txt: 100, passed, profit: -21957817, flight count: 6, unload count: 60
+input22.txt: 100, passed, profit: -14085343, flight count: 4, unload count: 40
+input23.txt: 0, grading failed bad output aircraft creation error: airport capacity violated aircraft creation error
+input24.txt: 100, passed, profit: -10321886, flight count: 3, unload count: 30
+input25.txt: 50, invalid output
+input26.txt: 50, invalid output
+input27.txt: 100, passed, profit: -14674414, flight count: 3, unload count: 3
+input28.txt: 100, passed, profit: -39620937, flight count: 8, unload count: 8
+input29.txt: 50, invalid output
+input3.txt: 0, grading failed bad output flight operation error
+input30.txt: 50, invalid output
+input31.txt: 0, time out.
+input32.txt: 0, time out.
+input33.txt: 0, time out.
+input34.txt: 0, time out.
+input4.txt: 100, passed, profit: -68900261, flight count: 15, unload count: 150
+input5.txt: 100, passed, profit: -62425928, flight count: 17, unload count: 170
+input6.txt: 100, passed, profit: -227817769, flight count: 16, unload count: 155
+input7.txt: 0, grading failed bad output flight operation error
+input8.txt: 0, grading failed bad output flight operation error
+input9.txt: 0, grading failed bad output flight operation error

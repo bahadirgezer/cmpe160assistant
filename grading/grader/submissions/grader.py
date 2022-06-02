@@ -32,13 +32,11 @@ class PropAircraft(Aircraft):
         self.aircraft_multiplier = 0.9
 
     def get_fuel_consumption(self, distance):
-        # print("weight: " + str(self.weight))
         takeoff_fuel = self.weight * 0.08 / self.fuel_weight
         distance_ratio = distance / 2000
         bath_tub_coefficient = (25.9324 * (distance_ratio ** 4)) + (-50.5633 * (distance_ratio ** 3)) + (35.0554 * (distance_ratio ** 2)) + (-9.90346 * distance_ratio) + (1.97413)
         average_fuel_consumption = self.fuel_consumption * bath_tub_coefficient * distance
         average_fuel_consumption += takeoff_fuel
-        # print("average fuel consumption: " + str(average_fuel_consumption))
         return average_fuel_consumption
     
     def __str__(self):
@@ -171,8 +169,6 @@ class RegionalAirport(Airport):
         super().__init__(ID, x, y, fuel_cost, op_fee, capacity)
 
     def depart_aircraft(self, weight_ratio):
-        #print("regional depart" + str(0.6 * math.e ** (float(self.current / self.capacity))))
-
         fulness_coefficient = 0.6 * math.e ** (float(self.current / self.capacity)) # USE THE VALUES BEFORE THE ACTUAL OPERATION
         return self.op_fee * weight_ratio * 1.2 * fulness_coefficient
 
@@ -225,6 +221,7 @@ class testing:
         self.valid = False
         self.flight_count = 0
         self.unload_count = 0
+        self.comment = ""
     
     def run(self):
         print(self.input_file, self.output_file)
@@ -236,11 +233,10 @@ class testing:
         if not self.grade_output():
             print("bad output")
             input_txt = re.findall(r"input\d+.+", self.input_file)[0]
-            self.grade_file.write("{}: 0".format(input_txt) + ", grading failed bad output.\n")
+            self.grade_file.write("{}: 0".format(input_txt) + ", grading failed bad output"+ self.comment +"\n")
             return
     #                                       ARRANGE THESE TWO METHODS SO THAT THE CODE RUNS WELL
     def error(self, error_id):
-        #print("Error{}".format(error_id))
         return
         
     def read_input(self):
@@ -304,6 +300,11 @@ class testing:
             
             for line in lines:
                 tokens = line.split()
+                if len(tokens) == 0:
+                    self.comment = "empty line"
+                    print("empty line")
+                    return False
+
                 line_number += 1
 
                 if line_number == last_line:
@@ -349,53 +350,81 @@ class testing:
                     return True
 
                 if tokens[0] == '0':
+                    if (len(tokens) < 3):
+                        self.comment = "log '0' has wrong number of arguments in the output log"
+                        print("wrong number of arguments")
+                        return False
+
                     airport = self.airports.get(int(tokens[1]))
                     if not airport:
+                        self.comment = "aircraft creating error: airport not found"
                         print("aircraft creation error: airport not found")
                         self.error(101)
                         return False
 
                     if not self.aircraft_creation(airport, int(tokens[2])):
+                        self.comment += " aircraft creation error"
                         print("aircraft creation error: aircraft creation failed")
                         self.error(1)
                         return  False
                     profit_index = 3
 
                 elif tokens[0] == '1':
+                    if (len(tokens) < 3):
+                        self.comment = "log '1' has wrong number of arguments in the output log"
+                        print("wrong number of arguments")
+                        return False
+
                     to_airport = self.airports.get(int(tokens[1]))
                     if not to_airport:
+                        self.comment = "flight operation error: airport not found"
                         print("flight operation error: airport not found")
                         self.error(2)
                         return False
 
                     aircraft = self.aircrafts.get(int(tokens[2]))
                     if not aircraft:
+                        self.comment = "flight operation error: aircraft not found"
                         print("flight operation error: aircraft not found")
                         self.error(3)
                         return False
                         
                     if not self.flight_operation(to_airport, aircraft):
+                        self.comment += " flight operation error"
                         print("flight operation error: flight operation failed")
                         self.error(4)
                         return False
                     profit_index = 3
 
                 elif tokens[0] == '2':
+                    if (len(tokens) < 5):
+                        self.comment = "log '2' has wrong number of arguments in the output log"
+                        print("wrong number of arguments")
+                        return False
+
                     aircraft = self.aircrafts.get(int(tokens[1]))
                     if not aircraft:
+                        self.comment = "seat assignment error: aircraft not found"
                         print("seat assignment error: aircraft not found")
                         self.error(4)
                         return False
 
                     if not self.seat_assignment(aircraft, int(tokens[2]), int(tokens[3]), int(tokens[4])):
+                        self.comment += " seat assignment error"
                         print("seat assignment error: seat assignment failed")
                         self.error(4)
                         return False
                     profit_index = 5
 
                 elif tokens[0] == '3':
+                    if (len(tokens) < 3):
+                        self.comment = "log '3' has wrong number of arguments in the output log"
+                        print("wrong number of arguments")
+                        return False
+
                     aircraft = self.aircrafts.get(int(tokens[1]))
                     if not aircraft:
+                        self.comment = "fuel loading error: aircraft not found"
                         print("fuel loading error: aircraft not found")
                         self.error(4)
                         return False
@@ -406,25 +435,34 @@ class testing:
                     profit_index = 3
                     
                 elif tokens[0] == '4':
+                    if (len(tokens) < 4):
+                        self.comment = "log '4' has wrong number of arguments in the output log"
+                        print("wrong number of arguments")
+                        return False
+
                     airport = self.airports.get(int(tokens[3]))
                     if not airport:
+                        self.comment = "passenger loading error: airport not found"
                         print("passenger loading error: airport not found")
                         self.error(6)
                         return False
                     
                     aircraft = self.aircrafts.get(int(tokens[2]))
                     if not aircraft:
+                        self.comment = "passenger loading error: aircraft not found"
                         print("passenger loading error: aircraft not found")
                         self.error(7)
                         return False
 
                     passenger = airport.passengers.get(int(tokens[1]))
                     if not passenger:
+                        self.comment = "passenger loading error: passenger not found"
                         print("passenger loading error: passenger not found")
                         self.error(8)
                         return False
 
                     if not self.passenger_loading(passenger, aircraft, airport):
+                        self.comment += " passenger loading error"
                         print("passenger loading error: passenger loading failed")
                         self.error(9)
                         return False
@@ -432,24 +470,33 @@ class testing:
                     profit_index = 4
 
                 elif tokens[0] == '5':
+                    if (len(tokens) < 4):
+                        self.comment = "log '5' has wrong number of arguments in the output log"
+                        print("wrong number of arguments")
+                        return False
+
                     airport = self.airports.get(int(tokens[3]))
                     if not airport:
+                        self.comment = "passenger unloading error: airport not found"
                         print("passenger unloading error: airport not found")
                         self.error(9)
                         return False
                     aircraft = self.aircrafts.get(int(tokens[2]))
                     if not aircraft:
+                        self.comment = "passenger unloading error: aircraft not found"
                         print("passenger unloading error: aircraft not found")
                         self.error(10)
                         return False
 
                     passenger = aircraft.passengers.get(int(tokens[1]))
                     if not passenger:
+                        self.comment = "passenger unloading error: passenger not found"
                         print("passenger unloading error: passenger not found")
                         self.error(11)
                         return False
 
                     if not self.passenger_unloading(passenger, aircraft, airport):
+                        self.comment += " passenger unloading error"
                         print("passenger unloading error: passenger unloading failed")
                         self.error(12)
                         return False
@@ -457,36 +504,47 @@ class testing:
                     profit_index = 4
 
                 elif tokens[0] == '6':
-                
+                    if (len(tokens) < 5):
+                        self.comment = "log '6' has wrong number of arguments in the output log"
+                        print("wrong number of arguments")
+                        return False
+
                     airport = self.airports.get(int(tokens[4]))
                     if not airport:
+                        self.comment = "passenger transfer error: airport not found"
                         print("passenger transfer error: airport not found")
                         self.error(12)
                         return False
 
                     from_aircraft = self.aircrafts.get(int(tokens[2]))
                     if not from_aircraft:
+                        self.comment = "passenger transfer error: aircraft not found"
                         print("passenger transfer error: from aircraft not found")
                         self.error(13)
                         return False
 
                     to_aircraft = self.aircrafts.get(int(tokens[3]))
                     if not to_aircraft:
+                        self.comment = "passenger transfer error: aircraft not found"
                         print("passenger transfer error: to aircraft not found")
                         self.error(14)
                         return False
 
                     passenger = from_aircraft.passengers.get(int(tokens[1]))
                     if not passenger:
+                        self.comment = "passenger transfer error: passenger not found"
                         print("passenger transfer error: passenger not at from aircraft")
                         self.error(15)
                         return False
 
                     if not self.passenger_transfer(passenger, from_aircraft, to_aircraft, airport):
+                        self.comment += " passenger transfer error"
                         print("passenger transfer error: passenger not at from aircraft")
+                        return False
                     profit_index = 5
 
                 else:
+                    self.comment = "unmatched command in the output log"
                     print("OUTPUT LINE NOT MATCHED")
                     return False
                 
@@ -514,10 +572,12 @@ class testing:
         self.profit -= self.op_cost * len(self.aircrafts)
         if to_airport.ID == aircraft.current_airport.ID:
             if self.runmode:
+                self.comment += " flight operation error: aircraft already at the destination airport"
                 print("flight operation error: to airport is the same as the current airport")
             return False
         if to_airport.capacity < to_airport.current + 1:
             if self.runmode:
+                self.comment += " flight operation error: destination airport is full"
                 print("flight operation error: to airport is full")
             return False
         
@@ -525,6 +585,7 @@ class testing:
         consumed = aircraft.get_fuel_consumption(flight_distance)
         if aircraft.fuel < consumed:
             if self.runmode:
+                self.comment += " flight operation error: aircraft fuel is not enough"
                 print("flight operation error: not enough fuel")
             return False
 
@@ -555,17 +616,20 @@ class testing:
     def passenger_transfer(self, passenger, from_aircraft, to_aircraft, airport):
         if (from_aircraft.current_airport.ID != airport.ID):
             if self.runmode:
+                self.comment += " passenger transfer error: aircraft not at correct airport"
                 print("passenger transfer error: from aircraft is not at the correct airport.")
             self.profit -= from_aircraft.operation_fee
             return True
         if (to_aircraft.current_airport.ID != airport.ID):
             if self.runmode:
+                self.comment += " passenger transfer error: aircraft not at correct airport"
                 print("passenger transfer error: to aircraft is not at the correct airport.")
             self.profit -= from_aircraft.operation_fee # FROM OPERATION FEE SHOULD BE RETURNED
             return True
         
         if to_aircraft.weight + passenger.weight > to_aircraft.max_weight:
             if self.runmode:
+                self.comment += " passenger transfer error: aircraft weight exceeded"
                 print("passenger transfer error: to aircraft weight exceeded.")
             self.profit -= from_aircraft.operation_fee
             return True
@@ -600,6 +664,7 @@ class testing:
                 fee = to_aircraft.operation_fee * to_aircraft.aircraft_multiplier * 1.2
             else:
                 if self.runmode:
+                    self.comment += " passenger transfer error: aircraft is full"
                     print("passenger loading error: no seats available.")
                 self.profit -= from_aircraft.operation_fee #                         FROM OPERATION FEE SHOULD BE RETURNED
                 return True
@@ -617,6 +682,7 @@ class testing:
                 fee = to_aircraft.operation_fee * to_aircraft.aircraft_multiplier * 1.2
             else:
                 if self.runmode:
+                    self.comment += " passenger transfer error: aircraft is full"
                     print("passenger loading error: no seats available.")
                 self.profit -= from_aircraft.operation_fee
                 return True
@@ -629,6 +695,7 @@ class testing:
                 fee = to_aircraft.operation_fee * to_aircraft.aircraft_multiplier * 1.2
             else:
                 if self.runmode:
+                    self.comment += " passenger transfer error: aircraft is full"
                     print("passenger loading error: no seats available.")
                 self.profit -= from_aircraft.operation_fee
                 return True
@@ -645,18 +712,21 @@ class testing:
     def passenger_loading(self, passenger, aircraft, airport):
         if (aircraft.current_airport.ID != airport.ID):
             if self.runmode:
+                self.comment += " passenger loading error: aircraft not at correct airport"
                 print("passenger loading error: aircraft is not at the correct airport") #TODO: MIGHT BE ERROR
             self.profit -= aircraft.operation_fee
             return True
 
         if aircraft.weight + passenger.weight > aircraft.max_weight:
             if self.runmode:
+                self.comment += " passenger loading error: aircraft weight exceeded"
                 print("passenger loading error: aircraft weight exceeded.")
             self.profit -= aircraft.operation_fee
             return True
         
         if passenger.seat_assigned != -1:
             if self.runmode:
+                self.comment += " passenger loading error: passenger already assigned to a seat"
                 print("passenger loading error: passenger was still assigned to a seat") #TODO: MAYBE REDUNDANT
             self.profit -= aircraft.operation_fee
             return True
@@ -679,6 +749,7 @@ class testing:
                 fee = aircraft.operation_fee * aircraft.aircraft_multiplier * 1.2
             else:
                 if self.runmode:
+                    self.comment += " passenger loading error: aircraft is full"
                     print("passenger loading error: no seats available.")
                 self.profit -= aircraft.operation_fee
                 return True
@@ -696,6 +767,7 @@ class testing:
                 fee = aircraft.operation_fee * aircraft.aircraft_multiplier * 1.2
             else:
                 if self.runmode:
+                    self.comment += " passenger loading error: aircraft is full"
                     print("passenger loading error: no seats available.")
                 self.profit -= aircraft.operation_fee
                 return True
@@ -708,6 +780,7 @@ class testing:
                 fee = aircraft.operation_fee * aircraft.aircraft_multiplier * 1.2
             else:
                 if self.runmode:
+                    self.comment += " passenger loading error: aircraft is full"
                     print("passenger loading error: no seats available.")
                 self.profit -= aircraft.operation_fee
                 return True
@@ -722,12 +795,14 @@ class testing:
     def passenger_unloading(self, passenger, aircraft, airport):
         if (aircraft.current_airport.ID != airport.ID):
             if self.runmode:
+                self.comment += " passenger unloading error: aircraft not at correct airport"
                 print("passenger unloading error: aircraft is not at the correct airport") #TODO: MIGHT BE ERROR
             self.profit -= aircraft.operation_fee
             return True
         
         if airport.ID not in passenger.destinations:
             if self.runmode:
+                self.comment += " passenger unloading error: passenger not at correct destination"
                 print("passenger unloading error: passenger is not at one of the destinations") #TODO: MIGHT BE ERROR
             self.profit -= aircraft.operation_fee
             return True
@@ -747,6 +822,7 @@ class testing:
 
         previous_destionation_object = self.airports.get(passenger.previous_destination)
         if not previous_destionation_object:
+            self.comment += " passenger unloading error: previous destination not found"
             print("passenger unloading error: previous destination not found")
             return False
 
@@ -781,10 +857,11 @@ class testing:
         elif isinstance(passenger, LuxuryPassenger):
             ticket_price *= 15.0
         else:
+            self.comment += " passenger unloading error: passenger is not a passenger?"
             print("passenger unloading error: passenger is not a passenger") #TODO MIGHT BE REDUNTANT
             self.profit -= aircraft.operation_fee
             return True
-        
+
         ticket_price *= self.airports.get(passenger.previous_destination).distance(airport) * aircraft.aircraft_multiplier * passenger.connection_multiplier * passenger.seat_multiplier
         ticket_price *= (1 + (passenger.baggage_count * 0.05))
 
@@ -805,16 +882,20 @@ class testing:
 
     def seat_assignment(self, aircraft, economy, business, first):
         if aircraft.economy_occupied > economy:
+            self.comment += " seat assignment error: occupied economy seats violated"
             print("seat assignment error: occupied economy seats violated.")
             return False
         if aircraft.business_occupied > business:
+            self.comment += " seat assignment error: occupied business seats violated"
             print("seat assignment error: occupied business seats violated.")
             return False
         if aircraft.first_occupied > first:
+            self.comment += " seat assignment error: occupied first class seats violated"
             print("seat assignment error: occupied first seats violated.")
             return False
     
         if economy * 1 + business * 3 + first * 8 > aircraft.floor_area:
+            self.comment += " seat assignment error: floor area violated"
             print("seat assignment error: aircraft floor area exceeded.")
             return False
         
@@ -826,9 +907,11 @@ class testing:
 
     def fuel_loading(self, aircraft, fuel_amount):
         if aircraft.fuel_capacity < aircraft.fuel + fuel_amount < 0:
+            self.comment += " fuel loading error: fuel capacity violated"
             print("fuel loading error: fuel capacity exceeded.")
             return False
         if aircraft.weight + fuel_amount * aircraft.fuel_weight > aircraft.max_weight:
+            self.comment += " fuel loading error: weight exceeded"
             print("fuel loading error: aircraft weight exceeded.")
             return False
 
@@ -854,10 +937,12 @@ class testing:
             new_aircraft = JetAircraft(airport, self.jet_op_fee, len(self.aircrafts))
 
         if (len(self.aircrafts) + 1 > self.max_aircrafts):
+            self.comment += " aircraft creation error: airline aircraft limit exceeded"
             print("aircraft creation error: airline aircraft limit reached.")
             return False
 
         if (airport.current + 1 > airport.capacity):
+            self.comment += " aircraft creation error: airport capacity violated"
             print("aircraft creation error: airport capacity exceeded.")
             return False
         
@@ -880,7 +965,6 @@ if __name__ == "__main__":
         bin_path = os.getcwd()+f"/bin"
         output_file = os.getcwd()+f"/output.txt"
         os.system(f"touch {output_file}")
-        run_dir_string = "project."
         if not os.path.exists(bin_path):
             os.makedirs(bin_path)
         print("\n\n"+user)
@@ -888,7 +972,8 @@ if __name__ == "__main__":
         #javac src/project/passenger*/*.java src/project/interfaces*/*.java src/project/executable*/*.java src/project/airport*/*.java src/project/airline*/aircraft*/concrete*/*.java src/project/airline*/aircraft*/*.java src/project/airline*/*.java -target 17
         
         try:
-            project_dir_string = "project/"
+            run_dir_string = ""#"project."
+            project_dir_string = ""#"project/"
             #print("bin path: " + bin_path)
             
             os.system(f"javac src/{project_dir_string}passenger*/*.java src/{project_dir_string}interfaces*/*.java src/{project_dir_string}executable*/*.java src/{project_dir_string}airport*/*.java src/{project_dir_string}airline*/aircraft*/concrete*/*.java src/{project_dir_string}airline*/aircraft*/*.java src/{project_dir_string}airline*/*.java -d {bin_path} -target 17")

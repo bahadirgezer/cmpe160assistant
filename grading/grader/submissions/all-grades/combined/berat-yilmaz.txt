@@ -1,0 +1,89 @@
+input  0, 100.27,  0.27, passed
+
+input  1, 100.22,  0.22, passed
+
+input  2, 100.13,  0.13, passed
+
+input  3, 100.23,  0.23, passed
+
+input  4, 100.37,  0.37, passed
+
+input  5, 100.47,  0.47, passed
+
+input  6, 100.69,  0.69, passed
+
+input  7, 100.51,  0.51, passed
+
+input  8, 100.30,  0.30, passed
+
+input  9, 101.24,  1.24, passed
+
+input 10, 100.26,  0.26, passed
+
+input 11, 100.31,  0.31, passed
+
+input 12, 100.19,  0.19, passed
+
+input 13, 100.24,  0.24, passed
+
+input 14, 100.33,  0.33, passed
+
+input 15, 100.26,  0.26, passed
+
+input 16, 100.29,  0.29, passed
+
+input 17, 100.34,  0.34, passed
+
+input 18,   0.00,  0.00, time out
+
+input 19,   0.00,  0.00, time out
+
+input 20,   0.00,  0.00, time out
+
+input 21, 104.99,  4.99, passed
+
+input 22,   0.00,  0.00, time out
+
+input 23, 100.21,  0.21, passed
+
+input 24,  25.00,  0.00, invalid output
+
+input 25,   0.00,  0.00, time out
+
+input 26,   0.00,  0.00, time out
+
+input 27, 101.06,  1.06, passed
+
+input 28,   0.00,  0.00, time out
+
+input 29, 105.95,  5.95, passed
+
+input 30, 106.02,  6.02, passed
+
+input 31, 106.02,  6.02, passed
+
+input 32, 106.05,  6.05, passed
+
+input 33, 100.16,  0.16, passed
+
+input 34, 100.26,  0.26, passed
+
+total test case grade,  78.93
+
+javadoc grade: 9.0/10
+compile grade: 10.0/10
+correct class structure grade: 10.0/10
+
+javadoc comment: javadoc: True, param keyword: True, returns keyword: True, author: False
+
+compile comment: airline: True, passenger_aircraft: True, jet: True, rapid: True, widebody: True, prop: True, airport: True, hub: True, major: True, regional: True, passenger: True, economy: True, business: True, first: True, luxury: False, aircraft_interface: True, passenger_interface: True, main: True
+
+class structure comment: airline: True, passenger_aircraft: True, jet: True, rapid: True, widebody: True, prop: True, airport: True, hub: True, major: True, regional: True, passenger: True, economy: True, business: True, first: True, luxury: True, aircraft_interface: True, passenger_interface: True, main: True
+
+javadoc: 5p, param keyword: 3p, returns keyword: 2p, author: 1p
+
+compile: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
+
+class structure: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
+
+total grade: 84.25/100

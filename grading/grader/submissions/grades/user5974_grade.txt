@@ -27,22 +27,7 @@ input31.txt: 0, runtime error.
 input32.txt: 100, passed, profit: 9319784, flight count: 1, unload count: 3
 input33.txt: 100, passed, profit: -9993050, flight count: 1, unload count: 1
 input34.txt: 0, runtime error.
-input35.txt: 0, runtime error.
-input36.txt: 0, runtime error.
-input37.txt: 0, runtime error.
-input38.txt: 0, runtime error.
-input39.txt: 100, passed, profit: -14714650, flight count: 1, unload count: 1
 input4.txt: 100, passed, profit: -577378280, flight count: 20, unload count: 43
-input40.txt: 100, passed, profit: -13154415, flight count: 1, unload count: 1
-input41.txt: 100, passed, profit: -7900334, flight count: 1, unload count: 1
-input42.txt: 100, passed, profit: -16246, flight count: 1, unload count: 2
-input43.txt: 100, passed, profit: -5695105, flight count: 1, unload count: 1
-input44.txt: 100, passed, profit: -7852530, flight count: 1, unload count: 1
-input45.txt: 0, runtime error.
-input46.txt: 0, runtime error.
-input47.txt: 0, runtime error.
-input48.txt: 0, runtime error.
-input49.txt: 0, runtime error.
 input5.txt: 100, passed, profit: -1550680532, flight count: 31, unload count: 67
 input6.txt: 100, passed, profit: -361130725, flight count: 8, unload count: 16
 input7.txt: 100, passed, profit: -494663417, flight count: 10, unload count: 20
