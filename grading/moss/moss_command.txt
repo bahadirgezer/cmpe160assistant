@@ -1,0 +1,4 @@
+./moss -l java -m 100000 -d */src/project/airline*/aircraft*/concrete*/*.java */src/project/airline*/aircraft*/*.java 
+*/src/project/airline*/*.java */src/project/airport*/*.java */src/project/executable*/*.java */src/project/interface*/*.java 
+*/src/project/passenger*/*.java
+

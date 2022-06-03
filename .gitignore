@@ -2,3 +2,4 @@
 grading/grader/validity/build/
 *.iml
 .*
+grading/moss/*/

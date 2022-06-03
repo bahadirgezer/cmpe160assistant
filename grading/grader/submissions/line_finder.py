@@ -1,8 +1,9 @@
 import os
 import re
+import sys
 
 if __name__ == "__main__":
-    search_string = ""
+    search_string = sys.argv[1]
     users_dir = os.getcwd()+f"/submitted-graded"
     users = [item for item in os.listdir(users_dir) if os.path.isdir(os.path.join(users_dir, item))]
     

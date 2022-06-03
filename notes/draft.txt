@@ -1,0 +1,99 @@
+choose your own game.
+
+logistics problem
+
+supply demand envater
+
+milk supply chain
+
+tuketim depolama pazarlama
+
+DNA replikasyon
+
+Financial markets 
+
+psuedo market bot
+
+military
+
+attricion
+
+decision making
+
+iha
+
+curve grader
+
+
+
+
+
+1. proje için airport management system. Obje oluşturma interface kullanımı, keywordlerle packageler ve dosyalar arasında ulaşılabilirlik, javadoc kullanımı. 
+
+Airports
+Interface International or Domestic. 
+cargo aiport, passenger airport, military airport, mixed airport.
+
+aircraft capacity (cargo-passenger-military), passenger and cargo capacity (count), coordinates, runway count (Without the concept of time, only by giving more than one flight commands in one input line),
+
+=================
+Aircrafts
+cargo aircraft, passenger aircraft, mixed aircraft, military aircraft
+
+passenger and cargo capacity (both count and weight), fuel (impacts range current weight will), maxWeight, maxCount, (checks before flight operation), comfort.
+
+================
+
+Passenger
+
+International, Domestic. Determines which airport the passenger can access. 
+
+Has attributes. Weight, comfort,  (determines if the passenger will get onboard the plane).
+
+Different restrictions between types of planes and airports, for example military aircraft can land everywhere but military airports only accept military aircraft. 
+
+Concept of profit and money could also be introduced to add more levels, every plane could either turn a profit or loss, based on fuel amount (cost), fixed cost and passenger income (every passenger will pay an amount derived from their comfort and weight). 
+
+Output could simply list all airports, aircrafts and passengers.
+
+================
+
+Cargo
+
+General, Bulk, goods
+Special; High Value, Fragile
+
+Has attributes. Weight, Value per weight.
+
+Fragile cargo has a chance of breaking, which removes any value.
+
+And so on. There will be the concept of money and cost, so for the outputs i will be able to ask profits. Cost of fuel loaded, cost of operation per flight (impacted by total weight and distance and is it from international or domestic), revenue could be from passenger comfort and distance, the concept of seating could be interesting (window seats cost more etc.).
+
+Also could make it so that there is access only to aircraft, effectively making the project an airline simulator.
+
+
+2. proje icin.
+
+DNA replication system
+
+with mRNA and tRNAs. 
+
+The nucleobase, pentoz sugar, phosphate group, nuclosit and nucleotit is where the implements and extends functionality be.
+
+I will design it so that different parts will have to communicate with eachother.
+
+For the output I could ask for DNA replication operations by using mRNAs and tRNAs. (maybe with a certain chance of errors or mutations in the replication chain, then I could ask for the error and what disease it stands for), I could just ask for desiase detection using psuedo DNA fragments designated as disieses, similarity percentages between two different DNA fragments, I could potentially give a table DNA segments which correspond to a certain pyhsical trait and ask the phenotype of that DNA fragment, I could add enzyme classes to do all the work (to restrict certain functionality inside the DNA from being accessed by the functional part of the code) and so on.
+
+
+Tree odevi icin Huffman coding tarzi Tree kullanarak encryption decryption yapilmasi istenebilir. Tree traversal vs. acisindan guzel olur.
+
+Basit bir tur supply chain yapilabilir. Gecen sene milk supply cok fazla oldugundan ciftciler sut dokmustu, supply chainlerin durumunu simule etmeyi deneyebiliriz. Customers, warehouses, factories, suppliers etc. all of these could have orders waiting in a queue. Production rates and cost, consumption rates and cost, transfer rates and cost, inventory capacities and amounts and so on. Supply ve demand kisminda stack ve queue kullanimini katarak 2. proje icin guzel bir sey hazirlanabilir.
+
+
+
+
+
+decision tree. Lojistik kodunda yukleme sisteminde kullanilabilir. Depoda iki gun bekledi mi prime uyesi mi agirlik ne 
+
+
+
