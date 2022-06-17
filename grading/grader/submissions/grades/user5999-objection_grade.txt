@@ -1,0 +1,35 @@
+input0.txt: 100, passed, profit: -13476634, flight count: 1, unload count: 1
+input1.txt: 100, passed, profit: -12132291, flight count: 1, unload count: 1
+input10.txt: 100, passed, profit: -13297239, flight count: 1, unload count: 1
+input11.txt: 100, passed, profit: -13800151, flight count: 1, unload count: 1
+input12.txt: 100, passed, profit: -14013714, flight count: 1, unload count: 1
+input13.txt: 100, passed, profit: -3518437, flight count: 1, unload count: 1
+input14.txt: 0, grading failed bad output fuel loading error: weight exceeded
+input15.txt: 100, passed, profit: -10253975, flight count: 1, unload count: 1
+input16.txt: 100, passed, profit: -11040647, flight count: 1, unload count: 1
+input17.txt: 100, passed, profit: -10404185, flight count: 1, unload count: 1
+input18.txt: 100, passed, profit: -15037971, flight count: 1, unload count: 1
+input19.txt: 100, passed, profit: -13560891, flight count: 1, unload count: 1
+input2.txt: 100, passed, profit: -15184901, flight count: 1, unload count: 1
+input20.txt: 100, passed, profit: -14653707, flight count: 1, unload count: 1
+input21.txt: 100, passed, profit: -14008590, flight count: 1, unload count: 1
+input22.txt: 100, passed, profit: -10303021, flight count: 1, unload count: 1
+input23.txt: 100, passed, profit: -10082659, flight count: 1, unload count: 1
+input24.txt: 0, grading failed bad output output file is empty
+input25.txt: 0, grading failed bad output output file is empty
+input26.txt: 0, grading failed bad output output file is empty
+input27.txt: 0, grading failed bad output output file is empty
+input28.txt: 0, grading failed bad output output file is empty
+input29.txt: 0, grading failed bad output output file is empty
+input3.txt: 100, passed, profit: -15049265, flight count: 1, unload count: 1
+input30.txt: 0, grading failed bad output output file is empty
+input31.txt: 0, grading failed bad output output file is empty
+input32.txt: 0, grading failed bad output output file is empty
+input33.txt: 0, time out.
+input34.txt: 0, grading failed bad output output file is empty
+input4.txt: 100, passed, profit: -11244358, flight count: 1, unload count: 1
+input5.txt: 100, passed, profit: -11263289, flight count: 1, unload count: 1
+input6.txt: 100, passed, profit: -13377212, flight count: 1, unload count: 1
+input7.txt: 100, passed, profit: -11268163, flight count: 1, unload count: 1
+input8.txt: 100, passed, profit: -12989631, flight count: 1, unload count: 1
+input9.txt: 100, passed, profit: -9776451, flight count: 1, unload count: 1

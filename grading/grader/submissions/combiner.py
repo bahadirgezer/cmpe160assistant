@@ -38,7 +38,9 @@ if __name__ == "__main__":
 
         totals.update({user:round(polished_grade + class_structure_grade + compile_grade + javadoc_grade, 2)})
 
-        '''
+        if not os.path.exists(os.getcwd()+f"/all-grades/combined"):
+            os.makedirs(os.getcwd()+f"/all-grades/combined")
+            
         combined_file = open(combined_path, "w")
         for i in range(35):
             combined_file.write(inputs[i] + '\n')
@@ -54,6 +56,6 @@ if __name__ == "__main__":
         combined_file.write(compile_rubric+ '\n')
         combined_file.write(class_structure_rubric + '\n')
         combined_file.write("total grade: " + str(round(polished_grade + class_structure_grade + compile_grade + javadoc_grade, 2))  + "/100" + '\n')
-        '''
+        
     
     for user, grade in sorted(totals.items(), key=lambda x:x[1], reverse=True): print(f"{user}:".rjust(20, ' ') + f"{str(format(round(grade, 2), '.2f')).rjust(8, ' ')}")

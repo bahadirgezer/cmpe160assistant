@@ -38,6 +38,8 @@ def find_airline_file(files_list):
 if __name__ == "__main__":
     users_dir = os.getcwd()+f"/submitted-graded"
     users = [item for item in os.listdir(users_dir) if os.path.isdir(os.path.join(users_dir, item))]
+    if not os.path.exists(os.getcwd()+f"/grades/constant_grades"):
+        os.mkdir(os.getcwd()+f"/grades/constant_grades")
 
     #javadoc
     grades_dir = os.getcwd()+f"/grades/constant_grades/javadoc-grades"

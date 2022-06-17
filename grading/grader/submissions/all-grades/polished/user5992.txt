@@ -1,27 +1,27 @@
-input  0, 100.72,  0.72, passed
-input  1, 100.17,  0.17, passed
-input  2, 101.60,  1.60, passed
+input  0, 100.89,  0.89, passed
+input  1, 100.20,  0.20, passed
+input  2, 102.07,  2.07, passed
 input  3, 100.32,  0.32, passed
 input  4, 100.22,  0.22, passed
-input  5, 105.11,  5.11, passed
+input  5, 106.80,  6.80, passed
 input  6, 105.24,  5.24, passed
 input  7, 106.31,  6.31, passed
-input  8, 108.57,  8.57, passed
+input  8, 108.60,  8.60, passed
 input  9, 106.73,  6.73, passed
 input 10, 100.65,  0.65, passed
 input 11, 100.91,  0.91, passed
-input 12, 101.97,  1.97, passed
+input 12, 102.42,  2.42, passed
 input 13,   0.00,  0.00, runtime error
-input 14, 100.73,  0.73, passed
-input 15, 100.36,  0.36, passed
-input 16, 100.58,  0.58, passed
-input 17, 100.45,  0.45, passed
+input 14, 101.03,  1.03, passed
+input 15, 100.47,  0.47, passed
+input 16, 100.73,  0.73, passed
+input 17, 100.65,  0.65, passed
 input 18,   0.00,  0.00, time out
 input 19,   0.00,  0.00, time out
 input 20,  25.00,  0.00, invalid output
 input 21,  25.00,  0.00, invalid output
 input 22,   0.00,  0.00, time out
-input 23, 102.11,  2.11, passed
+input 23, 102.51,  2.51, passed
 input 24,   0.00,  0.00, time out
 input 25,   0.00,  0.00, time out
 input 26, 103.04,  3.04, passed
@@ -31,7 +31,7 @@ input 29, 107.93,  7.93, passed
 input 30, 106.54,  6.54, passed
 input 31, 107.66,  7.66, passed
 input 32, 106.86,  6.86, passed
-input 33, 102.53,  2.53, passed
+input 33, 106.19,  6.19, passed
 input 34,   0.00,  0.00, runtime error
-total test case grade,  75.26
- 52.68
+total test case grade,  75.48
+ 52.83

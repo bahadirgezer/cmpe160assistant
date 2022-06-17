@@ -1,0 +1,89 @@
+input  0,  25.00,  0.00, invalid output
+
+input  1,  25.00,  0.00, invalid output
+
+input  2,  25.00,  0.00, invalid output
+
+input  3,  25.00,  0.00, invalid output
+
+input  4,  25.00,  0.00, invalid output
+
+input  5,  25.00,  0.00, invalid output
+
+input  6,  25.00,  0.00, invalid output
+
+input  7,  25.00,  0.00, invalid output
+
+input  8,  25.00,  0.00, invalid output
+
+input  9,  25.00,  0.00, invalid output
+
+input 10,  25.00,  0.00, invalid output
+
+input 11,  25.00,  0.00, invalid output
+
+input 12,  25.00,  0.00, invalid output
+
+input 13,  25.00,  0.00, invalid output
+
+input 14,  25.00,  0.00, invalid output
+
+input 15,  25.00,  0.00, invalid output
+
+input 16,  25.00,  0.00, invalid output
+
+input 17,  25.00,  0.00, invalid output
+
+input 18,  25.00,  0.00, invalid output
+
+input 19,  25.00,  0.00, invalid output
+
+input 20,  25.00,  0.00, invalid output
+
+input 21,  25.00,  0.00, invalid output
+
+input 22,  25.00,  0.00, invalid output
+
+input 23,  25.00,  0.00, invalid output
+
+input 24,  25.00,  0.00, invalid output
+
+input 25,  25.00,  0.00, invalid output
+
+input 26,  25.00,  0.00, invalid output
+
+input 27,  25.00,  0.00, invalid output
+
+input 28,  25.00,  0.00, invalid output
+
+input 29,  25.00,  0.00, invalid output
+
+input 30,  25.00,  0.00, invalid output
+
+input 31,  25.00,  0.00, invalid output
+
+input 32,  25.00,  0.00, invalid output
+
+input 33,  25.00,  0.00, invalid output
+
+input 34,  25.00,  0.00, invalid output
+
+total test case grade,  25.00
+
+javadoc grade: 10.0/10
+compile grade: 10.0/10
+correct class structure grade: 10.0/10
+
+javadoc comment: javadoc: True, param keyword: True, returns keyword: True, author: True
+
+compile comment: airline: True, passenger_aircraft: True, jet: True, rapid: True, widebody: True, prop: True, airport: True, hub: True, major: True, regional: True, passenger: True, economy: True, business: True, first: True, luxury: False, aircraft_interface: True, passenger_interface: True, main: True
+
+class structure comment: airline: True, passenger_aircraft: True, jet: True, rapid: True, widebody: True, prop: True, airport: True, hub: True, major: True, regional: True, passenger: True, economy: True, business: True, first: True, luxury: True, aircraft_interface: True, passenger_interface: True, main: True
+
+javadoc: 5p, param keyword: 3p, returns keyword: 2p, author: 1p
+
+compile: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
+
+class structure: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
+
+total grade: 47.5/100

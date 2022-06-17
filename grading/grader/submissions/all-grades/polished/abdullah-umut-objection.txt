@@ -1,0 +1,37 @@
+input  0,  25.00,  0.00, invalid output
+input  1,  25.00,  0.00, invalid output
+input  2,  25.00,  0.00, invalid output
+input  3,  25.00,  0.00, invalid output
+input  4,  25.00,  0.00, invalid output
+input  5,  25.00,  0.00, invalid output
+input  6,  25.00,  0.00, invalid output
+input  7,  25.00,  0.00, invalid output
+input  8,  25.00,  0.00, invalid output
+input  9,  25.00,  0.00, invalid output
+input 10,  25.00,  0.00, invalid output
+input 11,  25.00,  0.00, invalid output
+input 12,  25.00,  0.00, invalid output
+input 13,  25.00,  0.00, invalid output
+input 14,  25.00,  0.00, invalid output
+input 15,  25.00,  0.00, invalid output
+input 16,  25.00,  0.00, invalid output
+input 17,  25.00,  0.00, invalid output
+input 18,  25.00,  0.00, invalid output
+input 19,  25.00,  0.00, invalid output
+input 20,  25.00,  0.00, invalid output
+input 21,  25.00,  0.00, invalid output
+input 22,  25.00,  0.00, invalid output
+input 23,  25.00,  0.00, invalid output
+input 24,  25.00,  0.00, invalid output
+input 25,  25.00,  0.00, invalid output
+input 26,  25.00,  0.00, invalid output
+input 27,  25.00,  0.00, invalid output
+input 28,  25.00,  0.00, invalid output
+input 29,  25.00,  0.00, invalid output
+input 30,  25.00,  0.00, invalid output
+input 31,  25.00,  0.00, invalid output
+input 32,  25.00,  0.00, invalid output
+input 33,  25.00,  0.00, invalid output
+input 34,  25.00,  0.00, invalid output
+total test case grade,  25.00
+ 17.50

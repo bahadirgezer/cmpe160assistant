@@ -1,21 +1,21 @@
-input  0, 100.30,  0.30, passed
-input  1, 100.17,  0.17, passed
+input  0, 100.48,  0.48, passed
+input  1, 100.20,  0.20, passed
 input  2,   0.00,  0.00, grading failed bad output aircraft creation error: airport capacity violated aircraft creation error
 input  3, 100.28,  0.28, passed
 input  4, 100.20,  0.20, passed
-input  5, 102.46,  2.46, passed
+input  5, 104.06,  4.06, passed
 input  6,  41.00,  0.00, profit difference higher than 10^-2
 input  7, 101.31,  1.31, passed
-input  8, 101.57,  1.57, passed
+input  8, 101.65,  1.65, passed
 input  9, 102.00,  2.00, passed
 input 10,   0.00,  0.00, grading failed bad output aircraft creation error: airport capacity violated aircraft creation error
 input 11, 100.47,  0.47, passed
 input 12,   0.00,  0.00, grading failed bad output aircraft creation error: airport capacity violated aircraft creation error
 input 13, 100.09,  0.09, passed
-input 14, 100.71,  0.71, passed
-input 15, 100.14,  0.14, passed
-input 16, 100.60,  0.60, passed
-input 17, 100.60,  0.60, passed
+input 14, 101.01,  1.01, passed
+input 15, 100.26,  0.26, passed
+input 16, 100.75,  0.75, passed
+input 17, 100.81,  0.81, passed
 input 18,   0.00,  0.00, time out
 input 19,   0.00,  0.00, time out
 input 20, 102.00,  2.00, passed
@@ -31,7 +31,7 @@ input 29, 105.96,  5.96, passed
 input 30, 107.34,  7.34, passed
 input 31, 107.57,  7.57, passed
 input 32,   0.00,  0.00, grading failed bad output aircraft creation error: airport capacity violated aircraft creation error
-input 33, 102.61,  2.61, passed
-input 34, 102.54,  2.54, passed
-total test case grade,  65.38
- 45.77
+input 33, 106.34,  6.34, passed
+input 34, 103.50,  3.50, passed
+total test case grade,  65.59
+ 45.91

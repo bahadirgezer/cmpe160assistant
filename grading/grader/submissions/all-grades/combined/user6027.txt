@@ -1,20 +1,20 @@
-input  0, 100.03,  0.03, passed
+input  0, 100.22,  0.22, passed
 
-input  1, 100.00,  0.00, passed
+input  1, 100.04,  0.04, passed
 
-input  2, 100.09,  0.09, passed
+input  2, 100.59,  0.59, passed
 
 input  3, 100.17,  0.17, passed
 
 input  4, 100.09,  0.09, passed
 
-input  5, 100.49,  0.49, passed
+input  5, 102.62,  2.62, passed
 
 input  6, 100.69,  0.69, passed
 
 input  7, 100.48,  0.48, passed
 
-input  8, 100.17,  0.17, passed
+input  8, 100.27,  0.27, passed
 
 input  9,  25.00,  0.00, invalid output
 
@@ -22,17 +22,17 @@ input 10, 100.02,  0.02, passed
 
 input 11, 100.05,  0.05, passed
 
-input 12, 100.16,  0.16, passed
+input 12, 100.66,  0.66, passed
 
 input 13, 100.01,  0.01, passed
 
-input 14, 100.10,  0.10, passed
+input 14, 100.42,  0.42, passed
 
-input 15, 100.03,  0.03, passed
+input 15, 100.14,  0.14, passed
 
-input 16, 100.05,  0.05, passed
+input 16, 100.21,  0.21, passed
 
-input 17, 100.05,  0.05, passed
+input 17, 100.26,  0.26, passed
 
 input 18,  25.00,  0.00, invalid output
 
@@ -44,9 +44,9 @@ input 21,   0.00,  0.00, runtime error
 
 input 22, 106.00,  6.00, passed
 
-input 23, 100.13,  0.13, passed
+input 23, 100.58,  0.58, passed
 
-input 24, 100.00,  0.00, passed
+input 24, 104.01,  4.01, passed
 
 input 25,  25.00,  0.00, invalid output
 
@@ -64,11 +64,11 @@ input 31, 106.00,  6.00, passed
 
 input 32, 106.00,  6.00, passed
 
-input 33, 100.18,  0.18, passed
+input 33, 104.19,  4.19, passed
 
-input 34, 100.22,  0.22, passed
+input 34, 101.22,  1.22, passed
 
-total test case grade,  78.80
+total test case grade,  79.20
 
 javadoc grade: 9.0/10
 compile grade: 10.0/10
@@ -86,4 +86,4 @@ compile: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airp
 
 class structure: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
 
-total grade: 84.16/100
+total grade: 84.44/100

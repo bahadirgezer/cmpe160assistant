@@ -1,0 +1,37 @@
+input  0,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input  1,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input  2,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input  3,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input  4,   0.00,  0.00, grading failed bad outputlog '2' has wrong number of arguments in the output log
+input  5,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input  6,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input  7,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input  8,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input  9,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 10,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 11,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 12,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 13,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 14,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 15,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 16,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 17,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 18,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 19,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 20,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 21,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 22,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 23,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 24,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 25,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 26,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 27,   0.00,  0.00, time out
+input 28,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 29,   0.00,  0.00, grading failed bad outputlog '2' has wrong number of arguments in the output log
+input 30,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 31,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 32,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 33,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+input 34,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
+total test case grade,   0.00
+  0.00

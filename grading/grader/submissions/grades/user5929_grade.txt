@@ -23,7 +23,7 @@ input28.txt: 100, passed, profit: -22694637, flight count: 5, unload count: 5
 input29.txt: 100, passed, profit: -5670223961, flight count: 2084, unload count: 13
 input3.txt: 100, passed, profit: 162841545, flight count: 25, unload count: 258
 input30.txt: 100, passed, profit: 1784443370, flight count: 769, unload count: 13
-input31.txt: 0, time out.
+input31.txt: 100, passed, profit: 5721821923, flight count: 1086, unload count: 13
 input32.txt: 100, passed, profit: 9286673, flight count: 1, unload count: 5
 input33.txt: 100, passed, profit: -19741208, flight count: 11, unload count: 29
 input34.txt: 100, passed, profit: -6043913172, flight count: 6318, unload count: 13

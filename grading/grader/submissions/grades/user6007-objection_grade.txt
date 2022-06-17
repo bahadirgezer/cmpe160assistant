@@ -1,0 +1,35 @@
+input0.txt: 100, passed, profit: -8732455, flight count: 1, unload count: 78
+input1.txt: 100, passed, profit: -9696671, flight count: 1, unload count: 93
+input10.txt: 100, passed, profit: -8677105, flight count: 1, unload count: 16
+input11.txt: 100, passed, profit: -8658618, flight count: 1, unload count: 19
+input12.txt: 100, passed, profit: -9035343, flight count: 1, unload count: 55
+input13.txt: 50, invalid output
+input14.txt: 100, passed, profit: -8338090, flight count: 1, unload count: 29
+input15.txt: 50, invalid output
+input16.txt: 50, invalid output
+input17.txt: 50, invalid output
+input18.txt: 100, passed, profit: -9554653, flight count: 1, unload count: 52
+input19.txt: 100, passed, profit: -9259269, flight count: 1, unload count: 70
+input2.txt: 100, passed, profit: -8215804, flight count: 1, unload count: 10
+input20.txt: 100, passed, profit: -6156006, flight count: 1, unload count: 69
+input21.txt: 100, passed, profit: -8296201, flight count: 1, unload count: 58
+input22.txt: 100, passed, profit: -8949263, flight count: 1, unload count: 95
+input23.txt: 100, passed, profit: -7111040, flight count: 1, unload count: 84
+input24.txt: 100, passed, profit: -9572952, flight count: 1, unload count: 82
+input25.txt: 0, time out.
+input26.txt: 0, time out.
+input27.txt: 0, time out.
+input28.txt: 0, time out.
+input29.txt: 0, time out.
+input3.txt: 100, passed, profit: -8869231, flight count: 1, unload count: 29
+input30.txt: 0, time out.
+input31.txt: 0, time out.
+input32.txt: 0, time out.
+input33.txt: 0, time out.
+input34.txt: 0, time out.
+input4.txt: 100, passed, profit: -5225309, flight count: 1, unload count: 20
+input5.txt: 100, passed, profit: -9340529, flight count: 1, unload count: 21
+input6.txt: 100, passed, profit: -28037948, flight count: 1, unload count: 19
+input7.txt: 100, passed, profit: -7725185, flight count: 1, unload count: 10
+input8.txt: 100, passed, profit: -40152326, flight count: 1, unload count: 27
+input9.txt: 100, passed, profit: -4864956, flight count: 1, unload count: 20

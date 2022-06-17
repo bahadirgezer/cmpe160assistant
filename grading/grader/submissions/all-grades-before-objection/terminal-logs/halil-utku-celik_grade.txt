@@ -1,0 +1,159 @@
+
+halil-utku-celik
+compiling...
+running...
+input0.txt testing...
+profit = -7909820.21861764
+flight operation error: flight operation failed
+bad output
+input1.txt testing...
+profit = -5.362434498510114E7
+flight operation error: flight operation failed
+bad output
+input10.txt testing...
+profit = -1.1250994050065508E9
+flight operation error: flight operation failed
+bad output
+input11.txt testing...
+profit = 8.300869352125993E7
+input12.txt testing...
+profit = 8.029234246789095E7
+input13.txt testing...
+profit = -4.5552026610009587E8
+flight operation error: flight operation failed
+bad output
+input14.txt testing...
+profit = -2.389440376713503E8
+flight operation error: flight operation failed
+bad output
+input15.txt testing...
+profit = -4.014024014722985E8
+flight operation error: flight operation failed
+bad output
+input16.txt testing...
+profit = -1.0190249959358957E9
+flight operation error: flight operation failed
+bad output
+input17.txt testing...
+profit = -3.1954904984290206E8
+flight operation error: flight operation failed
+bad output
+input18.txt testing...
+profit = 1.8425169393136534E8
+flight operation error: flight operation failed
+bad output
+input19.txt testing...
+profit = -1.1286474079005092E7
+flight operation error: flight operation failed
+bad output
+input2.txt testing...
+profit = -2.163875927651538E9
+flight operation error: flight operation failed
+bad output
+input20.txt testing...
+profit = 1.0246367682408556E7
+fuel loading error: aircraft weight exceeded.
+bad output
+input21.txt testing...
+profit = 7.446117450730759E7
+flight operation error: flight operation failed
+bad output
+input22.txt testing...
+profit = 1.3659099965518773E8
+fuel loading error: aircraft weight exceeded.
+bad output
+input23.txt testing...
+profit = 1.0718923620512384E8
+flight operation error: flight operation failed
+bad output
+input24.txt testing...
+profit = -4532287.070682384
+input25.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:404)
+	at project.executable.Main.main(Main.java:76)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:404)
+	at project.executable.Main.main(Main.java:76)
+runtime error.
+input27.txt testing...
+Timed out - killing 65717
+input28.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:404)
+	at project.executable.Main.main(Main.java:76)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:404)
+	at project.executable.Main.main(Main.java:76)
+runtime error.
+input3.txt testing...
+profit = -1.1815401045363288E9
+flight operation error: flight operation failed
+bad output
+input30.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:404)
+	at project.executable.Main.main(Main.java:76)
+runtime error.
+input31.txt testing...
+Timed out - killing 65735
+input32.txt testing...
+Timed out - killing 65738
+input33.txt testing...
+Timed out - killing 65740
+input34.txt testing...
+Timed out - killing 65743
+input4.txt testing...
+profit = -1.104444074982479E9
+flight operation error: flight operation failed
+bad output
+input5.txt testing...
+profit = -1.6403782857296291E10
+flight operation error: flight operation failed
+bad output
+input6.txt testing...
+profit = -1.8161170051721807E9
+flight operation error: flight operation failed
+bad output
+input7.txt testing...
+profit = -1.4233053682280317E10
+flight operation error: flight operation failed
+bad output
+input8.txt testing...
+profit = -7.535513112075613E8
+flight operation error: flight operation failed
+bad output
+input9.txt testing...
+profit = -1.1164144426795082E9
+flight operation error: flight operation failed
+bad output
+

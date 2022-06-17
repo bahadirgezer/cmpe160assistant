@@ -1,8 +1,8 @@
-input  0, 100.19,  0.19, passed
+input  0, 100.38,  0.38, passed
 
-input  1, 100.07,  0.07, passed
+input  1, 100.10,  0.10, passed
 
-input  2, 100.58,  0.58, passed
+input  2, 101.09,  1.09, passed
 
 input  3, 100.23,  0.23, passed
 
@@ -26,13 +26,13 @@ input 12,   0.00,  0.00, grading failed bad output aircraft creation error: airp
 
 input 13, 100.07,  0.07, passed
 
-input 14, 100.33,  0.33, passed
+input 14, 100.65,  0.65, passed
 
-input 15, 100.16,  0.16, passed
+input 15, 100.28,  0.28, passed
 
 input 16,   0.00,  0.00, grading failed bad output aircraft creation error: airport capacity violated aircraft creation error
 
-input 17, 100.19,  0.19, passed
+input 17, 100.40,  0.40, passed
 
 input 18,  25.00,  0.00, invalid output
 
@@ -40,7 +40,7 @@ input 19,  25.00,  0.00, invalid output
 
 input 20, 106.95,  6.95, passed
 
-input 21, 107.89,  7.89, passed
+input 21, 107.90,  7.90, passed
 
 input 22,  25.00,  0.00, invalid output
 
@@ -68,7 +68,7 @@ input 33,   0.00,  0.00, grading failed bad output flight operation error
 
 input 34,   0.00,  0.00, grading failed bad output flight operation error
 
-total test case grade,  49.66
+total test case grade,  49.70
 
 javadoc grade: 9.0/10
 compile grade: 10.0/10
@@ -86,4 +86,4 @@ compile: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airp
 
 class structure: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
 
-total grade: 63.76/100
+total grade: 63.79/100

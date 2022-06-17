@@ -297,6 +297,9 @@ class testing:
             line_number = 0
             last_line = len(lines)
             self.line_profit = 0.0
+            if not lines:
+                self.comment = " output file is empty"
+                return False
             
             for line in lines:
                 tokens = line.split()
@@ -972,11 +975,13 @@ if __name__ == "__main__":
         #javac src/project/passenger*/*.java src/project/interfaces*/*.java src/project/executable*/*.java src/project/airport*/*.java src/project/airline*/aircraft*/concrete*/*.java src/project/airline*/aircraft*/*.java src/project/airline*/*.java -target 17
         
         try:
-            run_dir_string = ""#"project."
-            project_dir_string = ""#"project/"
+            run_dir_string = "project."
+            project_dir_string = "project/"
             #print("bin path: " + bin_path)
             
-            os.system(f"javac src/{project_dir_string}passenger*/*.java src/{project_dir_string}interfaces*/*.java src/{project_dir_string}executable*/*.java src/{project_dir_string}airport*/*.java src/{project_dir_string}airline*/aircraft*/concrete*/*.java src/{project_dir_string}airline*/aircraft*/*.java src/{project_dir_string}airline*/*.java -d {bin_path} -target 17")
+            #os.system(f"javac src/{project_dir_string}passenger*/*.java src/{project_dir_string}interfaces*/*.java src/{project_dir_string}executable*/*.java src/{project_dir_string}airport*/*.java src/{project_dir_string}airline*/aircraft*/concrete*/*.java src/{project_dir_string}airline*/aircraft*/*.java src/{project_dir_string}airline*/*.java -d {bin_path} -target 17")
+            os.system(f"javac src/{project_dir_string}passenger*/*.java src/{project_dir_string}interfaces*/*.java src/{project_dir_string}executable*/*.java src/{project_dir_string}airport*/*.java src/{project_dir_string}airline*/concrete*/*.java src/{project_dir_string}airline*/aircraft*/*.java src/{project_dir_string}airline*/*.java -d {bin_path} -target 17")
+            #os.system(f"javac src/{project_dir_string}passenger*/*.java src/{project_dir_string}interfaces*/*.java src/{project_dir_string}executable*/*.java src/{project_dir_string}airport*/*.java src/{project_dir_string}concrete*/*.java src/{project_dir_string}aircraft*/*.java src/{project_dir_string}airline*/*.java -d {bin_path} -target 17")
 
             '''
             passenger_package = f"src/{project_dir_string}passenger*/*.java"
@@ -1048,6 +1053,7 @@ if __name__ == "__main__":
                 break
 
             executable_package_name = run_dir_string + executable_package_name + "." + "Main"
+            #executable_package_name = run_dir_string + executable_package_name + "." + "main"
             input_txt = re.findall(r"input\d+.+", input_file)[0]
 
             print(input_txt + " testing...")

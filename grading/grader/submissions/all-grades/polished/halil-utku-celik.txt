@@ -15,7 +15,7 @@ input 13,   0.00,  0.00, grading failed bad output fuel loading error: weight ex
 input 14,   0.00,  0.00, grading failed bad output flight operation error
 input 15,   0.00,  0.00, grading failed bad output fuel loading error: weight exceeded
 input 16,   0.00,  0.00, grading failed bad output flight operation error
-input 17, 101.83,  1.83, passed
+input 17, 102.04,  2.04, passed
 input 18,   0.00,  0.00, runtime error
 input 19,   0.00,  0.00, runtime error
 input 20,   0.00,  0.00, time out

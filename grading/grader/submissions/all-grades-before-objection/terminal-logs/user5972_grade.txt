@@ -1,0 +1,320 @@
+
+user5972
+compiling...
+running...
+input0.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input1.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input10.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input11.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input12.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input13.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input14.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input15.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input16.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input17.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input18.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input19.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input2.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input20.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input21.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input22.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input23.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input24.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input25.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input26.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input27.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input28.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input29.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input3.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input30.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input31.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input32.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input33.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input34.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input4.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input5.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input6.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input7.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input8.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+input9.txt testing...
+File already exists.
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at project.executable.Main.main(Main.java:29)
+runtime error.
+

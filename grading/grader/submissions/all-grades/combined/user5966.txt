@@ -14,7 +14,7 @@ input  6, 107.06,  7.06, passed
 
 input  7, 105.78,  5.78, passed
 
-input  8, 105.66,  5.66, passed
+input  8, 105.69,  5.69, passed
 
 input  9, 106.79,  6.79, passed
 
@@ -34,15 +34,15 @@ input 16, 110.00, 10.00, passed
 
 input 17, 110.00, 10.00, passed
 
-input 18, 104.14,  4.14, passed
+input 18, 108.82,  8.82, passed
 
 input 19,   0.00,  0.00, time out
 
 input 20,   0.00,  0.00, time out
 
-input 21, 102.00,  2.00, passed
+input 21, 102.27,  2.27, passed
 
-input 22, 104.88,  4.88, passed
+input 22, 107.55,  7.55, passed
 
 input 23, 110.00, 10.00, passed
 
@@ -68,7 +68,7 @@ input 33, 110.00, 10.00, passed
 
 input 34, 110.00, 10.00, passed
 
-total test case grade,  92.51
+total test case grade,  92.73
 
 javadoc grade: 10.0/10
 compile grade: 10.0/10
@@ -86,4 +86,4 @@ compile: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airp
 
 class structure: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
 
-total grade: 94.76/100
+total grade: 94.91/100

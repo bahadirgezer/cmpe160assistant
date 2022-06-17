@@ -1,0 +1,33 @@
+Abdullah Umut (-3p)
+Turkce karakterler duzeltildi.
+
+user 5999 - Yusuf Oksuz (-3p) //whitespace problemi notlanmadi
+Turkce karakterler duzeltildi.
+Output log 5 icin bir whitespace atilmamis. Koddaki log 5 yazdiran kismi bulup bosluk attim.
+
+user 5991 - Burcu (-3p -5p)
+Turkce karakterler duzeltildi.
+Airline constructor degistirildi. Filename'i constructorda almadigi halde constructor'da initialize etmeye calistigindan null pointer error aliyordu. 
+
+user 6031 - Hanaa (-3p) //encoding problemi notlanmadi
+Class structure yanlis. concrete package'i aircraft package'inin icinde olmasi gerekirken disina konulmus. Iki satirda UTF-8 Encoding'e uymayan karakter var.
+
+Halil Utku Celik (-3p) 
+Mailinde soyledigi duzeltmeleri yaptim.
+4 satir duzelttim.
+
+user 5983 - Oguz Kagnici (maalesef sifir aldi zaten)
+Class structure tamamen yanlis. Hersey disarida kalmis. Mailde yazdigi problem icin file.nextline() yerine args[0] ve args[1] yazdim. Ona ragmen indexOutBounds aldi. while loop condition sagladiktan sonra indexi kullanmadan once bir kez daha artirmis. Onu da duzeltince aircraft creation error, airport not found aldi (Butun test caselerde).
+
+Tarik Can (-3p)
+Turkce karakterler duzeltildi.
+
+user 6007 - Yigit Kagan (-5p -5p) //class stcuture ve misc 
+concrete package aircraft package icinde degil. Duzelttim. Sonra 2 tane @deprecated annotation sildim. input dosyasini direkt string olarak girmis. args[0] ve args[1] olarak degistirdim. 
+
+
+
+3p for turkish characters
+5p for class structure errors
+5p for other misc errors
+3p for other misc errors which are metioned in the objection mail

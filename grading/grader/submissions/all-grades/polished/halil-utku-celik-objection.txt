@@ -1,0 +1,37 @@
+input  0, 100.84,  0.84, passed
+input  1, 100.30,  0.30, passed
+input  2, 101.23,  1.23, passed
+input  3, 100.21,  0.21, passed
+input  4, 100.27,  0.27, passed
+input  5,   0.00,  0.00, grading failed bad output flight operation error
+input  6, 101.64,  1.64, passed
+input  7, 100.89,  0.89, passed
+input  8, 100.58,  0.58, passed
+input  9,   0.00,  0.00, runtime error
+input 10, 100.64,  0.64, passed
+input 11, 100.60,  0.60, passed
+input 12, 101.30,  1.30, passed
+input 13, 100.18,  0.18, passed
+input 14, 101.32,  1.32, passed
+input 15, 100.79,  0.79, passed
+input 16, 101.04,  1.04, passed
+input 17, 100.71,  0.71, passed
+input 18,   0.00,  0.00, runtime error
+input 19,   0.00,  0.00, runtime error
+input 20,   0.00,  0.00, runtime error
+input 21,   0.00,  0.00, runtime error
+input 22,   0.00,  0.00, runtime error
+input 23,   0.00,  0.00, grading failed bad output flight operation error
+input 24,   0.00,  0.00, runtime error
+input 25,   0.00,  0.00, runtime error
+input 26,   0.00,  0.00, runtime error
+input 27,   0.00,  0.00, runtime error
+input 28,   0.00,  0.00, runtime error
+input 29, 106.76,  6.76, passed
+input 30, 106.26,  6.26, passed
+input 31, 106.69,  6.69, passed
+input 32, 106.41,  6.41, passed
+input 33, 105.03,  5.03, passed
+input 34, 101.93,  1.93, passed
+total test case grade,  64.16
+ 44.91

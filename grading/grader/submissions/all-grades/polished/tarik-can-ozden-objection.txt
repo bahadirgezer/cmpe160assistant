@@ -1,0 +1,37 @@
+input  0, 100.01,  0.01, passed
+input  1, 100.01,  0.01, passed
+input  2, 100.67,  0.67, passed
+input  3,  25.00,  0.00, invalid output
+input  4,  25.00,  0.00, invalid output
+input  5, 100.07,  0.07, passed
+input  6,   0.00,  0.00, grading failed bad output flight operation error
+input  7,   0.00,  0.00, grading failed bad output flight operation error
+input  8,   0.00,  0.00, grading failed bad output flight operation error
+input  9,   0.00,  0.00, grading failed bad output flight operation error
+input 10,  25.00,  0.00, invalid output
+input 11,  25.00,  0.00, invalid output
+input 12, 100.00,  0.00, passed
+input 13,  25.00,  0.00, invalid output
+input 14, 100.56,  0.56, passed
+input 15, 100.02,  0.02, passed
+input 16, 100.05,  0.05, passed
+input 17, 100.00,  0.00, passed
+input 18,  25.00,  0.00, invalid output
+input 19,  25.00,  0.00, invalid output
+input 20,  25.00,  0.00, invalid output
+input 21,  25.00,  0.00, invalid output
+input 22,  25.00,  0.00, invalid output
+input 23, 100.05,  0.05, passed
+input 24,   0.00,  0.00, time out
+input 25,  25.00,  0.00, invalid output
+input 26,  25.00,  0.00, invalid output
+input 27,  25.00,  0.00, invalid output
+input 28,  25.00,  0.00, invalid output
+input 29, 106.36,  6.36, passed
+input 30, 106.61,  6.61, passed
+input 31, 104.44,  4.44, passed
+input 32, 105.83,  5.83, passed
+input 33, 100.88,  0.88, passed
+input 34, 101.06,  1.06, passed
+total test case grade,  56.48
+ 39.53

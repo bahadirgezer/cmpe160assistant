@@ -1,0 +1,35 @@
+input0.txt: 100, passed, profit: -62758663, flight count: 2, unload count: 2
+input1.txt: 100, passed, profit: -23967369, flight count: 2, unload count: 2
+input10.txt: 100, passed, profit: -347812675, flight count: 26, unload count: 142
+input11.txt: 50, invalid output
+input12.txt: 50, invalid output
+input13.txt: 100, passed, profit: -206753210, flight count: 2, unload count: 2
+input14.txt: 0, grading failed bad output flight operation error
+input15.txt: 0, grading failed bad output flight operation error
+input16.txt: 0, grading failed bad output flight operation error
+input17.txt: 0, grading failed bad output flight operation error
+input18.txt: 50, invalid output
+input19.txt: 50, invalid output
+input2.txt: 100, passed, profit: -304196942, flight count: 1, unload count: 1
+input20.txt: 50, invalid output
+input21.txt: 100, passed, profit: -127169932, flight count: 10, unload count: 125
+input22.txt: 100, passed, profit: -56888681, flight count: 3, unload count: 3
+input23.txt: 100, passed, profit: -92589187, flight count: 5, unload count: 5
+input24.txt: 100, passed, profit: -31631079, flight count: 1, unload count: 1
+input25.txt: 50, invalid output
+input26.txt: 50, invalid output
+input27.txt: 50, invalid output
+input28.txt: 50, invalid output
+input29.txt: 50, invalid output
+input3.txt: 100, passed, profit: -267249367, flight count: 6, unload count: 6
+input30.txt: 0, time out.
+input31.txt: 50, invalid output
+input32.txt: 50, invalid output
+input33.txt: 50, invalid output
+input34.txt: 50, invalid output
+input4.txt: 100, passed, profit: -333818976, flight count: 28, unload count: 138
+input5.txt: 100, passed, profit: -386538864, flight count: 32, unload count: 159
+input6.txt: 100, passed, profit: -4075805615, flight count: 30, unload count: 156
+input7.txt: 100, passed, profit: -254917022, flight count: 1, unload count: 1
+input8.txt: 100, passed, profit: -4078722397, flight count: 33, unload count: 149
+input9.txt: 100, passed, profit: -283402499, flight count: 28, unload count: 158

@@ -1,0 +1,89 @@
+input  0,   0.00,  0.00, runtime error
+
+input  1,   0.00,  0.00, runtime error
+
+input  2,   0.00,  0.00, runtime error
+
+input  3,   0.00,  0.00, runtime error
+
+input  4,   0.00,  0.00, runtime error
+
+input  5,   0.00,  0.00, runtime error
+
+input  6,   0.00,  0.00, runtime error
+
+input  7,   0.00,  0.00, runtime error
+
+input  8,   0.00,  0.00, runtime error
+
+input  9,   0.00,  0.00, runtime error
+
+input 10,   0.00,  0.00, runtime error
+
+input 11,   0.00,  0.00, runtime error
+
+input 12,   0.00,  0.00, runtime error
+
+input 13,   0.00,  0.00, runtime error
+
+input 14,   0.00,  0.00, runtime error
+
+input 15,   0.00,  0.00, runtime error
+
+input 16,   0.00,  0.00, runtime error
+
+input 17,   0.00,  0.00, runtime error
+
+input 18,   0.00,  0.00, runtime error
+
+input 19,   0.00,  0.00, runtime error
+
+input 20,   0.00,  0.00, runtime error
+
+input 21,   0.00,  0.00, runtime error
+
+input 22,   0.00,  0.00, runtime error
+
+input 23,   0.00,  0.00, runtime error
+
+input 24,   0.00,  0.00, runtime error
+
+input 25,   0.00,  0.00, runtime error
+
+input 26,   0.00,  0.00, runtime error
+
+input 27,   0.00,  0.00, runtime error
+
+input 28,   0.00,  0.00, runtime error
+
+input 29,   0.00,  0.00, runtime error
+
+input 30,   0.00,  0.00, runtime error
+
+input 31,   0.00,  0.00, runtime error
+
+input 32,   0.00,  0.00, runtime error
+
+input 33,   0.00,  0.00, runtime error
+
+input 34,   0.00,  0.00, runtime error
+
+total test case grade,   0.00
+
+javadoc grade: 9.0/10
+compile grade: 0.5/10
+correct class structure grade: 10.0/10
+
+javadoc comment: javadoc: True, param keyword: True, returns keyword: True, author: False
+
+compile comment: airline: False, passenger_aircraft: False, jet: False, rapid: False, widebody: False, prop: False, airport: False, hub: False, major: False, regional: False, passenger: False, economy: False, business: False, first: False, luxury: False, aircraft_interface: False, passenger_interface: False, main: False
+
+class structure comment: airline: True, passenger_aircraft: True, jet: True, rapid: True, widebody: True, prop: True, airport: True, hub: True, major: True, regional: True, passenger: True, economy: True, business: True, first: True, luxury: True, aircraft_interface: True, passenger_interface: True, main: True
+
+javadoc: 5p, param keyword: 3p, returns keyword: 2p, author: 1p
+
+compile: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
+
+class structure: airline, aircraft, passenger_aircraft, jet, rapid, widebody, prop, airport, hub, major, regional, passenger, economy, business, first, luxury, aircraft_interface, passenger_interface, main plus a bonus. Each is worth 0.5p
+
+total grade: 19.5/100

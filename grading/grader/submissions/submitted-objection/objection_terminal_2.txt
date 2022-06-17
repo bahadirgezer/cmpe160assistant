@@ -1,0 +1,1414 @@
+Last login: Wed Jun 15 01:19:38 on ttys000
+gezer@gezer ~ % cd bounDers 
+gezer@gezer bounDers % cd 4.Donem 
+gezer@gezer 4.Donem % cd Cmpe160Assistant 
+gezer@gezer Cmpe160Assistant % cd g
+cd: no such file or directory: g
+gezer@gezer Cmpe160Assistant % cd project1 
+gezer@gezer project1 % cd grading 
+gezer@gezer grading % cd grader 
+gezer@gezer grader % cd submissions 
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5999-objection
+compiling...
+running...
+input0.txt testing...
+wrong number of arguments
+bad output
+input1.txt testing...
+wrong number of arguments
+bad output
+input10.txt testing...
+wrong number of arguments
+bad output
+input11.txt testing...
+wrong number of arguments
+bad output
+input12.txt testing...
+wrong number of arguments
+bad output
+input13.txt testing...
+wrong number of arguments
+bad output
+input14.txt testing...
+fuel loading error: aircraft weight exceeded.
+bad output
+input15.txt testing...
+wrong number of arguments
+bad output
+input16.txt testing...
+wrong number of arguments
+bad output
+input17.txt testing...
+wrong number of arguments
+bad output
+input18.txt testing...
+wrong number of arguments
+bad output
+input19.txt testing...
+wrong number of arguments
+bad output
+input2.txt testing...
+wrong number of arguments
+bad output
+input20.txt testing...
+wrong number of arguments
+bad output
+input21.txt testing...
+wrong number of arguments
+bad output
+input22.txt testing...
+wrong number of arguments
+bad output
+input23.txt testing...
+wrong number of arguments
+bad output
+input24.txt testing...
+bad output
+input25.txt testing...
+bad output
+input26.txt testing...
+bad output
+input27.txt testing...
+bad output
+input28.txt testing...
+bad output
+input29.txt testing...
+bad output
+input3.txt testing...
+wrong number of arguments
+bad output
+input30.txt testing...
+bad output
+input31.txt testing...
+bad output
+input32.txt testing...
+bad output
+input33.txt testing...
+wrong number of arguments
+bad output
+input34.txt testing...
+bad output
+input4.txt testing...
+wrong number of arguments
+bad output
+input5.txt testing...
+wrong number of arguments
+bad output
+input6.txt testing...
+wrong number of arguments
+bad output
+input7.txt testing...
+wrong number of arguments
+bad output
+input8.txt testing...
+wrong number of arguments
+bad output
+input9.txt testing...
+wrong number of arguments
+bad output
+
+
+abdullah-umut-objection
+compiling...
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+running...
+input0.txt testing...
+0 810660 1
+2 0 450 0 0
+0.0
+input1.txt testing...
+0 559233 1
+2 0 450 0 0
+0.0
+input10.txt testing...
+0 156899 1
+2 0 450 0 0
+0.0
+input11.txt testing...
+0 410658 1
+2 0 450 0 0
+0.0
+input12.txt testing...
+0 385819 1
+2 0 450 0 0
+0.0
+input13.txt testing...
+0 842517 1
+2 0 450 0 0
+0.0
+input14.txt testing...
+0 388995 1
+2 0 450 0 0
+0.0
+input15.txt testing...
+0 523601 1
+2 0 450 0 0
+0.0
+input16.txt testing...
+0 482883 1
+2 0 450 0 0
+0.0
+input17.txt testing...
+0 509816 1
+2 0 450 0 0
+0.0
+input18.txt testing...
+0 681038 1
+2 0 450 0 0
+0.0
+input19.txt testing...
+0 638857 1
+2 0 450 0 0
+0.0
+input2.txt testing...
+0 954360 1
+2 0 450 0 0
+0.0
+input20.txt testing...
+0 218027 1
+2 0 450 0 0
+0.0
+input21.txt testing...
+0 116939 1
+2 0 450 0 0
+0.0
+input22.txt testing...
+0 613897 1
+2 0 450 0 0
+0.0
+input23.txt testing...
+0 576340 1
+2 0 450 0 0
+0.0
+input24.txt testing...
+0 832744 1
+2 0 450 0 0
+0.0
+input25.txt testing...
+0 593703 1
+2 0 450 0 0
+0.0
+input26.txt testing...
+0 548512 1
+2 0 450 0 0
+0.0
+input27.txt testing...
+0 521965 1
+2 0 450 0 0
+0.0
+input28.txt testing...
+0 157011 1
+2 0 450 0 0
+0.0
+input29.txt testing...
+0 566141 1
+2 0 450 0 0
+0.0
+input3.txt testing...
+0 333986 1
+2 0 450 0 0
+0.0
+input30.txt testing...
+0 617615 1
+2 0 450 0 0
+0.0
+input31.txt testing...
+0 838759 1
+2 0 450 0 0
+0.0
+input32.txt testing...
+0 593453 1
+2 0 450 0 0
+0.0
+input33.txt testing...
+0 285422 1
+2 0 450 0 0
+0.0
+input34.txt testing...
+0 701214 1
+2 0 450 0 0
+0.0
+input4.txt testing...
+0 118968 1
+2 0 450 0 0
+0.0
+input5.txt testing...
+0 272227 1
+2 0 450 0 0
+0.0
+input6.txt testing...
+0 668718 1
+2 0 450 0 0
+0.0
+input7.txt testing...
+0 496768 1
+2 0 450 0 0
+0.0
+input8.txt testing...
+0 855027 1
+2 0 450 0 0
+0.0
+input9.txt testing...
+0 575129 1
+2 0 450 0 0
+0.0
+
+
+user5991-objection
+compiling...
+Note: src/project/airline/Airline.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+running...
+input0.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input1.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input10.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input11.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input12.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input13.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input14.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input15.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input16.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input17.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input18.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input19.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input2.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input20.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input21.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input22.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input23.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input24.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input25.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input3.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input30.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input4.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input5.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input6.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input7.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input8.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input9.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5999-objection
+compiling...
+running...
+input0.txt testing...
+input1.txt testing...
+input10.txt testing...
+input11.txt testing...
+input12.txt testing...
+input13.txt testing...
+input14.txt testing...
+fuel loading error: aircraft weight exceeded.
+bad output
+input15.txt testing...
+input16.txt testing...
+input17.txt testing...
+input18.txt testing...
+input19.txt testing...
+input2.txt testing...
+input20.txt testing...
+input21.txt testing...
+input22.txt testing...
+input23.txt testing...
+input24.txt testing...
+bad output
+input25.txt testing...
+bad output
+input26.txt testing...
+bad output
+input27.txt testing...
+bad output
+input28.txt testing...
+bad output
+input29.txt testing...
+bad output
+input3.txt testing...
+input30.txt testing...
+bad output
+input31.txt testing...
+bad output
+input32.txt testing...
+bad output
+input33.txt testing...
+input34.txt testing...
+bad output
+input4.txt testing...
+input5.txt testing...
+input6.txt testing...
+input7.txt testing...
+input8.txt testing...
+input9.txt testing...
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5991-objection
+compiling...
+Note: src/project/airline/Airline.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+running...
+input0.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input1.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input10.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input11.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input12.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input13.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input14.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input15.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input16.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input17.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input18.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input19.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input2.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input20.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input21.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input22.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input23.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input24.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input25.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input3.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input30.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input4.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input5.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input6.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input7.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input8.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input9.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5991-objection
+compiling...
+src/project/airline/Airline.java:56: error: cannot find symbol
+	    try {file.createNewFile();}
+	         ^
+  symbol:   variable file
+  location: class Airline
+Note: src/project/airline/Airline.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+running...
+input0.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input1.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input10.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input11.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input12.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input13.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input14.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input15.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input16.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input17.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input18.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input19.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input2.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input20.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input21.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input22.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input23.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input24.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input25.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input3.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input30.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input4.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input5.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input6.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input7.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input8.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input9.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5991-objection
+compiling...
+src/project/executable/Main.java:28: error: constructor Airline in class Airline cannot be applied to given types;
+		Airline airline = new Airline(M,operationalCost,prop,widebody,rapid,jet);
+		                  ^
+  required: int,double,double,double,double,double,String
+  found:    int,double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+Note: src/project/airline/Airline.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+running...
+input0.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input1.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input10.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input11.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input12.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input13.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input14.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input15.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input16.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input17.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input18.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input19.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input2.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input20.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input21.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input22.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input23.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input24.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input25.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input3.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input30.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input4.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input5.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input6.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input7.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input8.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input9.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5991-objection
+compiling...
+Note: src/project/airline/Airline.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+running...
+input0.txt testing...
+input1.txt testing...
+input10.txt testing...
+input11.txt testing...
+input12.txt testing...
+input13.txt testing...
+input14.txt testing...
+input15.txt testing...
+input16.txt testing...
+input17.txt testing...
+input18.txt testing...
+input19.txt testing...
+input2.txt testing...
+input20.txt testing...
+input21.txt testing...
+input22.txt testing...
+input23.txt testing...
+input24.txt testing...
+input25.txt testing...
+input26.txt testing...
+input27.txt testing...
+Timed out - killing 33236
+input28.txt testing...
+input29.txt testing...
+input3.txt testing...
+input30.txt testing...
+input31.txt testing...
+Timed out - killing 33255
+input32.txt testing...
+Timed out - killing 33259
+input33.txt testing...
+Timed out - killing 33265
+input34.txt testing...
+Timed out - killing 33269
+input4.txt testing...
+input5.txt testing...
+input6.txt testing...
+input7.txt testing...
+input8.txt testing...
+input9.txt testing...
+gezer@gezer submissions % python3 grader.py inputs
+
+
+halil-utku-celik-objection
+compiling...
+running...
+input0.txt testing...
+profit = 3666213.0932198726
+input1.txt testing...
+profit = -6603526.701615253
+input10.txt testing...
+profit = -1.4442039195964485E7
+input11.txt testing...
+profit = 3618358.3360215025
+input12.txt testing...
+profit = 4245983.718675899
+input13.txt testing...
+profit = 5704983.7336434275
+flight operation error: flight operation failed
+bad output
+input14.txt testing...
+profit = -8182251.180264413
+input15.txt testing...
+profit = 1.7095165307645954E7
+input16.txt testing...
+profit = -572061.2633569428
+input17.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.makeFlight(Airline.java:302)
+	at project.airline.Airline.findNextFlight(Airline.java:397)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input18.txt testing...
+profit = 2.0736446182406113E7
+input19.txt testing...
+profit = 9182414.557321064
+input2.txt testing...
+profit = -1365610.0804428756
+input20.txt testing...
+profit = 8460944.41281119
+input21.txt testing...
+profit = 4.6179924302352175E7
+input22.txt testing...
+profit = 3.035958459741465E7
+input23.txt testing...
+profit = 856976.1819649674
+input24.txt testing...
+profit = -998994.9185623787
+input25.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.makeFlight(Airline.java:302)
+	at project.airline.Airline.findNextFlight(Airline.java:397)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input3.txt testing...
+profit = 4007271.4944785237
+flight operation error: flight operation failed
+bad output
+input30.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input4.txt testing...
+profit = 9.526194432776397E7
+input5.txt testing...
+profit = -7.184027616480986E8
+input6.txt testing...
+profit = -1.0373188522828606E8
+input7.txt testing...
+profit = -4.799000191049719E8
+input8.txt testing...
+profit = 7960650.293858781
+input9.txt testing...
+profit = -2.584264239301607E7
+gezer@gezer submissions % 

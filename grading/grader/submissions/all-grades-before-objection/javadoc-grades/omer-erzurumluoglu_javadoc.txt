@@ -1,0 +1,3 @@
+10
+javadoc: True, param keyword: True, returns keyword: True, author: True
+javadoc: 5p, param keyword: 3p, returns keyword: 2p, author: 1p

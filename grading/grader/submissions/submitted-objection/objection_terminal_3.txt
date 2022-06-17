@@ -1,0 +1,4519 @@
+Last login: Wed Jun 15 01:19:38 on ttys000
+gezer@gezer ~ % cd bounDers 
+gezer@gezer bounDers % cd 4.Donem 
+gezer@gezer 4.Donem % cd Cmpe160Assistant 
+gezer@gezer Cmpe160Assistant % cd g
+cd: no such file or directory: g
+gezer@gezer Cmpe160Assistant % cd project1 
+gezer@gezer project1 % cd grading 
+gezer@gezer grading % cd grader 
+gezer@gezer grader % cd submissions 
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5999-objection
+compiling...
+running...
+input0.txt testing...
+wrong number of arguments
+bad output
+input1.txt testing...
+wrong number of arguments
+bad output
+input10.txt testing...
+wrong number of arguments
+bad output
+input11.txt testing...
+wrong number of arguments
+bad output
+input12.txt testing...
+wrong number of arguments
+bad output
+input13.txt testing...
+wrong number of arguments
+bad output
+input14.txt testing...
+fuel loading error: aircraft weight exceeded.
+bad output
+input15.txt testing...
+wrong number of arguments
+bad output
+input16.txt testing...
+wrong number of arguments
+bad output
+input17.txt testing...
+wrong number of arguments
+bad output
+input18.txt testing...
+wrong number of arguments
+bad output
+input19.txt testing...
+wrong number of arguments
+bad output
+input2.txt testing...
+wrong number of arguments
+bad output
+input20.txt testing...
+wrong number of arguments
+bad output
+input21.txt testing...
+wrong number of arguments
+bad output
+input22.txt testing...
+wrong number of arguments
+bad output
+input23.txt testing...
+wrong number of arguments
+bad output
+input24.txt testing...
+bad output
+input25.txt testing...
+bad output
+input26.txt testing...
+bad output
+input27.txt testing...
+bad output
+input28.txt testing...
+bad output
+input29.txt testing...
+bad output
+input3.txt testing...
+wrong number of arguments
+bad output
+input30.txt testing...
+bad output
+input31.txt testing...
+bad output
+input32.txt testing...
+bad output
+input33.txt testing...
+wrong number of arguments
+bad output
+input34.txt testing...
+bad output
+input4.txt testing...
+wrong number of arguments
+bad output
+input5.txt testing...
+wrong number of arguments
+bad output
+input6.txt testing...
+wrong number of arguments
+bad output
+input7.txt testing...
+wrong number of arguments
+bad output
+input8.txt testing...
+wrong number of arguments
+bad output
+input9.txt testing...
+wrong number of arguments
+bad output
+
+
+abdullah-umut-objection
+compiling...
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+running...
+input0.txt testing...
+0 810660 1
+2 0 450 0 0
+0.0
+input1.txt testing...
+0 559233 1
+2 0 450 0 0
+0.0
+input10.txt testing...
+0 156899 1
+2 0 450 0 0
+0.0
+input11.txt testing...
+0 410658 1
+2 0 450 0 0
+0.0
+input12.txt testing...
+0 385819 1
+2 0 450 0 0
+0.0
+input13.txt testing...
+0 842517 1
+2 0 450 0 0
+0.0
+input14.txt testing...
+0 388995 1
+2 0 450 0 0
+0.0
+input15.txt testing...
+0 523601 1
+2 0 450 0 0
+0.0
+input16.txt testing...
+0 482883 1
+2 0 450 0 0
+0.0
+input17.txt testing...
+0 509816 1
+2 0 450 0 0
+0.0
+input18.txt testing...
+0 681038 1
+2 0 450 0 0
+0.0
+input19.txt testing...
+0 638857 1
+2 0 450 0 0
+0.0
+input2.txt testing...
+0 954360 1
+2 0 450 0 0
+0.0
+input20.txt testing...
+0 218027 1
+2 0 450 0 0
+0.0
+input21.txt testing...
+0 116939 1
+2 0 450 0 0
+0.0
+input22.txt testing...
+0 613897 1
+2 0 450 0 0
+0.0
+input23.txt testing...
+0 576340 1
+2 0 450 0 0
+0.0
+input24.txt testing...
+0 832744 1
+2 0 450 0 0
+0.0
+input25.txt testing...
+0 593703 1
+2 0 450 0 0
+0.0
+input26.txt testing...
+0 548512 1
+2 0 450 0 0
+0.0
+input27.txt testing...
+0 521965 1
+2 0 450 0 0
+0.0
+input28.txt testing...
+0 157011 1
+2 0 450 0 0
+0.0
+input29.txt testing...
+0 566141 1
+2 0 450 0 0
+0.0
+input3.txt testing...
+0 333986 1
+2 0 450 0 0
+0.0
+input30.txt testing...
+0 617615 1
+2 0 450 0 0
+0.0
+input31.txt testing...
+0 838759 1
+2 0 450 0 0
+0.0
+input32.txt testing...
+0 593453 1
+2 0 450 0 0
+0.0
+input33.txt testing...
+0 285422 1
+2 0 450 0 0
+0.0
+input34.txt testing...
+0 701214 1
+2 0 450 0 0
+0.0
+input4.txt testing...
+0 118968 1
+2 0 450 0 0
+0.0
+input5.txt testing...
+0 272227 1
+2 0 450 0 0
+0.0
+input6.txt testing...
+0 668718 1
+2 0 450 0 0
+0.0
+input7.txt testing...
+0 496768 1
+2 0 450 0 0
+0.0
+input8.txt testing...
+0 855027 1
+2 0 450 0 0
+0.0
+input9.txt testing...
+0 575129 1
+2 0 450 0 0
+0.0
+
+
+user5991-objection
+compiling...
+Note: src/project/airline/Airline.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+running...
+input0.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input1.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input10.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input11.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input12.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input13.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input14.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input15.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input16.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input17.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input18.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input19.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input2.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input20.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input21.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input22.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input23.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input24.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input25.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input3.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input30.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input4.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input5.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input6.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input7.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input8.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input9.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5999-objection
+compiling...
+running...
+input0.txt testing...
+input1.txt testing...
+input10.txt testing...
+input11.txt testing...
+input12.txt testing...
+input13.txt testing...
+input14.txt testing...
+fuel loading error: aircraft weight exceeded.
+bad output
+input15.txt testing...
+input16.txt testing...
+input17.txt testing...
+input18.txt testing...
+input19.txt testing...
+input2.txt testing...
+input20.txt testing...
+input21.txt testing...
+input22.txt testing...
+input23.txt testing...
+input24.txt testing...
+bad output
+input25.txt testing...
+bad output
+input26.txt testing...
+bad output
+input27.txt testing...
+bad output
+input28.txt testing...
+bad output
+input29.txt testing...
+bad output
+input3.txt testing...
+input30.txt testing...
+bad output
+input31.txt testing...
+bad output
+input32.txt testing...
+bad output
+input33.txt testing...
+input34.txt testing...
+bad output
+input4.txt testing...
+input5.txt testing...
+input6.txt testing...
+input7.txt testing...
+input8.txt testing...
+input9.txt testing...
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5991-objection
+compiling...
+Note: src/project/airline/Airline.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+running...
+input0.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input1.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input10.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input11.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input12.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input13.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input14.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input15.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input16.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input17.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input18.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input19.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input2.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input20.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input21.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input22.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input23.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input24.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input25.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input3.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input30.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input4.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input5.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input6.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input7.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input8.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input9.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5991-objection
+compiling...
+src/project/airline/Airline.java:56: error: cannot find symbol
+	    try {file.createNewFile();}
+	         ^
+  symbol:   variable file
+  location: class Airline
+Note: src/project/airline/Airline.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+running...
+input0.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input1.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input10.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input11.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input12.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input13.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input14.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input15.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input16.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input17.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input18.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input19.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input2.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input20.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input21.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input22.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input23.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input24.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input25.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input3.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input30.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input4.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input5.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input6.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input7.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input8.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input9.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5991-objection
+compiling...
+src/project/executable/Main.java:28: error: constructor Airline in class Airline cannot be applied to given types;
+		Airline airline = new Airline(M,operationalCost,prop,widebody,rapid,jet);
+		                  ^
+  required: int,double,double,double,double,double,String
+  found:    int,double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+Note: src/project/airline/Airline.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+running...
+input0.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input1.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input10.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input11.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input12.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input13.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input14.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input15.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input16.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input17.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input18.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input19.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input2.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input20.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input21.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input22.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input23.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input24.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input25.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input3.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input30.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input4.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input5.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input6.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input7.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input8.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+input9.txt testing...
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:278)
+	at project.airline.Airline.<init>(Airline.java:35)
+	at project.executable.Main.main(Main.java:28)
+runtime error.
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5991-objection
+compiling...
+Note: src/project/airline/Airline.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+running...
+input0.txt testing...
+input1.txt testing...
+input10.txt testing...
+input11.txt testing...
+input12.txt testing...
+input13.txt testing...
+input14.txt testing...
+input15.txt testing...
+input16.txt testing...
+input17.txt testing...
+input18.txt testing...
+input19.txt testing...
+input2.txt testing...
+input20.txt testing...
+input21.txt testing...
+input22.txt testing...
+input23.txt testing...
+input24.txt testing...
+input25.txt testing...
+input26.txt testing...
+input27.txt testing...
+Timed out - killing 33236
+input28.txt testing...
+input29.txt testing...
+input3.txt testing...
+input30.txt testing...
+input31.txt testing...
+Timed out - killing 33255
+input32.txt testing...
+Timed out - killing 33259
+input33.txt testing...
+Timed out - killing 33265
+input34.txt testing...
+Timed out - killing 33269
+input4.txt testing...
+input5.txt testing...
+input6.txt testing...
+input7.txt testing...
+input8.txt testing...
+input9.txt testing...
+gezer@gezer submissions % python3 grader.py inputs
+
+
+halil-utku-celik-objection
+compiling...
+running...
+input0.txt testing...
+profit = 3666213.0932198726
+input1.txt testing...
+profit = -6603526.701615253
+input10.txt testing...
+profit = -1.4442039195964485E7
+input11.txt testing...
+profit = 3618358.3360215025
+input12.txt testing...
+profit = 4245983.718675899
+input13.txt testing...
+profit = 5704983.7336434275
+flight operation error: flight operation failed
+bad output
+input14.txt testing...
+profit = -8182251.180264413
+input15.txt testing...
+profit = 1.7095165307645954E7
+input16.txt testing...
+profit = -572061.2633569428
+input17.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.makeFlight(Airline.java:302)
+	at project.airline.Airline.findNextFlight(Airline.java:397)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input18.txt testing...
+profit = 2.0736446182406113E7
+input19.txt testing...
+profit = 9182414.557321064
+input2.txt testing...
+profit = -1365610.0804428756
+input20.txt testing...
+profit = 8460944.41281119
+input21.txt testing...
+profit = 4.6179924302352175E7
+input22.txt testing...
+profit = 3.035958459741465E7
+input23.txt testing...
+profit = 856976.1819649674
+input24.txt testing...
+profit = -998994.9185623787
+input25.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.makeFlight(Airline.java:302)
+	at project.airline.Airline.findNextFlight(Airline.java:397)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input3.txt testing...
+profit = 4007271.4944785237
+flight operation error: flight operation failed
+bad output
+input30.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.io.IOException: Stream closed
+	at java.base/sun.nio.cs.StreamEncoder.ensureOpen(StreamEncoder.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:142)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at project.airline.Airline.findNextFlight(Airline.java:401)
+	at project.executable.Main.main(Main.java:71)
+runtime error.
+input4.txt testing...
+profit = 9.526194432776397E7
+input5.txt testing...
+profit = -7.184027616480986E8
+input6.txt testing...
+profit = -1.0373188522828606E8
+input7.txt testing...
+profit = -4.799000191049719E8
+input8.txt testing...
+profit = 7960650.293858781
+input9.txt testing...
+profit = -2.584264239301607E7
+gezer@gezer submissions % python3 line_finder.py oguz
+Not found
+gezer@gezer submissions % python3 line_finder.py Oguz
+Not found
+gezer@gezer submissions % python3 line_finder.py kag 
+user5972 found in Main.java
+	package project.executable;
+user5972 found in RegionalAirport.java
+	package project.airport;
+user5972 found in HubAirport.java
+	package project.airport;
+user5972 found in MajorAirport.java
+	package project.airport;
+user5972 found in Airport.java
+	package project.airport;
+user5972 found in BusinessPassenger.java
+	package project.passenger;
+user5972 found in LuxuryPassenger.java
+	package project.passenger;
+user5972 found in EconomyPassenger.java
+	package project.passenger;
+user5972 found in FirstClassPassenger.java
+	package project.passenger;
+user5972 found in Passenger.java
+	package project.passenger;
+user5972 found in Airline.java
+	package project.airline;
+user5972 found in Aircraft.java
+	package project.airline.aircraft;
+user5972 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user5972 found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5972 found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5972 found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5972 found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5972 found in AircraftInterface.java
+	package project.interfaces;
+user5972 found in PassengerInterface.java
+	package project.interfaces;
+tarik-can-ozden found in main.java
+	package project.executable;
+tarik-can-ozden found in RegionalAirport.java
+	package project.airport;
+tarik-can-ozden found in HubAirport.java
+	package project.airport;
+tarik-can-ozden found in MajorAirport.java
+	package project.airport;
+tarik-can-ozden found in Airport.java
+	package project.airport;
+tarik-can-ozden found in BusinessPassenger.java
+	package project.passenger;
+tarik-can-ozden found in LuxuryPassenger.java
+	package project.passenger;
+tarik-can-ozden found in EconomyPassenger.java
+	package project.passenger;
+tarik-can-ozden found in FirstClassPassenger.java
+	package project.passenger;
+tarik-can-ozden found in Passenger.java
+	package project.passenger;
+tarik-can-ozden found in Aircraft.java
+	package project.airline.aircraft;
+tarik-can-ozden found in PassengerAircraft.java
+	package project.airline.aircraft;
+tarik-can-ozden found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+tarik-can-ozden found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+tarik-can-ozden found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+tarik-can-ozden found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+tarik-can-ozden found in AircraftInterface.java
+	package project.interfaces;
+tarik-can-ozden found in PassengerInterface.java
+	package project.interfaces;
+user5929 found in Main.java
+	package project.executable;
+user5929 found in RegionalAirport.java
+	package project.airport;
+user5929 found in HubAirport.java
+	package project.airport;
+user5929 found in MajorAirport.java
+	package project.airport;
+user5929 found in Airport.java
+	package project.airport;
+user5929 found in BusinessPassenger.java
+	package project.passenger;
+user5929 found in LuxuryPassenger.java
+	package project.passenger;
+user5929 found in EconomyPassenger.java
+	package project.passenger;
+user5929 found in FirstClassPassenger.java
+	package project.passenger;
+user5929 found in Passenger.java
+	package project.passenger;
+user5929 found in Airline.java
+	package project.airline;
+user5929 found in Aircraft.java
+	package project.airline.aircraft;
+user5929 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user5929 found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5929 found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5929 found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5929 found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5929 found in AircraftInterface.java
+	package project.interfaces;
+user5929 found in PassengerInterface.java
+	package project.interfaces;
+omer-erzurumluoglu found in Main.java
+	package project.executable;
+omer-erzurumluoglu found in RegionalAirport.java
+	package project.airport;
+omer-erzurumluoglu found in HubAirport.java
+	package project.airport;
+omer-erzurumluoglu found in MajorAirport.java
+	package project.airport;
+omer-erzurumluoglu found in Airport.java
+	package project.airport;
+omer-erzurumluoglu found in BusinessPassenger.java
+	package project.passenger;
+omer-erzurumluoglu found in LuxuryPassenger.java
+	package project.passenger;
+omer-erzurumluoglu found in EconomyPassenger.java
+	package project.passenger;
+omer-erzurumluoglu found in FirstClassPassenger.java
+	package project.passenger;
+omer-erzurumluoglu found in Passenger.java
+	package project.passenger;
+omer-erzurumluoglu found in Airline.java
+	package project.airline;
+omer-erzurumluoglu found in Aircraft.java
+	package project.airline.aircraft;
+omer-erzurumluoglu found in PassengerAircraft.java
+	package project.airline.aircraft;
+omer-erzurumluoglu found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+omer-erzurumluoglu found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+omer-erzurumluoglu found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+omer-erzurumluoglu found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+omer-erzurumluoglu found in AircraftInterface.java
+	package project.interfaces;
+omer-erzurumluoglu found in PassengerInterface.java
+	package project.interfaces;
+user5974 found in Main.java
+	package project.executable;
+user5974 found in RegionalAirport.java
+	package project.airport;
+user5974 found in HubAirport.java
+	package project.airport;
+user5974 found in MajorAirport.java
+	package project.airport;
+user5974 found in Airport.java
+	package project.airport;
+user5974 found in BusinessPassenger.java
+	package project.passenger;
+user5974 found in LuxuryPassenger.java
+	package project.passenger;
+user5974 found in EconomyPassenger.java
+	package project.passenger;
+user5974 found in FirstClassPassenger.java
+	package project.passenger;
+user5974 found in Passenger.java
+	package project.passenger;
+user5974 found in Airline.java
+	package project.airline;
+user5974 found in Aircraft.java
+	package project.airline.aircraft;
+user5974 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user5974 found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5974 found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5974 found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5974 found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5974 found in AircraftInterface.java
+	package project.interfaces;
+user5974 found in PassengerInterface.java
+	package project.interfaces;
+user6013 found in BusinessPassenger.java
+	package project.passenger_container;
+user6013 found in LuxuryPassenger.java
+	package project.passenger_container;
+user6013 found in EconomyPassenger.java
+	package project.passenger_container;
+user6013 found in FirstClassPassenger.java
+	package project.passenger_container;
+user6013 found in Passenger.java
+	package project.passenger_container;
+user6013 found in Main.java
+	package project.executable_container;
+user6013 found in AircraftInterface.java
+	package project.interfaces_container;
+user6013 found in PassengerInterface.java
+	package project.interfaces_container;
+user6013 found in Airline.java
+	package project.airline_container;
+user6013 found in Aircraft.java
+	package project.airline_container.aircraft_container;
+user6013 found in PassengerAircraft.java
+	package project.airline_container.aircraft_container;
+user6013 found in JetPassengerAircraft.java
+	package project.airline_container.aircraft_container.concrete_container;
+user6013 found in WidebodyPassengerAircraft.java
+	package project.airline_container.aircraft_container.concrete_container;
+user6013 found in RapidPassengerAircraft.java
+	package project.airline_container.aircraft_container.concrete_container;
+user6013 found in PropPassengerAircraft.java
+	package project.airline_container.aircraft_container.concrete_container;
+user6013 found in RegionalAirport.java
+	package project.airport_container;
+user6013 found in HubAirport.java
+	package project.airport_container;
+user6013 found in MajorAirport.java
+	package project.airport_container;
+user6013 found in Airport.java
+	package project.airport_container;
+user6013 found in Aircraft.java
+	package project.aircraft_container;
+user6013 found in PassengerAircraft.java
+	package project.aircraft_container;
+user6013 found in JetPassengerAircraft.java
+	package project.aircraft_container.concrete_container;
+user6013 found in WidebodyPassengerAircraft.java
+	package project.aircraft_container.concrete_container;
+user6013 found in RapidPassengerAircraft.java
+	package project.aircraft_container.concrete_container;
+user6013 found in PropPassengerAircraft.java
+	package project.aircraft_container.concrete_container;
+user6009 found in Airline.java
+	package project.airlineContainer;
+user6009 found in Aircraft.java
+	package project.airlineContainer.aircraftContainer;
+user6009 found in PassengerAircraft.java
+	package project.airlineContainer.aircraftContainer;
+user6009 found in JetPassengerAircraft.java
+	package project.airlineContainer.aircraftContainer.concreteContainer;
+user6009 found in WidebodyPassengerAircraft.java
+	package project.airlineContainer.aircraftContainer.concreteContainer;
+user6009 found in RapidPassengerAircraft.java
+	package project.airlineContainer.aircraftContainer.concreteContainer;
+user6009 found in PropPassengerAircraft.java
+	package project.airlineContainer.aircraftContainer.concreteContainer;
+user6009 found in BusinessPassenger.java
+	package project.passengerContainer;
+user6009 found in LuxuryPassenger.java
+	package project.passengerContainer;
+user6009 found in EconomyPassenger.java
+	package project.passengerContainer;
+user6009 found in FirstClassPassenger.java
+	package project.passengerContainer;
+user6009 found in Passenger.java
+	package project.passengerContainer;
+user6009 found in AircraftInterface.java
+	package project.interfacesContainer;
+user6009 found in PassengerInterface.java
+	package project.interfacesContainer;
+user6009 found in Main.java
+	package project.executableContainer;
+user6009 found in RegionalAirport.java
+	package project.airportContainer;
+user6009 found in HubAirport.java
+	package project.airportContainer;
+user6009 found in MajorAirport.java
+	package project.airportContainer;
+user6009 found in Airport.java
+	package project.airportContainer;
+user6031 found in Main.java
+	package project.executable;
+user6031 found in RegionalAirport.java
+	package project.airport;
+user6031 found in HubAirport.java
+	package project.airport;
+user6031 found in MajorAirport.java
+	package project.airport;
+user6031 found in Airport.java
+	package project.airport;
+user6031 found in BusinessPassenger.java
+	package project.passenger;
+user6031 found in LuxuryPassenger.java
+	package project.passenger;
+user6031 found in EconomyPassenger.java
+	package project.passenger;
+user6031 found in FirstClassPassenger.java
+	package project.passenger;
+user6031 found in Passenger.java
+	package project.passenger;
+user6031 found in OldAirline.java
+	package project.airline;
+user6031 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user6031 found in JetPassengerAircraft.java
+	package project.airline.concrete;
+user6031 found in WidebodyPassengerAircraft.java
+	package project.airline.concrete;
+user6031 found in RapidPassengerAircraft.java
+	package project.airline.concrete;
+user6031 found in PropPassengerAircraft.java
+	package project.airline.concrete;
+user6031 found in AircraftInterface.java
+	package project.interfaces;
+user6031 found in PassengerInterface.java
+	package project.interfaces;
+user6007 found in Airline.java
+	 * @author Yigit Kagan Poyrazoglu
+	package project.airlineContainer;
+user6007 found in Aircraft.java
+	package project.airlineContainer.aircraftContainer;
+user6007 found in PassengerAircraft.java
+	package project.airlineContainer.aircraftContainer;
+user6007 found in JetPassengerAircraft.java
+	package project.airlineContainer.concreteContainer;
+user6007 found in WidebodyPassengerAircraft.java
+	package project.airlineContainer.concreteContainer;
+user6007 found in RapidPassengerAircraft.java
+	package project.airlineContainer.concreteContainer;
+user6007 found in PropPassengerAircraft.java
+	package project.airlineContainer.concreteContainer;
+user6007 found in BusinessPassenger.java
+	package project.passengerContainer;
+user6007 found in LuxuryPassenger.java
+	package project.passengerContainer;
+user6007 found in EconomyPassenger.java
+	package project.passengerContainer;
+user6007 found in FirstClassPassenger.java
+	package project.passengerContainer;
+user6007 found in Passenger.java
+	package project.passengerContainer;
+user6007 found in AircraftInterface.java
+	package project.interfacesContainer;
+user6007 found in PassengerInterface.java
+	package project.interfacesContainer;
+user6007 found in Main.java
+	package project.executableContainer;
+user6007 found in RegionalAirport.java
+	package project.airportContainer;
+user6007 found in HubAirport.java
+	package project.airportContainer;
+user6007 found in MajorAirport.java
+	package project.airportContainer;
+user6007 found in Airport.java
+	package project.airportContainer;
+user6000 found in Airline.java
+	package project.airlinecontainer;
+user6000 found in Aircraft.java
+	package project.airlinecontainer.aircraftcontainer;
+user6000 found in PassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer;
+user6000 found in JetPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user6000 found in WidebodyPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user6000 found in RapidPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user6000 found in PropPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user6000 found in BusinessPassenger.java
+	package project.passengercontainer;
+user6000 found in LuxuryPassenger.java
+	package project.passengercontainer;
+user6000 found in EconomyPassenger.java
+	package project.passengercontainer;
+user6000 found in FirstClassPassenger.java
+	package project.passengercontainer;
+user6000 found in Passenger.java
+	package project.passengercontainer;
+user6000 found in AircraftInterface.java
+	package project.interfacescontainer;
+user6000 found in PassengerInterface.java
+	package project.interfacescontainer;
+user6000 found in Main.java
+	package project.executablecontainer;
+user6000 found in RegionalAirport.java
+	package project.airportcontainer;
+user6000 found in HubAirport.java
+	package project.airportcontainer;
+user6000 found in MajorAirport.java
+	package project.airportcontainer;
+user6000 found in Airport.java
+	package project.airportcontainer;
+user5993 found in package-info.java
+	package project;
+user5993 found in Airline.java
+	package project.airlineContainer;
+user5993 found in Aircraft.java
+	package project.airlineContainer.aircraftContainer;
+user5993 found in PassengerAircraft.java
+	package project.airlineContainer.aircraftContainer;
+user5993 found in JetPassengerAircraft.java
+	package project.airlineContainer.aircraftContainer.concreteContainer;
+user5993 found in WidebodyPassengerAircraft.java
+	package project.airlineContainer.aircraftContainer.concreteContainer;
+user5993 found in RapidPassengerAircraft.java
+	package project.airlineContainer.aircraftContainer.concreteContainer;
+user5993 found in PropPassengerAircraft.java
+	package project.airlineContainer.aircraftContainer.concreteContainer;
+user5993 found in BusinessPassenger.java
+	package project.passengerContainer;
+user5993 found in LuxuryPassenger.java
+	package project.passengerContainer;
+user5993 found in EconomyPassenger.java
+	package project.passengerContainer;
+user5993 found in FirstClassPassenger.java
+	package project.passengerContainer;
+user5993 found in Passenger.java
+	package project.passengerContainer;
+user5993 found in AircraftInterface.java
+	package project.interfacesContainer;
+user5993 found in PassengerInterface.java
+	package project.interfacesContainer;
+user5993 found in Main.java
+	package project.executableContainer;
+user5993 found in RegionalAirport.java
+	package project.airportContainer;
+user5993 found in HubAirport.java
+	package project.airportContainer;
+user5993 found in MajorAirport.java
+	package project.airportContainer;
+user5993 found in Airport.java
+	package project.airportContainer;
+mesut-melih-akpinar found in Main.java
+	package project.executable;
+mesut-melih-akpinar found in RegionalAirport.java
+	package project.airport;
+mesut-melih-akpinar found in HubAirport.java
+	package project.airport;
+mesut-melih-akpinar found in MajorAirport.java
+	package project.airport;
+mesut-melih-akpinar found in Airport.java
+	package project.airport;
+mesut-melih-akpinar found in BusinessPassenger.java
+	package project.passenger;
+mesut-melih-akpinar found in LuxuryPassenger.java
+	package project.passenger;
+mesut-melih-akpinar found in EconomyPassenger.java
+	package project.passenger;
+mesut-melih-akpinar found in FirstClassPassenger.java
+	package project.passenger;
+mesut-melih-akpinar found in Passenger.java
+	package project.passenger;
+mesut-melih-akpinar found in Airline.java
+	package project.airline;
+mesut-melih-akpinar found in Aircraft.java
+	package project.airline.aircraft;
+mesut-melih-akpinar found in PassengerAircraft.java
+	package project.airline.aircraft;
+mesut-melih-akpinar found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+mesut-melih-akpinar found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+mesut-melih-akpinar found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+mesut-melih-akpinar found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+mesut-melih-akpinar found in AircraftInterface.java
+	package project.interfaces;
+mesut-melih-akpinar found in PassengerInterface.java
+	package project.interfaces;
+user5992 found in Main.java
+	package project.executable;
+user5992 found in RegionalAirport.java
+	package project.airport;
+user5992 found in HubAirport.java
+	package project.airport;
+user5992 found in MajorAirport.java
+	package project.airport;
+user5992 found in Airport.java
+	package project.airport;
+user5992 found in BusinessPassenger.java
+	package project.passenger;
+user5992 found in LuxuryPassenger.java
+	package project.passenger;
+user5992 found in EconomyPassenger.java
+	package project.passenger;
+user5992 found in FirstClassPassenger.java
+	package project.passenger;
+user5992 found in Passenger.java
+	package project.passenger;
+user5992 found in Airline.java
+	package project.airline;
+user5992 found in Aircraft.java
+	package project.airline.aircraft;
+user5992 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user5992 found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5992 found in WideBodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5992 found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5992 found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5992 found in AircraftInterface.java
+	package project.interfaces;
+user5992 found in PassengerInterface.java
+	package project.interfaces;
+user5966 found in Main.java
+	package project.executable;
+user5966 found in RegionalAirport.java
+	package project.airport;
+user5966 found in HubAirport.java
+	package project.airport;
+user5966 found in MajorAirport.java
+	package project.airport;
+user5966 found in Airport.java
+	package project.airport;
+user5966 found in BusinessPassenger.java
+	package project.passenger;
+user5966 found in LuxuryPassenger.java
+	package project.passenger;
+user5966 found in EconomyPassenger.java
+	package project.passenger;
+user5966 found in FirstClassPassenger.java
+	package project.passenger;
+user5966 found in Passenger.java
+	package project.passenger;
+user5966 found in Airline.java
+	package project.airline;
+user5966 found in Aircraft.java
+	package project.airline.aircraft;
+user5966 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user5966 found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5966 found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5966 found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5966 found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5966 found in AircraftInterface.java
+	package project.interfaces;
+user5966 found in PassengerInterface.java
+	package project.interfaces;
+user5985 found in Main.java
+	package project.executable;
+user5985 found in RegionalAirport.java
+	package project.airport;
+user5985 found in HubAirport.java
+	package project.airport;
+user5985 found in MajorAirport.java
+	package project.airport;
+user5985 found in Airport.java
+	package project.airport;
+user5985 found in BusinessPassenger.java
+	package project.passenger;
+user5985 found in LuxuryPassenger.java
+	package project.passenger;
+user5985 found in EconomyPassenger.java
+	package project.passenger;
+user5985 found in FirstClassPassenger.java
+	package project.passenger;
+user5985 found in Passenger.java
+	package project.passenger;
+user5985 found in Airline.java
+	package project.airline;
+user5985 found in Aircraft.java
+	package project.airline.aircraft;
+user5985 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user5985 found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5985 found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5985 found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5985 found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5985 found in AircraftInterface.java
+	package project.interfaces;
+user5985 found in PassengerInterface.java
+	package project.interfaces;
+user5947 found in BusinessPassenger.java
+	package project.passenger_container;
+user5947 found in LuxuryPassenger.java
+	package project.passenger_container;
+user5947 found in EconomyPassenger.java
+	package project.passenger_container;
+user5947 found in FirstClassPassenger.java
+	package project.passenger_container;
+user5947 found in Passenger.java
+	package project.passenger_container;
+user5947 found in Main.java
+	package project.executable_container;
+user5947 found in Util.java
+	package project.utils;
+user5947 found in DataReader.java
+	package project.utils;
+user5947 found in LogWriter.java
+	package project.utils;
+user5947 found in AircraftInterface.java
+	package project.interfaces_container;
+user5947 found in PassengerInterface.java
+	package project.interfaces_container;
+user5947 found in Airline.java
+	package project.airline_container;
+user5947 found in Aircraft.java
+	package project.airline_container.aircraft_container;
+user5947 found in PassengerAircraft.java
+	package project.airline_container.aircraft_container;
+user5947 found in JetPassengerAircraft.java
+	package project.airline_container.aircraft_container.concrete_container;
+user5947 found in WidebodyPassengerAircraft.java
+	package project.airline_container.aircraft_container.concrete_container;
+user5947 found in RapidPassengerAircraft.java
+	package project.airline_container.aircraft_container.concrete_container;
+user5947 found in PropPassengerAircraft.java
+	package project.airline_container.aircraft_container.concrete_container;
+user5947 found in RegionalAirport.java
+	package project.airport_container;
+user5947 found in HubAirport.java
+	package project.airport_container;
+user5947 found in MajorAirport.java
+	package project.airport_container;
+user5947 found in Airport.java
+	package project.airport_container;
+abdullah-umut found in Main.java
+	package project.executables;
+abdullah-umut found in BusinessPassenger.java
+	package project.passengers;
+abdullah-umut found in LuxuryPassenger.java
+	package project.passengers;
+abdullah-umut found in EconomyPassenger.java
+	package project.passengers;
+abdullah-umut found in FirstClassPassenger.java
+	package project.passengers;
+abdullah-umut found in Passenger.java
+	package project.passengers;
+abdullah-umut found in Aircraft.java
+	package project.airlines.aircrafts;
+abdullah-umut found in PassengerAircraft.java
+	package project.airlines.aircrafts;
+abdullah-umut found in JetPassengerAircraft.java
+	package project.airlines.aircrafts.concretes;
+abdullah-umut found in WidebodyPassengerAircraft.java
+	package project.airlines.aircrafts.concretes;
+abdullah-umut found in RapidPassengerAircraft.java
+	package project.airlines.aircrafts.concretes;
+abdullah-umut found in PropPassengerAircraft.java
+	package project.airlines.aircrafts.concretes;
+abdullah-umut found in RegionalAirport.java
+	package project.airports;
+abdullah-umut found in HubAirport.java
+	package project.airports;
+abdullah-umut found in MajorAirport.java
+	package project.airports;
+abdullah-umut found in Airport.java
+	package project.airports;
+abdullah-umut found in AircraftInterface.java
+	package project.interfaces;
+abdullah-umut found in PassengerInterface.java
+	package project.interfaces;
+user5925 found in Main.java
+	package project.executable;
+user5925 found in RegionalAirport.java
+	package project.airport;
+user5925 found in HubAirport.java
+	package project.airport;
+user5925 found in MajorAirport.java
+	package project.airport;
+user5925 found in Airport.java
+	package project.airport;
+user5925 found in BusinessPassenger.java
+	package project.passenger;
+user5925 found in LuxuryPassenger.java
+	package project.passenger;
+user5925 found in EconomyPassenger.java
+	package project.passenger;
+user5925 found in FirstClassPassenger.java
+	package project.passenger;
+user5925 found in Passenger.java
+	package project.passenger;
+user5925 found in Airline.java
+	package project.airline;
+user5925 found in Aircraft.java
+	package project.airline.aircraft;
+user5925 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user5925 found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5925 found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5925 found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5925 found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5925 found in AircraftInterface.java
+	package project.interfaces;
+user5925 found in PassengerInterface.java
+	package project.interfaces;
+user5983 found in Airline.java
+	package project.airlinecontainer;
+user5983 found in Aircraft.java
+	package project.aircraftcontainer;
+user5983 found in PassengerAircraft.java
+	package project.aircraftcontainer;
+user5983 found in BusinessPassenger.java
+	package project.passengercontainer;
+user5983 found in LuxuryPassenger.java
+	package project.passengercontainer;
+user5983 found in EconomyPassenger.java
+	package project.passengercontainer;
+user5983 found in FirstClassPassenger.java
+	package project.passengercontainer;
+user5983 found in Passenger.java
+	package project.passengercontainer;
+user5983 found in AircraftInterface.java
+	package project.interfacescontainer;
+user5983 found in PassengerInterface.java
+	package project.interfacescontainer;
+user5983 found in Main.java
+	package project.executablecontainer;
+user5983 found in RegionalAirport.java
+	package project.airportcontainer;
+user5983 found in HubAirport.java
+	package project.airportcontainer;
+user5983 found in MajorAirport.java
+	package project.airportcontainer;
+user5983 found in Airport.java
+	package project.airportcontainer;
+user5983 found in JetPassengerAircraft.java
+	package project.concretecontainer;
+user5983 found in WidebodyPassengerAircraft.java
+	package project.concretecontainer;
+user5983 found in RapidPassengerAircraft.java
+	package project.concretecontainer;
+user5983 found in PropPassengerAircraft.java
+	package project.concretecontainer;
+user6021 found in Main.java
+	package project.executable;
+user6021 found in RegionalAirport.java
+	package project.airport;
+user6021 found in HubAirport.java
+	package project.airport;
+user6021 found in MajorAirport.java
+	package project.airport;
+user6021 found in Airport.java
+	package project.airport;
+user6021 found in BusinessPassenger.java
+	package project.passenger;
+user6021 found in LuxuryPassenger.java
+	package project.passenger;
+user6021 found in EconomyPassenger.java
+	package project.passenger;
+user6021 found in FirstClassPassenger.java
+	package project.passenger;
+user6021 found in Passenger.java
+	package project.passenger;
+user6021 found in Airline.java
+	package project.airline;
+user6021 found in Aircraft.java
+	package project.airline.aircraft;
+user6021 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user6021 found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user6021 found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user6021 found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user6021 found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user6021 found in AircraftInterface.java
+	package project.interfaces;
+user6021 found in PassengerInterface.java
+	package project.interfaces;
+user6028 found in Main.java
+	package project.executable;
+user6028 found in RegionalAirport.java
+	package project.airport;
+user6028 found in HubAirport.java
+	package project.airport;
+user6028 found in MajorAirport.java
+	package project.airport;
+user6028 found in Airport.java
+	package project.airport;
+user6028 found in BusinessPassenger.java
+	package project.passenger;
+user6028 found in LuxuryPassenger.java
+	package project.passenger;
+user6028 found in EconomyPassenger.java
+	package project.passenger;
+user6028 found in FirstClassPassenger.java
+	package project.passenger;
+user6028 found in Passenger.java
+	package project.passenger;
+user6028 found in Airline.java
+	package project.airline;
+user6028 found in Aircraft.java
+	package project.airline.aircraft;
+user6028 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user6028 found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user6028 found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user6028 found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user6028 found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user6028 found in AircraftInterface.java
+	package project.interfaces;
+user6028 found in PassengerInterface.java
+	package project.interfaces;
+user6011 found in Main.java
+	package project.executable;
+user6011 found in RegionalAirport.java
+	package project.airport;
+user6011 found in HubAirport.java
+	package project.airport;
+user6011 found in MajorAirport.java
+	package project.airport;
+user6011 found in Airport.java
+	package project.airport;
+user6011 found in BusinessPassenger.java
+	package project.passenger;
+user6011 found in LuxuryPassenger.java
+	package project.passenger;
+user6011 found in EconomyPassenger.java
+	package project.passenger;
+user6011 found in FirstClassPassenger.java
+	package project.passenger;
+user6011 found in Passenger.java
+	package project.passenger;
+user6011 found in Airline.java
+	package project.airline;
+user6011 found in Aircraft.java
+	package project.airline.aircraft;
+user6011 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user6011 found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user6011 found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user6011 found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user6011 found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user6011 found in AircraftInterface.java
+	package project.interfaces;
+user6011 found in PassengerInterface.java
+	package project.interfaces;
+user6029 found in Main.java
+	package executable;
+user6029 found in RegionalAirport.java
+	package airport;
+user6029 found in HubAirport.java
+	package airport;
+user6029 found in MajorAirport.java
+	package airport;
+user6029 found in Airport.java
+	package airport;
+user6029 found in BusinessPassenger.java
+	package passenger;
+user6029 found in LuxuryPassenger.java
+	package passenger;
+user6029 found in EconomyPassenger.java
+	package passenger;
+user6029 found in FirstClassPassenger.java
+	package passenger;
+user6029 found in Passenger.java
+	package passenger;
+user6029 found in Airline.java
+	package airline;
+user6029 found in Aircraft.java
+	package airline.aircraft;
+user6029 found in PassengerAircraft.java
+	package airline.aircraft;
+user6029 found in JetPassengerAircraft.java
+	package airline.aircraft.concrete;
+user6029 found in WidebodyPassengerAircraft.java
+	package airline.aircraft.concrete;
+user6029 found in RapidPassengerAircraft.java
+	package airline.aircraft.concrete;
+user6029 found in PropPassengerAircraft.java
+	package airline.aircraft.concrete;
+user6029 found in AircraftInterface.java
+	package interfaces;
+user6029 found in PassengerInterface.java
+	package interfaces;
+user6027 found in Airline.java
+	package project.airlinecontainer;
+user6027 found in Aircraft.java
+	package project.airlinecontainer.aircraftcontainer;
+user6027 found in PassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer;
+user6027 found in JetPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user6027 found in WidebodyPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user6027 found in RapidPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user6027 found in PropPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user6027 found in BusinessPassenger.java
+	package project.passengercontainer;
+user6027 found in LuxuryPassenger.java
+	package project.passengercontainer;
+user6027 found in EconomyPassenger.java
+	package project.passengercontainer;
+user6027 found in FirstClassPassenger.java
+	package project.passengercontainer;
+user6027 found in Passenger.java
+	package project.passengercontainer;
+user6027 found in AircraftInterface.java
+	package project.interfacescontainer;
+user6027 found in PassengerInterface.java
+	package project.interfacescontainer;
+user6027 found in Main.java
+	package project.executablecontainer;
+user6027 found in RegionalAirport.java
+	package project.airportcontainer;
+user6027 found in HubAirport.java
+	package project.airportcontainer;
+user6027 found in MajorAirport.java
+	package project.airportcontainer;
+user6027 found in Airport.java
+	package project.airportcontainer;
+user6002 found in Airline.java
+	package project.airlinecontainer;
+user6002 found in Aircraft.java
+	package project.airlinecontainer.aircraftcontainer;
+user6002 found in PassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer;
+user6002 found in JetPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user6002 found in WidebodyPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user6002 found in RapidPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user6002 found in PropPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user6002 found in BusinessPassenger.java
+	package project.passengercontainer;
+user6002 found in LuxuryPassenger.java
+	package project.passengercontainer;
+user6002 found in EconomyPassenger.java
+	package project.passengercontainer;
+user6002 found in FirstClassPassenger.java
+	package project.passengercontainer;
+user6002 found in Passenger.java
+	package project.passengercontainer;
+user6002 found in AircraftInterface.java
+	package project.interfacescontainer;
+user6002 found in PassengerInterface.java
+	package project.interfacescontainer;
+user6002 found in Main.java
+	package project.executablecontainer;
+user6002 found in RegionalAirport.java
+	package project.airportcontainer;
+user6002 found in HubAirport.java
+	package project.airportcontainer;
+user6002 found in MajorAirport.java
+	package project.airportcontainer;
+user6002 found in Airport.java
+	package project.airportcontainer;
+berat-yilmaz found in Main.java
+	package project.executable;
+berat-yilmaz found in RegionalAirport.java
+	package project.airport;
+berat-yilmaz found in HubAirport.java
+	package project.airport;
+berat-yilmaz found in MajorAirport.java
+	package project.airport;
+berat-yilmaz found in Airport.java
+	package project.airport;
+berat-yilmaz found in BusinessPassenger.java
+	package project.passenger;
+berat-yilmaz found in LuxuryPassenger.java
+	package project.passenger;
+berat-yilmaz found in EconomyPassenger.java
+	package project.passenger;
+berat-yilmaz found in FirstClassPassenger.java
+	package project.passenger;
+berat-yilmaz found in Passenger.java
+	package project.passenger;
+berat-yilmaz found in Airline.java
+	package project.airline;
+berat-yilmaz found in Aircraft.java
+	package project.airline.aircraft;
+berat-yilmaz found in PassengerAircraft.java
+	package project.airline.aircraft;
+berat-yilmaz found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+berat-yilmaz found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+berat-yilmaz found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+berat-yilmaz found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+berat-yilmaz found in AircraftInterface.java
+	package project.interfaces;
+berat-yilmaz found in PassengerInterface.java
+	package project.interfaces;
+halil-utku-celik found in Main.java
+	package project.executable;
+halil-utku-celik found in RegionalAirport.java
+	package project.airport;
+halil-utku-celik found in HubAirport.java
+	package project.airport;
+halil-utku-celik found in MajorAirport.java
+	package project.airport;
+halil-utku-celik found in Airport.java
+	package project.airport;
+halil-utku-celik found in BusinessPassenger.java
+	package project.passenger;
+halil-utku-celik found in LuxuryPassenger.java
+	package project.passenger;
+halil-utku-celik found in EconomyPassenger.java
+	package project.passenger;
+halil-utku-celik found in FirstClassPassenger.java
+	package project.passenger;
+halil-utku-celik found in Passenger.java
+	package project.passenger;
+halil-utku-celik found in Airline.java
+	package project.airline;
+halil-utku-celik found in Aircraft.java
+	package project.airline.aircraft;
+halil-utku-celik found in PassengerAircraft.java
+	package project.airline.aircraft;
+halil-utku-celik found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+halil-utku-celik found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+halil-utku-celik found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+halil-utku-celik found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+halil-utku-celik found in AircraftInterface.java
+	package project.interfaces;
+halil-utku-celik found in PassengerInterface.java
+	package project.interfaces;
+user6035 found in main.java
+	package project;
+user6035 found in BusinessPassenger.java
+	package project.PassengerContainer;
+user6035 found in LuxuryPassenger.java
+	package project.PassengerContainer;
+user6035 found in EconomyPassenger.java
+	package project.PassengerContainer;
+user6035 found in FirstClassPassenger.java
+	package project.PassengerContainer;
+user6035 found in Passenger.java
+	package project.PassengerContainer;
+user6035 found in AircraftInterface.java
+	package project.interfacescontainer;
+user6035 found in PassengerInterface.java
+	package project.interfacescontainer;
+user6035 found in RegionalAirport.java
+	package project.airportContainer;
+user6035 found in HubAirport.java
+	package project.airportContainer;
+user6035 found in MajorAirport.java
+	package project.airportContainer;
+user6035 found in Airport.java
+	package project.airportContainer;
+user6035 found in Airline.java
+	package project.airlines;
+user6035 found in Aircraft.java
+	package project.airlines.aircraftcontainer;
+user6035 found in PassengerAircraft.java
+	package project.airlines.aircraftcontainer;
+user6035 found in JetPassengerAircraft.java
+	package project.airlines.aircraftcontainer.concretecontainer;
+user6035 found in WidebodyPassengerAircraft.java
+	package project.airlines.aircraftcontainer.concretecontainer;
+user6035 found in RapidPassengerAircraft.java
+	package project.airlines.aircraftcontainer.concretecontainer;
+user6035 found in PropPassengerAircraft.java
+	package project.airlines.aircraftcontainer.concretecontainer;
+semih-yilmaz found in Main.java
+	package executable;
+semih-yilmaz found in RegionalAirport.java
+	package airport;
+semih-yilmaz found in HubAirport.java
+	package airport;
+semih-yilmaz found in MajorAirport.java
+	package airport;
+semih-yilmaz found in Airport.java
+	package airport;
+semih-yilmaz found in BusinessPassenger.java
+	package passenger;
+semih-yilmaz found in LuxuryPassenger.java
+	package passenger;
+semih-yilmaz found in EconomyPassenger.java
+	package passenger;
+semih-yilmaz found in FirstClassPassenger.java
+	package passenger;
+semih-yilmaz found in Passenger.java
+	package passenger;
+semih-yilmaz found in Airline.java
+	package airline;
+semih-yilmaz found in Aircraft.java
+	package airline.aircraft;
+semih-yilmaz found in PassengerAircraft.java
+	package airline.aircraft;
+semih-yilmaz found in JetPassengerAircraft.java
+	package airline.aircraft.concrete;
+semih-yilmaz found in WidebodyPassengerAircraft.java
+	package airline.aircraft.concrete;
+semih-yilmaz found in RapidPassengerAircraft.java
+	package airline.aircraft.concrete;
+semih-yilmaz found in PropPassengerAircraft.java
+	package airline.aircraft.concrete;
+semih-yilmaz found in AircraftInterface.java
+	package interfaces;
+semih-yilmaz found in PassengerInterface.java
+	package interfaces;
+user5999 found in Aircraft.java
+	package project.airlinecontainer.aircraftcontainer;
+user5999 found in PassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer;
+user5999 found in JetPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user5999 found in WidebodyPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user5999 found in RapidPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user5999 found in PropPassengerAircraft.java
+	package project.airlinecontainer.aircraftcontainer.concretecontainer;
+user5999 found in BusinessPassenger.java
+	package project.passengercontainer;
+user5999 found in LuxuryPassenger.java
+	package project.passengercontainer;
+user5999 found in EconomyPassenger.java
+	package project.passengercontainer;
+user5999 found in FirstClassPassenger.java
+	package project.passengercontainer;
+user5999 found in Passenger.java
+	package project.passengercontainer;
+user5999 found in AircraftInterface.java
+	package project.interfacescontainer;
+user5999 found in PassengerInterface.java
+	package project.interfacescontainer;
+user5999 found in Main.java
+	package project.executablecontainer;
+user5999 found in RegionalAirport.java
+	package project.airportcontainer;
+user5999 found in HubAirport.java
+	package project.airportcontainer;
+user5999 found in MajorAirport.java
+	package project.airportcontainer;
+user5999 found in Airport.java
+	package project.airportcontainer;
+ramazan-onur-acar found in Main.java
+	package project.executable;
+ramazan-onur-acar found in RegionalAirport.java
+	package project.airport;
+ramazan-onur-acar found in HubAirport.java
+	package project.airport;
+ramazan-onur-acar found in MajorAirport.java
+	package project.airport;
+ramazan-onur-acar found in Airport.java
+	package project.airport;
+ramazan-onur-acar found in BusinessPassenger.java
+	package project.passenger;
+ramazan-onur-acar found in LuxuryPassenger.java
+	package project.passenger;
+ramazan-onur-acar found in EconomyPassenger.java
+	package project.passenger;
+ramazan-onur-acar found in FirstClassPassenger.java
+	package project.passenger;
+ramazan-onur-acar found in Passenger.java
+	package project.passenger;
+ramazan-onur-acar found in Airline.java
+	package project.airline;
+ramazan-onur-acar found in Aircraft.java
+	package project.airline.aircraft;
+ramazan-onur-acar found in PassengerAircraft.java
+	package project.airline.aircraft;
+ramazan-onur-acar found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+ramazan-onur-acar found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+ramazan-onur-acar found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+ramazan-onur-acar found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+ramazan-onur-acar found in AircraftInterface.java
+	package project.interfaces;
+ramazan-onur-acar found in PassengerInterface.java
+	package project.interfaces;
+user5991 found in Main.java
+	package project.executable;
+user5991 found in RegionalAirport.java
+	package project.airport;
+user5991 found in HubAirport.java
+	package project.airport;
+user5991 found in MajorAirport.java
+	package project.airport;
+user5991 found in Airport.java
+	package project.airport;
+user5991 found in BusinessPassenger.java
+	package project.passenger;
+user5991 found in LuxuryPassenger.java
+	package project.passenger;
+user5991 found in EconomyPassenger.java
+	package project.passenger;
+user5991 found in FirstClassPassenger.java
+	package project.passenger;
+user5991 found in Passenger.java
+	package project.passenger;
+user5991 found in Airline.java
+	package project.airline;
+user5991 found in Aircraft.java
+	package project.airline.aircraft;
+user5991 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user5991 found in AircraftInterface.java
+	package project.interfaces;
+user5991 found in PassengerInterface.java
+	package project.interfaces;
+user5954 found in Main.java
+	package project.executable;
+user5954 found in RegionalAirport.java
+	package project.airport;
+user5954 found in HubAirport.java
+	package project.airport;
+user5954 found in MajorAirport.java
+	package project.airport;
+user5954 found in Airport.java
+	package project.airport;
+user5954 found in BusinessPassenger.java
+	package project.passenger;
+user5954 found in LuxuryPassenger.java
+	package project.passenger;
+user5954 found in EconomyPassenger.java
+	package project.passenger;
+user5954 found in FirstClassPassenger.java
+	package project.passenger;
+user5954 found in Passenger.java
+	package project.passenger;
+user5954 found in Airline.java
+	package project.airline;
+user5954 found in Aircraft.java
+	package project.airline.aircraft;
+user5954 found in PassengerAircraft.java
+	package project.airline.aircraft;
+user5954 found in JetPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5954 found in WidebodyPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5954 found in RapidPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5954 found in PropPassengerAircraft.java
+	package project.airline.aircraft.concrete;
+user5954 found in AircraftInterface.java
+	package project.interfaces;
+user5954 found in PassengerInterface.java
+	package project.interfaces;
+Not found
+gezer@gezer submissions % python3 line_finder.py kagnici
+Not found
+gezer@gezer submissions % python3 grader.py inputs      
+
+
+user6031-objection
+compiling...
+src/project/airline/aircraft/Aircraft.java:1: error: unmappable character (0xFE) for encoding UTF-8
+��/**
+^
+src/project/airline/aircraft/Aircraft.java:1: error: unmappable character (0xFF) for encoding UTF-8
+��/**
+ ^
+src/project/airline/aircraft/Aircraft.java:184: error: unmappable character (0xFF) for encoding UTF-8
+	 * <h3>fuel cost</h3> = the fuel amount * the airport��s fuel cost which the
+ 	                                                                                                          ^
+src/project/airline/aircraft/Aircraft.java:184: error: unmappable character (0xFD) for encoding UTF-8
+	 * <h3>fuel cost</h3> = the fuel amount * the airport��s fuel cost which the
+ 	                                                                                                           ^
+src/project/airline/aircraft/Aircraft.java:1: error: illegal character: '\u0000'
+��/**
+  ^
+src/project/airline/aircraft/Aircraft.java:1: error: illegal character: '\u0000'
+��/**
+    ^
+src/project/airline/aircraft/Aircraft.java:1: error: illegal character: '\u0000'
+��/**
+      ^
+src/project/airline/aircraft/Aircraft.java:1: error: illegal character: '\u0000'
+��/**
+        ^
+src/project/airline/aircraft/Aircraft.java:2: error: illegal character: '\u0000'
+ * 
+^
+src/project/airline/aircraft/Aircraft.java:2: error: illegal character: '\u0000'
+ * 
+  ^
+src/project/airline/aircraft/Aircraft.java:2: error: illegal character: '\u0000'
+ * 
+    ^
+src/project/airline/aircraft/Aircraft.java:2: error: illegal character: '\u0000'
+ * 
+      ^
+src/project/airline/aircraft/Aircraft.java:3: error: illegal character: '\u0000'
+ */
+^
+src/project/airline/aircraft/Aircraft.java:3: error: illegal character: '\u0000'
+ */
+  ^
+src/project/airline/aircraft/Aircraft.java:3: error: class, interface, enum, or record expected
+ */
+   ^
+src/project/airline/aircraft/Aircraft.java:3: error: illegal character: '\u0000'
+ */
+    ^
+src/project/airline/aircraft/Aircraft.java:3: error: illegal character: '\u0000'
+ */
+      ^
+src/project/airline/aircraft/Aircraft.java:4: error: illegal character: '\u0000'
+package project.airline.aircraft;
+^
+src/project/airline/aircraft/Aircraft.java:4: error: illegal character: '\u0000'
+package project.airline.aircraft;
+                ^
+src/project/airline/aircraft/Aircraft.java:4: error: illegal character: '\u0000'
+package project.airline.aircraft;
+                                ^
+src/project/airline/aircraft/Aircraft.java:4: error: illegal character: '\u0000'
+package project.airline.aircraft;
+                                                ^
+src/project/airline/aircraft/Aircraft.java:4: error: illegal character: '\u0000'
+package project.airline.aircraft;
+                                                                  ^
+src/project/airline/aircraft/Aircraft.java:5: error: illegal character: '\u0000'
+
+^
+src/project/airline/aircraft/Aircraft.java:6: error: illegal character: '\u0000'
+import project.airline.Airline;
+^
+src/project/airline/aircraft/Aircraft.java:6: error: illegal character: '\u0000'
+import project.airline.Airline;
+              ^
+src/project/airline/aircraft/Aircraft.java:6: error: class, interface, enum, or record expected
+import project.airline.Airline;
+                             ^
+src/project/airline/aircraft/Aircraft.java:6: error: illegal character: '\u0000'
+import project.airline.Airline;
+                              ^
+src/project/airline/aircraft/Aircraft.java:6: error: illegal character: '\u0000'
+import project.airline.Airline;
+                                              ^
+src/project/airline/aircraft/Aircraft.java:6: error: illegal character: '\u0000'
+import project.airline.Airline;
+                                                              ^
+src/project/airline/aircraft/Aircraft.java:7: error: illegal character: '\u0000'
+import project.airport.Airport;
+^
+src/project/airline/aircraft/Aircraft.java:7: error: class, interface, enum, or record expected
+import project.airport.Airport;
+ ^
+src/project/airline/aircraft/Aircraft.java:7: error: illegal character: '\u0000'
+import project.airport.Airport;
+              ^
+src/project/airline/aircraft/Aircraft.java:7: error: illegal character: '\u0000'
+import project.airport.Airport;
+                              ^
+src/project/airline/aircraft/Aircraft.java:7: error: illegal character: '\u0000'
+import project.airport.Airport;
+                                              ^
+src/project/airline/aircraft/Aircraft.java:7: error: illegal character: '\u0000'
+import project.airport.Airport;
+                                                              ^
+src/project/airline/aircraft/Aircraft.java:8: error: illegal character: '\u0000'
+import project.interfaces.AircraftInterface;
+^
+src/project/airline/aircraft/Aircraft.java:8: error: class, interface, enum, or record expected
+import project.interfaces.AircraftInterface;
+ ^
+src/project/airline/aircraft/Aircraft.java:8: error: illegal character: '\u0000'
+import project.interfaces.AircraftInterface;
+              ^
+src/project/airline/aircraft/Aircraft.java:8: error: illegal character: '\u0000'
+import project.interfaces.AircraftInterface;
+                              ^
+src/project/airline/aircraft/Aircraft.java:8: error: illegal character: '\u0000'
+import project.interfaces.AircraftInterface;
+                                                    ^
+src/project/airline/aircraft/Aircraft.java:8: error: illegal character: '\u0000'
+import project.interfaces.AircraftInterface;
+                                                                                        ^
+src/project/airline/aircraft/Aircraft.java:9: error: illegal character: '\u0000'
+
+^
+src/project/airline/aircraft/Aircraft.java:10: error: illegal character: '\u0000'
+/**
+^
+src/project/airline/aircraft/Aircraft.java:10: error: illegal character: '\u0000'
+/**
+  ^
+src/project/airline/aircraft/Aircraft.java:10: error: illegal character: '\u0000'
+/**
+    ^
+src/project/airline/aircraft/Aircraft.java:10: error: illegal character: '\u0000'
+/**
+      ^
+src/project/airline/aircraft/Aircraft.java:11: error: illegal character: '\u0000'
+ * 
+^
+src/project/airline/aircraft/Aircraft.java:11: error: illegal character: '\u0000'
+ * 
+  ^
+src/project/airline/aircraft/Aircraft.java:11: error: illegal character: '\u0000'
+ * 
+    ^
+src/project/airline/aircraft/Aircraft.java:11: error: illegal character: '\u0000'
+ * 
+      ^
+src/project/airline/aircraft/Aircraft.java:12: error: illegal character: '\u0000'
+ *
+^
+src/project/airline/aircraft/Aircraft.java:12: error: illegal character: '\u0000'
+ *
+  ^
+src/project/airline/aircraft/Aircraft.java:12: error: class, interface, enum, or record expected
+ *
+   ^
+src/project/airline/aircraft/Aircraft.java:12: error: illegal character: '\u0000'
+ *
+    ^
+src/project/airline/aircraft/Aircraft.java:13: error: illegal character: '\u0000'
+ */
+^
+src/project/airline/aircraft/Aircraft.java:13: error: illegal character: '\u0000'
+ */
+  ^
+src/project/airline/aircraft/Aircraft.java:13: error: illegal character: '\u0000'
+ */
+    ^
+src/project/airline/aircraft/Aircraft.java:13: error: illegal character: '\u0000'
+ */
+      ^
+src/project/airline/aircraft/Aircraft.java:14: error: illegal character: '\u0000'
+public abstract class Aircraft implements AircraftInterface {
+^
+src/project/airline/aircraft/Aircraft.java:14: error: illegal character: '\u0000'
+public abstract class Aircraft implements AircraftInterface {
+              ^
+src/project/airline/aircraft/Aircraft.java:14: error: illegal character: '\u0000'
+public abstract class Aircraft implements AircraftInterface {
+                                ^
+src/project/airline/aircraft/Aircraft.java:14: error: illegal character: '\u0000'
+public abstract class Aircraft implements AircraftInterface {
+                                            ^
+src/project/airline/aircraft/Aircraft.java:14: error: illegal character: '\u0000'
+public abstract class Aircraft implements AircraftInterface {
+                                                              ^
+src/project/airline/aircraft/Aircraft.java:14: error: illegal character: '\u0000'
+public abstract class Aircraft implements AircraftInterface {
+                                                                                    ^
+src/project/airline/aircraft/Aircraft.java:14: error: illegal character: '\u0000'
+public abstract class Aircraft implements AircraftInterface {
+                                                                                                                        ^
+src/project/airline/aircraft/Aircraft.java:14: error: illegal character: '\u0000'
+public abstract class Aircraft implements AircraftInterface {
+                                                                                                                          ^
+src/project/airline/aircraft/Aircraft.java:15: error: illegal character: '\u0000'
+
+^
+src/project/airline/aircraft/Aircraft.java:16: error: illegal character: '\u0000'
+	/**
+^
+src/project/airline/aircraft/Aircraft.java:16: error: illegal character: '\u0000'
+	/**
+ 	^
+src/project/airline/aircraft/Aircraft.java:16: error: class, interface, enum, or record expected
+	/**
+ 	 ^
+src/project/airline/aircraft/Aircraft.java:16: error: illegal character: '\u0000'
+	/**
+ 	  ^
+src/project/airline/aircraft/Aircraft.java:16: error: illegal character: '\u0000'
+	/**
+ 	    ^
+src/project/airline/aircraft/Aircraft.java:16: error: illegal character: '\u0000'
+	/**
+ 	      ^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+ 	^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+ 	  ^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+ 	    ^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+ 	      ^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+ 	              ^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+ 	                              ^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+ 	                                          ^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+ 	                                                  ^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+ 	                                                              ^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+ 	                                                                    ^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+ 	                                                                                        ^
+src/project/airline/aircraft/Aircraft.java:17: error: illegal character: '\u0000'
+	 * The airport which the plane is currently in.
+ 	                                                                                              ^
+src/project/airline/aircraft/Aircraft.java:18: error: illegal character: '\u0000'
+	 */
+^
+src/project/airline/aircraft/Aircraft.java:18: error: illegal character: '\u0000'
+	 */
+ 	^
+src/project/airline/aircraft/Aircraft.java:18: error: illegal character: '\u0000'
+	 */
+ 	  ^
+src/project/airline/aircraft/Aircraft.java:18: error: illegal character: '\u0000'
+	 */
+ 	    ^
+src/project/airline/aircraft/Aircraft.java:18: error: illegal character: '\u0000'
+	 */
+ 	      ^
+src/project/airline/aircraft/Aircraft.java:19: error: illegal character: '\u0000'
+	protected Airport currentAirport;
+^
+src/project/airline/aircraft/Aircraft.java:19: error: illegal character: '\u0000'
+	protected Airport currentAirport;
+ 	^
+src/project/airline/aircraft/Aircraft.java:19: error: illegal character: '\u0000'
+	protected Airport currentAirport;
+ 	                    ^
+src/project/airline/aircraft/Aircraft.java:19: error: illegal character: '\u0000'
+	protected Airport currentAirport;
+ 	                                    ^
+src/project/airline/aircraft/Aircraft.java:19: error: illegal character: '\u0000'
+	protected Airport currentAirport;
+ 	                                                                  ^
+src/project/airline/aircraft/Aircraft.java:20: error: illegal character: '\u0000'
+	/**
+^
+src/project/airline/aircraft/Aircraft.java:20: error: illegal character: '\u0000'
+	/**
+ 	^
+src/project/airline/aircraft/Aircraft.java:20: error: illegal character: '\u0000'
+	/**
+ 	  ^
+src/project/airline/aircraft/Aircraft.java:20: error: illegal character: '\u0000'
+	/**
+ 	    ^
+100 errors
+only showing the first 100 errors, of 2280 total; use -Xmaxerrs if you would like to see more
+running...
+input0.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input1.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input10.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input11.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input12.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input13.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input14.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input15.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input16.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input17.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input18.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input19.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input2.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input20.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input21.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input22.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input23.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input24.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input25.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input26.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input27.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input28.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input29.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input3.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input30.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input31.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input32.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input33.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input34.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input4.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input5.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input6.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input7.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input8.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input9.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user6031-objection
+compiling...
+src/project/airline/aircraft/Aircraft.java:184: error: unmappable character (0x92) for encoding UTF-8
+	 * <h3>fuel cost</h3> = the fuel amount * the airport�s fuel cost which the
+	                                                     ^
+src/project/airline/Airline.java:563: error: unmappable character (0x92) for encoding UTF-8
+	 * <li>passenger cannot disembark at the aircraft�s airport (not a
+	                                                 ^
+2 errors
+running...
+input0.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input1.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input10.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input11.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input12.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input13.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input14.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input15.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input16.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input17.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input18.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input19.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input2.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input20.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input21.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input22.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input23.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input24.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input25.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input26.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input27.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input28.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input29.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input3.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input30.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input31.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input32.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input33.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input34.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input4.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input5.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input6.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input7.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input8.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+input9.txt testing...
+Error: Could not find or load main class project.executable.Main
+Caused by: java.lang.ClassNotFoundException: project.executable.Main
+runtime error.
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user6031-objection
+compiling...
+running...
+input0.txt testing...
+input1.txt testing...
+input10.txt testing...
+input11.txt testing...
+input12.txt testing...
+input13.txt testing...
+input14.txt testing...
+input15.txt testing...
+input16.txt testing...
+input17.txt testing...
+flight operation error: flight operation failed
+bad output
+input18.txt testing...
+input19.txt testing...
+input2.txt testing...
+input20.txt testing...
+input21.txt testing...
+input22.txt testing...
+input23.txt testing...
+input24.txt testing...
+input25.txt testing...
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at project.airline.Airline.createFlightsTable(Airline.java:435)
+	at project.executable.Main.main(Main.java:56)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.resize(HashMap.java:702)
+	at java.base/java.util.HashMap.putVal(HashMap.java:661)
+	at java.base/java.util.HashMap.put(HashMap.java:610)
+	at project.airline.Airline.createFlightsTable(Airline.java:443)
+	at project.executable.Main.main(Main.java:56)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.newNode(HashMap.java:1901)
+	at java.base/java.util.HashMap.putVal(HashMap.java:640)
+	at java.base/java.util.HashMap.put(HashMap.java:610)
+	at project.airline.Airline.createFlightsTable(Airline.java:443)
+	at project.executable.Main.main(Main.java:56)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.resize(HashMap.java:702)
+	at java.base/java.util.HashMap.putVal(HashMap.java:661)
+	at java.base/java.util.HashMap.put(HashMap.java:610)
+	at project.airline.Airline.createFlightsTable(Airline.java:443)
+	at project.executable.Main.main(Main.java:56)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.resize(HashMap.java:702)
+	at java.base/java.util.HashMap.putVal(HashMap.java:661)
+	at java.base/java.util.HashMap.put(HashMap.java:610)
+	at project.airline.Airline.createFlightsTable(Airline.java:443)
+	at project.executable.Main.main(Main.java:56)
+runtime error.
+input3.txt testing...
+input30.txt testing...
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.resize(HashMap.java:702)
+	at java.base/java.util.HashMap.putVal(HashMap.java:661)
+	at java.base/java.util.HashMap.put(HashMap.java:610)
+	at project.airline.Airline.createFlightsTable(Airline.java:443)
+	at project.executable.Main.main(Main.java:56)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at project.airline.Airline.createFlightsTable(Airline.java:435)
+	at project.executable.Main.main(Main.java:56)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at project.airline.Airline.createFlightsTable(Airline.java:435)
+	at project.executable.Main.main(Main.java:56)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at project.airline.Airline.createFlightsTable(Airline.java:435)
+	at project.executable.Main.main(Main.java:56)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.newNode(HashMap.java:1901)
+	at java.base/java.util.HashMap.putVal(HashMap.java:640)
+	at java.base/java.util.HashMap.put(HashMap.java:610)
+	at project.airline.Airline.createFlightsTable(Airline.java:443)
+	at project.executable.Main.main(Main.java:56)
+runtime error.
+input4.txt testing...
+input5.txt testing...
+input6.txt testing...
+input7.txt testing...
+input8.txt testing...
+input9.txt testing...
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5983-objection
+compiling...
+src/project/executablecontainer/Main.java:21: error: ';' expected
+			String inputFile = args[0]
+			                          ^
+src/project/executablecontainer/Main.java:22: error: ';' expected
+			String outputFile = args[1]
+			                           ^
+2 errors
+running...
+input0.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input1.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input10.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input11.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input12.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input13.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input14.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input15.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input16.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input17.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input18.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input19.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input2.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input20.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input21.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input22.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input23.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input24.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input25.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input26.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input27.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input28.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input29.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input3.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input30.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input31.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input32.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input33.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input34.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input4.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input5.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input6.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input7.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input8.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+input9.txt testing...
+Error: Could not find or load main class project.executablecontainer.Main
+Caused by: java.lang.ClassNotFoundException: project.executablecontainer.Main
+runtime error.
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5983-objection
+compiling...
+running...
+input0.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input1.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input10.txt testing...
+aircraft creation error: airport not found
+bad output
+input11.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input12.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input13.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 22 out of bounds for length 22
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input14.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 20 out of bounds for length 20
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input15.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 20 out of bounds for length 20
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input16.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 26 out of bounds for length 26
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input17.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 19 out of bounds for length 19
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input18.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input19.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input2.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 28 out of bounds for length 28
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input20.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input21.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 10 out of bounds for length 10
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input22.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input23.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 9 out of bounds for length 9
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input24.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input25.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 18 out of bounds for length 18
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input3.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 25 out of bounds for length 25
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input30.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 22 out of bounds for length 22
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 11 out of bounds for length 11
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input4.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 25 out of bounds for length 25
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input5.txt testing...
+aircraft creation error: airport not found
+bad output
+input6.txt testing...
+aircraft creation error: airport not found
+bad output
+input7.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 25 out of bounds for length 25
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input8.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 25 out of bounds for length 25
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input9.txt testing...
+aircraft creation error: airport not found
+bad output
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5983-objection
+compiling...
+running...
+input0.txt testing...
+aircraft creation error: airport not found
+bad output
+input1.txt testing...
+aircraft creation error: airport not found
+bad output
+input10.txt testing...
+aircraft creation error: airport not found
+bad output
+input11.txt testing...
+aircraft creation error: airport not found
+bad output
+input12.txt testing...
+aircraft creation error: airport not found
+bad output
+input13.txt testing...
+aircraft creation error: airport not found
+bad output
+input14.txt testing...
+aircraft creation error: airport not found
+bad output
+input15.txt testing...
+aircraft creation error: airport not found
+bad output
+input16.txt testing...
+aircraft creation error: airport not found
+bad output
+input17.txt testing...
+aircraft creation error: airport not found
+bad output
+input18.txt testing...
+aircraft creation error: airport not found
+bad output
+input19.txt testing...
+aircraft creation error: airport not found
+bad output
+input2.txt testing...
+aircraft creation error: airport not found
+bad output
+input20.txt testing...
+aircraft creation error: airport not found
+bad output
+input21.txt testing...
+aircraft creation error: airport not found
+bad output
+input22.txt testing...
+aircraft creation error: airport not found
+bad output
+input23.txt testing...
+aircraft creation error: airport not found
+bad output
+input24.txt testing...
+aircraft creation error: airport not found
+bad output
+input25.txt testing...
+aircraft creation error: airport not found
+bad output
+input26.txt testing...
+aircraft creation error: airport not found
+bad output
+input27.txt testing...
+aircraft creation error: airport not found
+bad output
+input28.txt testing...
+aircraft creation error: airport not found
+bad output
+input29.txt testing...
+aircraft creation error: airport not found
+bad output
+input3.txt testing...
+aircraft creation error: airport not found
+bad output
+input30.txt testing...
+aircraft creation error: airport not found
+bad output
+input31.txt testing...
+aircraft creation error: airport not found
+bad output
+input32.txt testing...
+aircraft creation error: airport not found
+bad output
+input33.txt testing...
+aircraft creation error: airport not found
+bad output
+input34.txt testing...
+aircraft creation error: airport not found
+bad output
+input4.txt testing...
+aircraft creation error: airport not found
+bad output
+input5.txt testing...
+aircraft creation error: airport not found
+bad output
+input6.txt testing...
+aircraft creation error: airport not found
+bad output
+input7.txt testing...
+aircraft creation error: airport not found
+bad output
+input8.txt testing...
+aircraft creation error: airport not found
+bad output
+input9.txt testing...
+aircraft creation error: airport not found
+bad output
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5983-objection
+compiling...
+running...
+input0.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input1.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input10.txt testing...
+aircraft creation error: airport not found
+bad output
+input11.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input12.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input13.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 22 out of bounds for length 22
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input14.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 20 out of bounds for length 20
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input15.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 20 out of bounds for length 20
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input16.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 26 out of bounds for length 26
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input17.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 19 out of bounds for length 19
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input18.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input19.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input2.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 28 out of bounds for length 28
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input20.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input21.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 10 out of bounds for length 10
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input22.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input23.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 9 out of bounds for length 9
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input24.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input25.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input26.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input27.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input28.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 18 out of bounds for length 18
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input29.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input3.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 25 out of bounds for length 25
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input30.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input31.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input32.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 22 out of bounds for length 22
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input33.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 11 out of bounds for length 11
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input34.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input4.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 25 out of bounds for length 25
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input5.txt testing...
+aircraft creation error: airport not found
+bad output
+input6.txt testing...
+aircraft creation error: airport not found
+bad output
+input7.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 25 out of bounds for length 25
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input8.txt testing...
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 25 out of bounds for length 25
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at project.airlinecontainer.Airline.loadPassenger(Airline.java:106)
+	at project.airlinecontainer.Airline.distributePassengers(Airline.java:142)
+	at project.executablecontainer.Main.main(Main.java:118)
+runtime error.
+input9.txt testing...
+aircraft creation error: airport not found
+bad output
+gezer@gezer submissions % python3 grader.py inputs
+
+
+user5983-objection
+compiling...
+running...
+input0.txt testing...
+aircraft creation error: airport not found
+bad output
+input1.txt testing...
+aircraft creation error: airport not found
+bad output
+input10.txt testing...
+aircraft creation error: airport not found
+bad output
+input11.txt testing...
+aircraft creation error: airport not found
+bad output
+input12.txt testing...
+aircraft creation error: airport not found
+bad output
+input13.txt testing...
+aircraft creation error: airport not found
+bad output
+input14.txt testing...
+aircraft creation error: airport not found
+bad output
+input15.txt testing...
+aircraft creation error: airport not found
+bad output
+input16.txt testing...
+aircraft creation error: airport not found
+bad output
+input17.txt testing...
+aircraft creation error: airport not found
+bad output
+input18.txt testing...
+aircraft creation error: airport not found
+bad output
+input19.txt testing...
+aircraft creation error: airport not found
+bad output
+input2.txt testing...
+aircraft creation error: airport not found
+bad output
+input20.txt testing...
+aircraft creation error: airport not found
+bad output
+input21.txt testing...
+aircraft creation error: airport not found
+bad output
+input22.txt testing...
+aircraft creation error: airport not found
+bad output
+input23.txt testing...
+aircraft creation error: airport not found
+bad output
+input24.txt testing...
+aircraft creation error: airport not found
+bad output
+input25.txt testing...
+aircraft creation error: airport not found
+bad output
+input26.txt testing...
+aircraft creation error: airport not found
+bad output
+input27.txt testing...
+aircraft creation error: airport not found
+bad output
+input28.txt testing...
+aircraft creation error: airport not found
+bad output
+input29.txt testing...
+aircraft creation error: airport not found
+bad output
+input3.txt testing...
+aircraft creation error: airport not found
+bad output
+input30.txt testing...
+aircraft creation error: airport not found
+bad output
+input31.txt testing...
+aircraft creation error: airport not found
+bad output
+input32.txt testing...
+aircraft creation error: airport not found
+bad output
+input33.txt testing...
+aircraft creation error: airport not found
+bad output
+input34.txt testing...
+aircraft creation error: airport not found
+bad output
+input4.txt testing...
+aircraft creation error: airport not found
+bad output
+input5.txt testing...
+aircraft creation error: airport not found
+bad output
+input6.txt testing...
+aircraft creation error: airport not found
+bad output
+input7.txt testing...
+aircraft creation error: airport not found
+bad output
+input8.txt testing...
+aircraft creation error: airport not found
+bad output
+input9.txt testing...
+aircraft creation error: airport not found
+bad output
+gezer@gezer submissions % python3 grade_polish.py
+Traceback (most recent call last):
+  File "/Users/gezer/bounDers/4.Donem/Cmpe160Assistant/project1/grading/grader/submissions/grade_polish.py", line 118, in <module>
+    num_of_inputs = int(sys.argv[1])
+IndexError: list index out of range
+gezer@gezer submissions % python3 grade_polish.py 35
+input  0 average grade: 96.43
+input  1 average grade: 96.43
+input  2 average grade: 96.43
+input  3 average grade: 96.43
+input  4 average grade: 96.43
+input  5 average grade: 96.43
+input  6 average grade: 96.43
+input  7 average grade: 96.25
+input  8 average grade: 96.25
+input  9 average grade: 96.25
+input 10 average grade: 96.05
+input 11 average grade: 96.05
+input 12 average grade: 95.83
+input 13 average grade: 95.59
+input 14 average grade: 92.67
+input 15 average grade: 92.62
+input 16 average grade: 92.50
+input 17 average grade: 92.30
+input 18 average grade: 92.30
+input 19 average grade: 92.09
+input 20 average grade: 91.95
+input 21 average grade: 91.89
+input 22 average grade: 91.71
+input 23 average grade: 89.00
+input 24 average grade: 87.50
+input 25 average grade: 85.00
+input 26 average grade: 82.69
+input 27 average grade: 75.00
+input 28 average grade: 70.00
+input 29 average grade: 66.67
+input 30 average grade: 62.50
+input 31 average grade: 58.33
+input 32 average grade: 57.14
+input 33 average grade: 53.12
+input 34 average grade: 50.00
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.97, 25.0, 49.66, 63.96, 65.38, 68.11, 69.35, 69.44, 71.76, 72.3, 72.41, 75.26, 78.06, 78.92, 78.93, 79.4, 79.48, 86.81, 88.39, 92.73, 102.05, 104.32]
+71.6
+gezer@gezer submissions % 
