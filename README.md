@@ -1,7 +1,10 @@
 # Airline Profit Maximization 
 **CMPE160 Object Oriented Programming - Spring 2022 - Student Assistant**
+#### CmpE160 Course
+* **Instructor:** Tuna Tugcu
+* **Teaching Assistant:** Yigit Yildirim
 
-This repository has every file I used during my assistant work for the CMPE160 course at Bogazici University.
+This repository has every file I used during my assistant work for the CMPE160 course at Bogazici University. 
 
 I was tasked with creating the first project for this course. 
 This project was designed to introduce students with the object oriented programming paradigm. 
